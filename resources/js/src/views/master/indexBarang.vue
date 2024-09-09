@@ -235,10 +235,14 @@
         acc: ''
     })
 
-    
+
+    const GetCoaHpp=() => {
+        store.dispatch('GetCoaList')
+    }
 
     onMounted(() => {
         bind_data();
+        GetCoaHpp();
         getKtg();
         getkd();
         setTimeout(function() { accs.value = store.getters.StateCoaList; }, 1000);
