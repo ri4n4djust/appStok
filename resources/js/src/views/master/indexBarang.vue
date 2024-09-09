@@ -120,8 +120,8 @@
                                             <input v-model="input.satuanB" class="form-control" placeholder="Satuan" />
                                         </div>
                                         <div class="col-sm">
-                                            <label for="inputState">Akun</label>
-                                            <select id="inputState" v-model="input.acc" class="form-select">
+                                            <label for="inputState">Akun Penjualan</label>
+                                            <select id="inputState" v-model="input.acc_id" class="form-select">
                                                 <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
                                             </select>
                                         </div>
@@ -141,6 +141,12 @@
                                             <label for="inputState">Harga Jual</label>
                                             <input v-model="input.hrgJual" class="form-control" placeholder="Harga Jual" @keypress="onlyNumber" />
                                         </div>
+                                        <div class="col-sm">
+                                            <label for="inputState">Akun Hpp</label>
+                                            <select id="inputState" v-model="input.acchpp" class="form-select">
+                                                <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="row mb-4">
                                         <div class="col-sm-4">
@@ -154,6 +160,12 @@
                                         <div class="col-sm">
                                             <label for="inputState">Qty Max</label>
                                             <input v-model="input.qtyMax" class="form-control" placeholder="Qty Max" @keypress="onlyNumber" />
+                                        </div>
+                                        <div class="col-sm">
+                                            <label for="inputState">Akun Persediaan</label>
+                                            <select id="inputState" v-model="input.accpersediaan" class="form-select">
+                                                <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </form>
@@ -232,7 +244,6 @@
         merek: '',
         qtyMin: '',
         qtyMax: '',
-        acc: ''
     })
 
 

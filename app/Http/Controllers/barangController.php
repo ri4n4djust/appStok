@@ -31,7 +31,7 @@ class barangController extends Controller
     {
         $posts = Persediaan::join('tblkategori', 'tblpersediaan.ktgPersediaan', '=', 'tblkategori.kodeKtg')
                 ->join('tblbarang', 'tblbarang.kdBarang', 'tblpersediaan.kdPersediaan')
-                ->get(['tblpersediaan.*', 'tblbarang.accid','tblbarang.accid_persediaan','tblbarang.accid_biaya','tblkategori.namaKtg']);
+                ->get(['tblpersediaan.*', 'tblbarang.accid','tblbarang.accid_persediaan','tblkategori.namaKtg']);
         //$posts = Barang::latest()->get();
         $count = Barang::count();
         return response([
@@ -381,6 +381,9 @@ class barangController extends Controller
                 $merek = $request->input('merek');
                 $qtymin = $request->input('qtyMin');
                 $qtymax = $request->input('qtyMax');
+                $acc_id = $request->input('acc_id');
+                $acchpp = $request->input('acchpp');
+                $accpersediaan = $request->input('accpersediaan');
 
                 // $tglOpnum = date("Y-m-d", strtotime($request[0]['tglOpnum']));
                 $post = Barang::upsert([
@@ -397,7 +400,10 @@ class barangController extends Controller
                         'qtyMax'   => $qtymax,
                         'deskripsi'     => 'des',
                         'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
-                        'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+                        'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                        'accid' => $acc_id,
+                        'accid_hpp' => $acchpp,
+                        'accid_persediaan' => $accpersediaan
                     ],
                     [
                         'nmBarang'     => $nmBarang,
@@ -409,9 +415,25 @@ class barangController extends Controller
                         'qtyMin'       => $qtymin,
                         'qtyMax'   => $qtymax,
                         'deskripsi'     => 'des',
-                        'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+                        'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                        'accid' => $acc_id,
+                        'accid_hpp' => $acchpp,
+                        'accid_persediaan' => $accpersediaan
                     ]
                 );
+
+                Persediaan::upsert([
+                    [
+                        'kdPersediaan'     => $kdBarang,
+                        'nmPersediaan' => $nmBarang,
+                        'stokPersediaan' => 0,
+                        'satuanPersediaan' => $satuan,
+                        'ktgPersediaan' => $kategori,
+                    ]
+                ], 
+                ['id', 'kdPersediaan'], 
+                ['kdPersediaan']);
+                
 
                 
             DB::commit();
