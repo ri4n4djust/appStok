@@ -96,6 +96,71 @@
                 </div>
             </div>
 
+            <Modal v-model:visible="isVisible" :draggable="true" :title="edit" width="60%">
+                <div class="row mb-4">
+                    <div class="col-sm-4">
+                        <label for="inputState">Kode</label>
+                        <input v-model="edit.kdB" class="form-control" placeholder="Kode" disabled />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Nama</label>
+                        <input v-model="edit.nmB" class="form-control" placeholder="Nama Barang" />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Satuan</label>
+                        <input v-model="edit.satuanB" class="form-control" placeholder="Satuan" />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Akun Penjualan</label>
+                        <select id="inputState" v-model="edit.acc_id" class="form-select">
+                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-sm-4">
+                        <label for="inputState">Kategori</label>
+                        <select class="form-select" v-model="edit.kdktg">
+                            <option v-for="ktg in ktgs" :value="ktg.kodeKtg" :key="ktg.id">{{ ktg.namaKtg }}</option>
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Harga Beli</label>
+                        <input v-model="edit.hrgBeli" class="form-control" placeholder="Harga Beli" @keypress="onlyNumber" />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Harga Jual</label>
+                        <input v-model="edit.hrgJual" class="form-control" placeholder="Harga Jual" @keypress="onlyNumber" />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Akun Hpp</label>
+                        <select id="inputState" v-model="edit.acchpp" class="form-select">
+                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-sm-4">
+                        <label for="inputState">Merek</label>
+                        <input v-model="edit.merek" class="form-control" placeholder="Merek" />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Qty Min</label>
+                        <input v-model="edit.qtyMin" class="form-control" placeholder="Qty Min" @keypress="onlyNumber" />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Qty Max</label>
+                        <input v-model="edit.qtyMax" class="form-control" placeholder="Qty Max" @keypress="onlyNumber" />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Akun Persediaan</label>
+                        <select id="inputState" v-model="edit.accpersediaan" class="form-select">
+                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                        </select>
+                    </div>
+                </div>
+            </Modal>
+
             <!-- <div v-show="modalinput" > -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -194,13 +259,14 @@
     import 'jspdf-autotable';
 
     import moment from "moment";
-
+    import { Modal } from 'usemodal-vue3';
     import { useStore } from 'vuex';
 
     import { useMeta } from '@/composables/use-meta';
     useMeta({ title: 'Data Barang' });
 
     const store = useStore();
+    
 
     const columns = ref(['kdBarang', 'nmBarang', 'hrgPokok', 'hrgJual', 'namaKtg', 'stokPersediaan', 'kartuStok' ,'action']);
 
@@ -231,6 +297,9 @@
         startDate: moment().subtract(30,'d').format("D-M-YYYY"),
         endDate: moment().format("D-M-YYYY")
     });
+
+    const isVisible = ref(false);
+    const edit = ref({});
 
     const accs = ref();
     const kdbrg = ref([])
@@ -405,7 +474,20 @@
     };
     const view_row = (item) => {
         modalinput.value = true
-        alert('ID: ' + item.kdBarang + ', Name: ' + item.nmBarang);
+        isVisible.value = true;
+        edit.value = ({
+            kdB: item.kdBarang,
+            kdktg: item.kodeKtg,
+            nmB: item.nmBarang,
+            satuanB: '',
+            hrgBeli: '',
+            hrgJual: '',
+            merek: '',
+            qtyMin: '',
+            qtyMax: '',
+        });
+        console.log(edit);
+        // alert('ID: ' + item.kdBarang + ', Name: ' + item.nmBarang);
     };
 
     const delete_row = (item) => {
