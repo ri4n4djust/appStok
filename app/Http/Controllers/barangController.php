@@ -372,6 +372,7 @@ class barangController extends Controller
     public function simpanBarang(Request $request){
         try{
             $exception = DB::transaction(function() use ($request){ 
+                // $id = $request->input('idB');
                 $kdBarang = $request->input('kdB');
                 $nmBarang = $request->input('nmB');
                 $satuan = $request->input('satuanB');
@@ -387,52 +388,63 @@ class barangController extends Controller
 
                 // $tglOpnum = date("Y-m-d", strtotime($request[0]['tglOpnum']));
                 $post = Barang::upsert([
-                        'kdBarang'     => $kdBarang,
+                        [
+                            'kdBarang'     => $kdBarang,
+                            'nmBarang'     => $nmBarang,
+                            'hrgPokok'     => $hrgBeli,
+                            'hrgJual'       => $hrgJual,
+                            'ktgBarang'   => $kategori,
+                            'stkBarang'   => '0',
+                            'stsBarang'   => '0',
+                            'satuanBarang'     => $satuan,
+                            'merek'     => $merek,
+                            'qtyMin'       => $qtymin,
+                            'qtyMax'   => $qtymax,
+                            'deskripsi'     => 'des',
+                            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                            'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                            'accid' => $acc_id,
+                            'accid_hpp' => $acchpp,
+                            'accid_persediaan' => $accpersediaan
+                        ],
+                    ],
+                    uniqueBy: ['id', 'kdBarang'],
+                    update: [
                         'nmBarang'     => $nmBarang,
                         'hrgPokok'     => $hrgBeli,
                         'hrgJual'       => $hrgJual,
                         'ktgBarang'   => $kategori,
-                        'stkBarang'   => '0',
-                        'stsBarang'   => '0',
                         'satuanBarang'     => $satuan,
                         'merek'     => $merek,
                         'qtyMin'       => $qtymin,
                         'qtyMax'   => $qtymax,
                         'deskripsi'     => 'des',
-                        'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                         'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
                         'accid' => $acc_id,
                         'accid_hpp' => $acchpp,
                         'accid_persediaan' => $accpersediaan
                     ],
-                    [
-                        'nmBarang'     => $nmBarang,
-                        'hrgPokok'     => $hrgBeli,
-                        'hrgJual'       => $hrgJual,
-                        'ktgBarang'   => $kategori,
-                        'satuanBarang'     => $satuan,
-                        'merek'     => $merek,
-                        'qtyMin'       => $qtymin,
-                        'qtyMax'   => $qtymax,
-                        'deskripsi'     => 'des',
-                        'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
-                        'accid' => $acc_id,
-                        'accid_hpp' => $acchpp,
-                        'accid_persediaan' => $accpersediaan
-                    ]
+                    // ['id','kdBarang'],
                 );
 
                 Persediaan::upsert([
-                    [
+                        [
+                            'kdPersediaan'     => $kdBarang,
+                            'nmPersediaan' => $nmBarang,
+                            'stokPersediaan' => 0,
+                            'satuanPersediaan' => $satuan,
+                            'ktgPersediaan' => $kategori,
+                        ]
+                    ], 
+                    uniqueBy: ['id', 'kdPersediaan'],
+                    update: [
                         'kdPersediaan'     => $kdBarang,
                         'nmPersediaan' => $nmBarang,
-                        'stokPersediaan' => 0,
+                        // 'stokPersediaan' => 0,
                         'satuanPersediaan' => $satuan,
                         'ktgPersediaan' => $kategori,
                     ]
-                ], 
-                ['id', 'kdPersediaan'], 
-                ['kdPersediaan']);
+                );
                 
 
                 
