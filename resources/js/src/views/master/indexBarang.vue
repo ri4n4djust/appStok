@@ -113,7 +113,7 @@
                     <div class="col-sm">
                         <label for="inputState">Akun Penjualan</label>
                         <select id="inputState" v-model="edit.acc_id" class="form-select">
-                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                            <option  v-for="ac in accs" :value="ac.acc_id" :key="ac.acc_id">{{ ac.name }}</option>
                         </select>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                     <div class="col-sm">
                         <label for="inputState">Akun Hpp</label>
                         <select id="inputState" v-model="edit.acchpp" class="form-select">
-                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id">{{ ac.name }}</option>
                         </select>
                     </div>
                 </div>
@@ -301,7 +301,7 @@
     const isVisible = ref(false);
     const edit = ref({});
 
-    const accs = ref();
+    
     const kdbrg = ref([])
     const input = ref({
         kdB: kdbrg,
@@ -313,19 +313,20 @@
         merek: '',
         qtyMin: '',
         qtyMax: '',
+        acc_id: accs,
+        acchpp: accs,
+        accpersediaan: accs,
     })
 
 
-    const GetCoaHpp=() => {
-        store.dispatch('GetCoaList')
-    }
+    
 
     onMounted(() => {
         bind_data();
         GetCoaHpp();
         getKtg();
         getkd();
-        setTimeout(function() { accs.value = store.getters.StateCoaList; }, 1000);
+        // setTimeout(function() { accs.value = store.getters.StateCoaList; }, 1000);
     });
 
     
@@ -344,6 +345,11 @@
     // input.value = computed(() => {
     //     kdbrg.value = store.getters.NoBarang;
     // })
+    const accs = ref([]);
+    const GetCoaHpp= async() => {
+        await store.dispatch('GetCoaList')
+        accs.value = store.getters.StateCoaList;
+    }
 
     const ktgs = ref([]);
     const getKtg = async () => {
@@ -477,16 +483,20 @@
         isVisible.value = true;
         edit.value = ({
             kdB: item.kdBarang,
-            kdktg: item.kodeKtg,
+            kdktg: item.ktgBarang,
             nmB: item.nmBarang,
-            satuanB: '',
-            hrgBeli: '',
-            hrgJual: '',
-            merek: '',
-            qtyMin: '',
-            qtyMax: '',
+            satuanB: item.stkSatuan,
+            hrgBeli: item.hrgPokok,
+            hrgJual: item.hrgJual,
+            merek: item.merek,
+            qtyMin: item.qtyMin,
+            qtyMax: item.qtyMax,
+            acc_id: item.accid,
+            acchpp: item.accid_hpp,
+            accpersediaan: item.accid_persediaan
+
         });
-        console.log(edit);
+        console.log(item);
         // alert('ID: ' + item.kdBarang + ', Name: ' + item.nmBarang);
     };
 
