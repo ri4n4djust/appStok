@@ -159,6 +159,10 @@
                         </select>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal" data-bs-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
+                    <button type="button" class="btn btn-primary" @click="edit_barang">Save</button>
+                </div>
             </Modal>
 
             <!-- <div v-show="modalinput" > -->
@@ -370,6 +374,12 @@
         bind_data();
         getkd()
     }
+    const edit_barang = () => {
+        const isi = edit.value
+        store.dispatch('CreateBarang', isi )
+        bind_data();
+        getkd()
+    }
 
     const export_table = (type) => {
         let cols = columns.value.filter((d) => d != 'profile' && d != 'action');
@@ -485,7 +495,7 @@
             kdB: item.kdBarang,
             kdktg: item.ktgBarang,
             nmB: item.nmBarang,
-            satuanB: item.stkSatuan,
+            satuanB: item.satuanBarang,
             hrgBeli: item.hrgPokok,
             hrgJual: item.hrgJual,
             merek: item.merek,
