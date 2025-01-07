@@ -158,6 +158,12 @@
                             <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
                         </select>
                     </div>
+                    <div class="col-sm">
+                        <label for="inputState">Akun Persediaan</label>
+                        <select id="inputState" v-model="edit.accbiaya" class="form-select">
+                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn" data-dismiss="modal" data-bs-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
@@ -233,6 +239,12 @@
                                         <div class="col-sm">
                                             <label for="inputState">Akun Persediaan</label>
                                             <select id="inputState" v-model="input.accpersediaan" class="form-select">
+                                                <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm">
+                                            <label for="inputState">Akun Biaya</label>
+                                            <select id="inputState" v-model="input.accbiaya" class="form-select">
                                                 <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
                                             </select>
                                         </div>
@@ -320,6 +332,7 @@
         acc_id: accs,
         acchpp: accs,
         accpersediaan: accs,
+        accbiaya: accs
     })
 
 

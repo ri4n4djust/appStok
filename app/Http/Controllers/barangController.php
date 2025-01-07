@@ -385,6 +385,7 @@ class barangController extends Controller
                 $acc_id = $request->input('acc_id');
                 $acchpp = $request->input('acchpp');
                 $accpersediaan = $request->input('accpersediaan');
+                $accbiaya = $request->input('accbiaya');
 
                 // $tglOpnum = date("Y-m-d", strtotime($request[0]['tglOpnum']));
                 $post = Barang::upsert([
@@ -405,7 +406,8 @@ class barangController extends Controller
                             'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
                             'accid' => $acc_id,
                             'accid_hpp' => $acchpp,
-                            'accid_persediaan' => $accpersediaan
+                            'accid_persediaan' => $accpersediaan,
+                            'accid_biaya' => $accbiaya
                         ],
                     ],
                     uniqueBy: ['id', 'kdBarang'],
@@ -422,7 +424,8 @@ class barangController extends Controller
                         'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
                         'accid' => $acc_id,
                         'accid_hpp' => $acchpp,
-                        'accid_persediaan' => $accpersediaan
+                        'accid_persediaan' => $accpersediaan,
+                        'accid_biaya' => $accbiaya
                     ],
                     // ['id','kdBarang'],
                 );
@@ -438,7 +441,6 @@ class barangController extends Controller
                     ], 
                     uniqueBy: ['id', 'kdPersediaan'],
                     update: [
-                        'kdPersediaan'     => $kdBarang,
                         'nmPersediaan' => $nmBarang,
                         // 'stokPersediaan' => 0,
                         'satuanPersediaan' => $satuan,
