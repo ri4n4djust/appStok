@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 07, 2025 at 10:10 AM
+-- Generation Time: Jan 07, 2025 at 10:14 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -15921,7 +15921,7 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (364, 'App\\Models\\User', 1, 'ApiToken', '80409fa6880f9b20006dc3502957ff483e65084469419e0073952734e86d2878', '[\"*\"]', '2024-09-09 06:38:15', '2024-09-08 07:57:51', '2024-09-09 06:38:15'),
 (365, 'App\\Models\\User', 1, 'ApiToken', '3999fb858d3ccb0b184e6033662f131cc54b5825a52bd3e7a2caad26e7c1af94', '[\"*\"]', NULL, '2024-09-09 05:57:57', '2024-09-09 05:57:57'),
 (366, 'App\\Models\\User', 1, 'ApiToken', '1e09498b021431e40925714832478097698888d1d71b6f6778bbb37306fb71dd', '[\"*\"]', '2024-09-09 23:35:43', '2024-09-09 06:27:38', '2024-09-09 23:35:43'),
-(367, 'App\\Models\\User', 1, 'ApiToken', 'e5d9067cdf960078d371142b3965c0d75f945c242992c6253da49023d2e5c32b', '[\"*\"]', '2025-01-07 10:10:35', '2025-01-07 10:07:42', '2025-01-07 10:10:35');
+(367, 'App\\Models\\User', 1, 'ApiToken', 'e5d9067cdf960078d371142b3965c0d75f945c242992c6253da49023d2e5c32b', '[\"*\"]', '2025-01-07 10:13:09', '2025-01-07 10:07:42', '2025-01-07 10:13:09');
 
 -- --------------------------------------------------------
 
@@ -16014,8 +16014,7 @@ INSERT INTO `tblbarang` (`id`, `kdBarang`, `nmBarang`, `hrgPokok`, `hrgJual`, `k
 (5, 'BRG0007', 'ELPIGI GAS 3KG', 16000, 18000, 'KT-2021-3', 'TABUNG', 'ELPIGI', '-3396', NULL, '5', '100', '0', 'des', '41400', '51400', '11604', '', '2023-02-04 02:58:44', '2023-02-04 02:58:44'),
 (6, 'BRG0008', 'OLI MESRAN 1.5L', 80000, 110000, 'KT-2021-2', 'BOTOL', 'MESRAN', '-1', NULL, '5', '100', '0', 'des', '41500', '51500', '11605', '', '2023-02-04 02:59:07', '2023-02-04 02:59:07'),
 (9, 'BRG0009', 'RAM', 190000, 350000, 'KT-2021-3', 'PCS', 'VISI', '2', NULL, '2', '10', '0', 'des', '41400', '51400', '11604', '', '2024-09-09 06:54:24', '2024-09-09 06:54:24'),
-(10, 'BRG00010', 'KOMPUTER CORE I3', 2000000, 3000000, 'KT-2021-3', 'SET', 'LG', '0', NULL, '1', '20', '0', 'des', '41200', '51200', '11602', '', '2024-09-09 09:51:22', '2024-09-09 09:51:22'),
-(11, 'BRG0009', 'RAM DDR', 190000, 350000, 'KT-2021-3', 'PCS', 'VISI', '0', NULL, '2', '10', '0', 'des', '41400', '51400', '11604', '52400', '2025-01-07 10:10:35', '2025-01-07 10:10:35');
+(10, 'BRG00010', 'KOMPUTER CORE I3', 2000000, 3000000, 'KT-2021-3', 'SET', 'LG', '0', NULL, '1', '20', '0', 'des', '41200', '51200', '11602', '', '2024-09-09 09:51:22', '2024-09-09 09:51:22');
 
 -- --------------------------------------------------------
 
@@ -18846,7 +18845,7 @@ INSERT INTO `tblpersediaan` (`idPersediaan`, `kdPersediaan`, `nmPersediaan`, `st
 (7, 'BRG0006', 'BRIGHT GAS 5,5KG', -11, 'TABUNG', 'KT-2021-3', '100000.00', '110000.00', NULL, NULL),
 (8, 'BRG0007', 'ELPIGI GAS 3KG', -2385, 'TABUNG', 'KT-2021-3', '16000.00', '18000.00', NULL, NULL),
 (9, 'BRG0008', 'OLI MESRAN 1.5L', -1, 'BOTOL', 'KT-2021-2', '0.00', '110000.00', NULL, NULL),
-(10, 'BRG0009', 'RAM DDR', 2, 'PCS', 'KT-2021-3', '190000.00', '350000.00', '2024-09-09 06:54:24', '2025-01-07 10:10:35'),
+(10, 'BRG0009', 'RAM KINGSTON', 2, 'PCS', 'KT-2021-3', '190000.00', '350000.00', '2024-09-09 06:54:24', '2025-01-07 10:13:08'),
 (11, 'BRG00010', 'KOMPUTER CORE I3', 0, 'SET', 'KT-2021-3', NULL, NULL, '2024-09-09 09:51:22', '2024-09-09 09:51:22');
 
 -- --------------------------------------------------------
@@ -26512,7 +26511,8 @@ ALTER TABLE `setup_dealer`
 -- Indexes for table `tblbarang`
 --
 ALTER TABLE `tblbarang`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `kdBarang` (`kdBarang`);
 
 --
 -- Indexes for table `tblbbm`
@@ -26671,7 +26671,8 @@ ALTER TABLE `tblpenjualan_detail`
 --
 ALTER TABLE `tblpersediaan`
   ADD PRIMARY KEY (`idPersediaan`),
-  ADD UNIQUE KEY `kdPersediaan_UNIQUE` (`kdPersediaan`);
+  ADD UNIQUE KEY `kdPersediaan_UNIQUE` (`kdPersediaan`),
+  ADD UNIQUE KEY `kdPersediaan` (`kdPersediaan`);
 
 --
 -- Indexes for table `tblperubahan_hargabbm`
@@ -26832,7 +26833,7 @@ ALTER TABLE `setup_dealer`
 -- AUTO_INCREMENT for table `tblbarang`
 --
 ALTER TABLE `tblbarang`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tblbbm`
@@ -26976,7 +26977,7 @@ ALTER TABLE `tblpenjualan_detail`
 -- AUTO_INCREMENT for table `tblpersediaan`
 --
 ALTER TABLE `tblpersediaan`
-  MODIFY `idPersediaan` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `idPersediaan` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `tblperubahan_hargabbm`
