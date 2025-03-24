@@ -172,7 +172,7 @@
             store.dispatch('LogIn', form.value)
             .then(response => {
                 // console.log('result: ', response)
-                router.push({path: '/bbm'})
+                router.push({path: '/barang'})
             })
             .catch(error => {
                 // console.log('error: ', error)

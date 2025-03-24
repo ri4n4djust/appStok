@@ -17,6 +17,7 @@ import labarugi from './labarugi';
 import coa from './coa';
 import inventaris from './inventaris';
 import tax from './tax';
+import jasa from './jasa';
 
 
 export default new createStore({
@@ -130,7 +131,8 @@ export default new createStore({
         labarugi,
         coa,
         inventaris,
-        tax
+        tax,
+        jasa
     },
     // plugins: [createPersistedState()]
 });

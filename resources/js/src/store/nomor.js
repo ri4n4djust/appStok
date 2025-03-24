@@ -4,6 +4,7 @@ import axios from 'axios';
 const state = {
     nopembelian: [],
     nobarang: [],
+    nojasa: [],
     noopnum: [],
     nopobbm: [],
     noterimabbm: [],
@@ -17,6 +18,7 @@ const state = {
   
 const getters = {
     NoBarang: state => state.nobarang,
+    NoJasa: state => state.nojasa,
     NoPembelian: state => state.nopembelian,
     NoPenjualan: state => state.nopenjualan,
     NoOpnum: state => state.noopnum,
@@ -60,6 +62,18 @@ const actions = {
         try {
             response = await axios.get('/api/kdbarang')
             commit('setNoBarang', response.data.kdBarang)
+        } catch (ex) {
+            // Handle error
+            alert('error no barang')
+            return
+        }
+    
+    },
+    async GetNoJasa({ commit }){
+        let response
+        try {
+            response = await axios.get('/api/kdjasa')
+            commit('setNoJasa', response.data.kdJasa)
         } catch (ex) {
             // Handle error
             alert('error no barang')
@@ -187,6 +201,9 @@ const mutations = {
     },
     setNoBarang(state, barang){
         state.nobarang = barang
+    },
+    setNoJasa(state, jasa){
+        state.nojasa = jasa
     },
     setNoOpnum(state, op){
         state.noopnum = op

@@ -108,57 +108,127 @@
                                     </div>
 
                                     <div class="invoice-detail-items">
-                                        <div class="row">
-                                            <div class="form-group col-md-3">
-                                                <label for="inputCity">NAMA BARANG</label>
-                                                <multiselect 
-                                                    v-model="brg" 
-                                                    :options="penjualan.barangs" 
-                                                    :searchable="true"
-                                                    track-by="nmBarang"
-                                                    label="nmBarang"
-                                                    open-direction="top"
-                                                    placeholder="Choose..." 
-                                                    selected-label="" 
-                                                    select-label="" >
-                                                </multiselect>
+                                        <ul class="nav nav-tabs mb-3 mt-3" id="simpletab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">BARANG</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">JASA</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="simpletabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="invoice-detail-items">
+                                                    <div class="row">
+                                                        <div class="form-group col-md-3">
+                                                            <label for="inputCity">NAMA BARANG</label>
+                                                            <multiselect 
+                                                                v-model="brg" 
+                                                                :options="penjualan.barangs" 
+                                                                :searchable="true"
+                                                                track-by="nmBarang"
+                                                                label="nmBarang"
+                                                                open-direction="top"
+                                                                placeholder="Choose..." 
+                                                                selected-label="" 
+                                                                select-label="" >
+                                                            </multiselect>
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <label for="inputState">HARGA</label>
+                                                            <input type="text" v-model="brg.hrgJual" class="form-control form-control-sm" placeholder="Price" @keypress="onlyNumber" />
+                                                        </div>
+                                                        <div class="form-group col-sm-1">
+                                                            <label for="inputZip">QTY</label>
+                                                            <input type="text" v-model="qty" class="form-control form-control-sm" placeholder="Quantity" @keypress="onlyNumber" />
+                                                        </div>
+                                                        <div class="form-group col-sm-1">
+                                                            <label for="inputZip">Disc</label>
+                                                            <input type="text" v-model="disc" class="form-control form-control-sm" placeholder="Diskon" @keypress="onlyNumber" />
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <label for="satuan">SATUAN</label>
+                                                            <input type="text" v-model="brg.satuanBarang" class="form-control form-control-sm" id="satuan" />
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <label for="inputZip">TOTAL</label><br>
+                                                            <!-- {{ new Intl.NumberFormat().format(brg.hrgJual * qty) }} -->
+                                                            <input type="text" v-model="tot" class="form-control form-control-sm" placeholder="Quantity" @keypress="onlyNumber" />
+                                                        </div>
+                                                        <div class="form-group col-md-1">
+                                                            <label for="aksi">Aksi</label>
+                                                            <button @click="addToCart(brg)" class="btn btn-xs btn-primary">
+                                                                + 
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="form-group col-md-2">
-                                                <label for="inputState">HARGA</label>
-                                                <input type="text" v-model="brg.hrgJual" class="form-control form-control-sm" placeholder="Price" @keypress="onlyNumber" />
-                                            </div>
-                                            <div class="form-group col-sm-2">
-                                                <label for="inputZip">QTY</label>
-                                                <input type="text" v-model="qty" class="form-control form-control-sm" placeholder="Quantity" @keypress="onlyNumber" />
-                                            </div>
-                                            <div class="form-group col-md-2">
-                                                <label for="satuan">SATUAN</label>
-                                                <input type="text" v-model="brg.satuanBarang" class="form-control form-control-sm" id="satuan" />
-                                            </div>
-                                            <div class="form-group col-md-2">
-                                                <label for="inputZip">TOTAL</label><br>
-                                                <!-- {{ new Intl.NumberFormat().format(brg.hrgJual * qty) }} -->
-                                                <input type="text" v-model="tot" class="form-control form-control-sm" placeholder="Quantity" @keypress="onlyNumber" />
-                                            </div>
-                                            <div class="form-group col-md-1">
-                                                <label for="aksi">Aksi</label>
-                                                <button @click="addToCart(brg)" class="btn btn-xs btn-primary">
-                                                    + 
-                                                </button>
+                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                <div class="invoice-detail-items">
+                                                    <div class="row">
+                                                        <div class="form-group col-md-4">
+                                                            <label for="inputCity">NAMA JASA</label>
+                                                            <multiselect 
+                                                                v-model="jsa" 
+                                                                :options="penjualan.jasas" 
+                                                                :searchable="true"
+                                                                track-by="nmJasa"
+                                                                label="nmJasa"
+                                                                open-direction="top"
+                                                                placeholder="Choose..." 
+                                                                selected-label="" 
+                                                                select-label="" >
+                                                            </multiselect>
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                            <label for="inputState">HARGA</label>
+                                                            <input type="text" v-model="jsa.biayaJasa" class="form-control form-control-sm" placeholder="Price" @keypress="onlyNumber" />
+                                                        </div>
+                                                        <div class="form-group col-sm-1">
+                                                            <label for="inputZip">QTY</label>
+                                                            <input type="text" v-model="qtyjasa" class="form-control form-control-sm" placeholder="Quantity" @keypress="onlyNumber" />
+                                                        </div>
+                                                        
+                                                        <div class="form-group col-md-2">
+                                                            <label for="inputZip">TOTAL</label><br>
+                                                            <!-- {{ new Intl.NumberFormat().format(brg.hrgJual * qty) }} -->
+                                                            <input type="text" v-model="totjasa" class="form-control form-control-sm" placeholder="Quantity" @keypress="onlyNumber" />
+                                                        </div>
+                                                        <div class="form-group col-md-1">
+                                                            <label for="aksi">Aksi</label>
+                                                            <button @click="addToCartJasa(jsa)" class="btn btn-xs btn-primary">
+                                                                + 
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="invoice-detail-items">
+                                    
+
+                                    <div class="invoice-detail-items" >
                                         <div class="inv--product-table-section">
                                             <div class="table-responsive">
                                                 <table class="table table-hover table-bordered item-table">
                                                     <thead>
                                                         <tr>
+                                                            <th>Detail Barang</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
                                                             <th>Nama Barang</th>
                                                             <th>Harga</th>
                                                             <th>Qty</th>
                                                             <th>Satuan</th>
+                                                            <th>Diskon</th>
                                                             <th>Total</th>
                                                             <th>Aksi</th>
                                                         </tr>
@@ -169,9 +239,54 @@
                                                             <td class="rate">{{ new Intl.NumberFormat().format(item.hrgJual) }}</td>
                                                             <td class="qty">{{ item.qty }}</td>
                                                             <td class="qty">{{ item.satuan }}</td>
+                                                            <td class="qty">{{ item.disc }} %</td>
                                                             <td class="amount">{{ new Intl.NumberFormat().format(item.total) }}</td>
                                                             <td class="tax">
                                                                 <button type="button" class="btn btn-secondary additem btn-sm" @click="removeItem(id=item.kdBarang)">Hapus</button>
+                                                                <!-- <div class="icon-container">
+                                                                    <i data-feather="trash"></i><span class="icon-name"> trash</span>
+                                                                </div> -->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <!-- <button type="button" class="btn btn-secondary additem btn-sm" @click="add_item()">Add Item</button> -->
+                                    </div>
+
+                                    <div class="invoice-detail-items" >
+                                        <div class="inv--product-table-section">
+                                            <div class="table-responsive">
+                                                <table class="table table-hover table-bordered item-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Detail Jasa</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Code</th>
+                                                            <th>Nama Jasa</th>
+                                                            <th>Biaya</th>
+                                                            <th>Qty</th>
+                                                            <th>Total</th>
+                                                            <th>Aksi</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr v-for="itemjasa in cartItemsPenJasa" :key="itemjasa.kdJasa">
+                                                            <td class="description">{{ itemjasa.kdJasa }}</td>
+                                                            <td class="description">{{ itemjasa.nmJasa }}</td>
+                                                            <td class="rate">{{ new Intl.NumberFormat().format(itemjasa.biayaJasa) }}</td>
+                                                            <td class="qty">{{ itemjasa.qtyjasa }}</td>
+                                                            <td class="amount">{{ new Intl.NumberFormat().format(itemjasa.total) }}</td>
+                                                            <td class="tax">
+                                                                <button type="button" class="btn btn-secondary additem btn-sm" @click="removeItemJasa(id=itemjasa.kdJasa)">Hapus</button>
                                                                 <!-- <div class="icon-container">
                                                                     <i data-feather="trash"></i><span class="icon-name"> trash</span>
                                                                 </div> -->
@@ -217,19 +332,18 @@
 
                                             <div class="col-md-6">
                                                 <div class="totals-row">
-                                                    <div class="invoice-totals-row invoice-summary-subtotal">
+                                                    <div class="invoice-totals-row invoice-summary-subtotal" >
                                                         <div class="invoice-summary-label">Sub Total</div>
                                                          <div class="invoice-summary-label"></div>
                                                         <div class="invoice-summary-value">
                                                             <div class="subtotal-amount"><span class="currency"></span><span class="amount">{{new Intl.NumberFormat().format(subtotal)}}</span></div>
                                                         </div>
                                                     </div>
-                                                    <div class="invoice-totals-row invoice-summary-total">
-                                                         <div class="invoice-summary-label">Disc</div>
-                                                        <input type="text" v-model="params.disc" @keyup="getTotal" class="form-control form-control-sm" >%
-                                                        <div class="invoice-summary-label"></div>
+                                                    <div class="invoice-totals-row invoice-summary-subtotal" >
+                                                        <div class="invoice-summary-label">Total Jasa</div>
+                                                         <div class="invoice-summary-label"></div>
                                                         <div class="invoice-summary-value">
-                                                            <div class="total-amount"><span class="currency"></span><span>{{ new Intl.NumberFormat().format(Math.floor(subtotal * disc / 100)) }}</span></div>
+                                                            <div class="subtotal-amount"><span class="currency"></span><span class="amount">{{new Intl.NumberFormat().format(subtotaljasa)}}</span></div>
                                                         </div>
                                                     </div>
                                                     <div v-show="divpajak">
@@ -312,14 +426,17 @@
 
     const items = ref([]);
     const brg = ref([]);
+    const jsa = ref([]);
     const nopenjualan = ref([]);
     const qty = ref(1);
+    const qtyjasa = ref(1);
     const subtotal = ref();
+    const subtotaljasa = ref();
     const total = ref();
     const disc = ref(0);
     const tax = ref(0);
-    const selected_file = ref(null);
     const tot = ref();
+    const totjasa = ref();
     const payment = ref([]);
     const params = ref({
         noNota: nopenjualan,
@@ -328,8 +445,9 @@
         jthTempo: moment().format("YYYY-MM-DD"),
         notes: '',
         subtotal: subtotal,
+        subtotaljasa: subtotaljasa,
         tax: tax,
-        disc: disc,
+        // disc: disc,
         total: total,
     });
     const paramspelanggan = ref({
@@ -347,23 +465,27 @@
 
     });
     const cartItemsPen = ref([])
+    const cartItemsPenJasa = ref([])
     const divpajak = ref(false)
     // const newValue = ref()
     // const currency_list = ref([]);
 
     const penjualan = computed(() => {
         const barangs = store.getters.StateBarang;
+        const jasas = store.getters.StateJasa;
         const pelanggans = store.getters.StatePelanggan;
         const accs = store.getters.StateAcc;
         nopenjualan.value = store.getters.NoPenjualan;
-        tot.value = brg.value.hrgJual * qty.value;
+        tot.value = (brg.value.hrgJual * qty.value) - (brg.value.hrgJual * qty.value * disc.value / 100);
+        totjasa.value = jsa.value.biayaJasa * qtyjasa.value;
         // const pajak = ref(store.state.pajak);
         // console.log(suppliers)
-        return { barangs, pelanggans, nopenjualan, accs, tot }
+        return { barangs, jasas, pelanggans, nopenjualan, accs, tot, totjasa }
     });
 
     const getBarang=() => {
         store.dispatch('GetBarang')
+        store.dispatch('GetJasa')
     }
     const getPelanggan=() => {
         store.dispatch('GetPelanggan')
@@ -379,18 +501,17 @@
 
     const getTotal=() =>{
         const pajak = store.state.pajak;
-        const temptotal = subtotal.value - (subtotal.value * disc.value / 100)
-        total.value = (subtotal.value - (subtotal.value * disc.value / 100))
-        tax.value = temptotal * pajak /100
-        
+        const temptotal = subtotal.value 
+        total.value = parseFloat(subtotal.value) + parseFloat(subtotaljasa.value)
+        tax.value = subtotal.value * pajak /100
         console.log('total tanpa pajak :'+tax.value)
         // return { tot }
     }
     const getTotalWtax=() =>{
         const pajak = store.state.pajak;
-        const temptotal = subtotal.value - (subtotal.value * disc.value / 100)
+        const temptotal = subtotal.value ;
         tax.value = temptotal * pajak /100
-        total.value = (subtotal.value - (subtotal.value * disc.value / 100)) + tax.value
+        total.value = subtotal.value  + tax.value
         
         
         console.log('total dengan pajak:'+tax.value)
@@ -429,29 +550,29 @@
         const header =params.value
         const headers =paramspelanggan.value
         const headerfull = Object.assign(header, headers)
-        const detail =cartItemsPen.value
-        store.dispatch('CreatePenjualan', [headerfull,detail] )
-        total.value = 0
-        subtotal.value = 0
-        tax.value = 0
-        setTimeout(function() { 
-            getCart(); 
-            getNoPenjualan();
-        }, 5000);
-        // getNoPenjualan();
-        total.value = 0
-        divpajak.value = false
+        const detail =cartItemsPen.value;
+        const detailjasa =cartItemsPenJasa.value;
+        store.dispatch('CreatePenjualan', [headerfull,detail,detailjasa])
+        .then(response => {
+            if(response.status == 200){
+                total.value = 0
+                subtotal.value = 0
+                tax.value = 0
+                getCart(); 
+                getCartJasa();
+                getNoPenjualan();
+                total.value = 0
+                divpajak.value = false
+                router.push({ name: 'invoice-penjualan', params: { id: response.data.data } });
+            }
+            console.log(response.data)
+        }).catch(error => {
+            console.log('error: ', error)
+            return
+        })
     }
 
     onMounted(() => {
-        //set default data
-        // items.value.push({ id: 1, title: '', description: '', rate: 0, quantity: 0, amount: 100, is_tax: false });
-
-        // let dt = new Date();
-        // params.value.invoice_date = JSON.parse(JSON.stringify(dt));
-        // dt.setDate(dt.getDate() + 5);
-        // params.value.due_date = dt;
-
         divpajak.value = false
         // console.log('on mount page penjualan')
         
@@ -460,7 +581,9 @@
         // getAcc();
         getPelanggan();
         getCart();
+        getCartJasa();
         getNoPenjualan();
+        getTotal();  
     });
 
     // const change_file = (event) => {
@@ -480,7 +603,7 @@
     // };
 
     function addToCart(brg) {
-        // console.log(brg)
+        console.log(brg)
         if (localStorage.getItem('cartItemsPen')===null){
             cartItemsPen.value = [];
             // console.log(cartItems.value)
@@ -508,12 +631,69 @@
                 getTotal()
                 // isicart = Object.keys(JSON.parse(localStorage.getItem('cartItemsP'))).length;
             }else{
-            cartItemsPen.value.push({kdBarang:brg.kdBarang, nmBarang:brg.nmBarang,accid:brg.accid,accid_persediaan:brg.accid_persediaan,accid_hpp:brg.accid_hpp,hrgJual:brg.hrgJual,accid:brg.accid,accid_persediaan:brg.accid_persediaan,qty:qty.value,satuan:brg.satuanBarang,total:qty.value * brg.hrgJual,totalhpp:qty.value * brg.hrgPokok, kategori:brg.ktgBarang});	
+            cartItemsPen.value.push({
+                kdBarang:brg.kdBarang, 
+                nmBarang:brg.nmBarang,
+                accid:brg.accid,
+                accid_persediaan:brg.accid_persediaan,
+                accid_hpp:brg.accid_hpp,
+                hrgJual:brg.hrgJual,
+                accid:brg.accid,
+                accid_persediaan:brg.accid_persediaan,
+                qty:qty.value,
+                satuan:brg.satuanBarang,
+                total:(qty.value * brg.hrgJual) - (qty.value * brg.hrgJual * disc.value / 100),
+                disc:disc.value,
+                totalhpp:qty.value * brg.hrgPokok, 
+                kategori:brg.ktgBarang
+            });	
             localStorage.setItem('cartItemsPen',JSON.stringify(cartItemsPen.value));
             getCart();
             getTotal()
             // isicart = Object.keys(JSON.parse(localStorage.getItem('cartItemsP'))).length;
             alert(brg.nmBarang+ " berhasil disimpan")
+            }
+    }
+    function addToCartJasa(jsa) {
+        // console.log(brg)
+        if (localStorage.getItem('cartItemsPenJasa')===null){
+            cartItemsPenJasa.value = [];
+            // console.log(cartItems.value)
+        }else{
+            cartItemsPenJasa.value = JSON.parse(localStorage.getItem('cartItemsPenJasa'));
+        }
+            const oldItems = JSON.parse(localStorage.getItem('cartItemsPenJasa')) || [];
+            // console.log(oldItems)
+            const existingItem = oldItems.find(({ kdJasa }) => kdJasa === jsa.kdJasa);
+            if (existingItem) {
+                const objIndex = cartItemsPenJasa.value.findIndex((e => e.kdJasa === jsa.kdJasa));
+                const oldName = cartItemsPenJasa.value[objIndex].nmJasa;
+                const oldQty = cartItemsPenJasa.value[objIndex].qtyjasa;
+                const oldTotal = cartItemsPenJasa.value[objIndex].total;
+                const newQty = parseInt(oldQty) + parseInt(qtyjasa.value) ;
+                const newTotal = parseInt(oldTotal) + parseInt(qtyjasa.value * jsa.biayaJasa) ;
+                cartItemsPenJasa.value[objIndex].qtyjasa = parseInt(newQty);
+                cartItemsPenJasa.value[objIndex].total = parseInt(newTotal);
+                localStorage.setItem('cartItemsPenJasa',JSON.stringify(cartItemsPenJasa.value));
+                alert(oldName+' Quantity Update')
+                getCartJasa();
+                getTotal()
+                // isicart = Object.keys(JSON.parse(localStorage.getItem('cartItemsP'))).length;
+            }else{
+                cartItemsPenJasa.value.push({
+                    kdJasa:jsa.kdJasa, 
+                    nmJasa:jsa.nmJasa,
+                    accid:jsa.accid,
+                    accid_jasa:jsa.accid_jasa,
+                    biayaJasa:jsa.biayaJasa,
+                    qtyjasa:qtyjasa.value,
+                    total:qtyjasa.value * jsa.biayaJasa,
+                });	
+                localStorage.setItem('cartItemsPenJasa',JSON.stringify(cartItemsPenJasa.value));
+                getCartJasa();
+                getTotal();
+                // isicart = Object.keys(JSON.parse(localStorage.getItem('cartItemsP'))).length;
+                alert(jsa.nmJasa+ " berhasil disimpan")
             }
     }
     function removeItem(id) {
@@ -524,22 +704,23 @@
         // cartItems.value.splice(index, 1)
         // this.isicart = Object.keys(JSON.parse(localStorage.getItem('cartItemsP'))).length;
         getCart();
+        getTotal();
         // subtotal.value = 0
         // total.value = 0
         // console.log(filtered)
-        // alert(filtered.nmBarang)
     }
-    // function updateItem(barcode, index) {
-    //     const cartItems = JSON.parse(localStorage.getItem('cartItemsP'));
-    //     const objIndex = cartItems.findIndex((e => e.barcode === barcode));
-    //     const newQty = parseInt(this.crt[index].qty) ;
-    //     cartItems[objIndex].qty = parseInt(newQty);
-    //     localStorage.setItem('cartItemsP',JSON.stringify(cartItems));
-    //     //alert('Quantity Update')
-    //     this.getCart();
-    //     this.isicart = Object.keys(JSON.parse(localStorage.getItem('cartItemsP'))).length;
-    // }
-
+    function removeItemJasa(id) {
+        // alert(id)
+        const arrayFromStroage = JSON.parse(localStorage.getItem('cartItemsPenJasa'));
+        const filtered = arrayFromStroage.filter(arrayFromStroage => arrayFromStroage.kdJasa !== id);
+        localStorage.setItem('cartItemsPenJasa', JSON.stringify(filtered));
+        // cartItems.value.splice(index, 1)
+        // this.isicart = Object.keys(JSON.parse(localStorage.getItem('cartItemsP'))).length;
+        getCartJasa();
+        getTotal();
+        // subtotal.value = 0
+        // total.value = 0
+    }
     function getCart() {
         // subtotal.value = []
         if (localStorage.getItem('cartItemsPen')===null){
@@ -548,13 +729,35 @@
             // total.value = 0
         }else if(localStorage.getItem('cartItemsPen')==='[]'){
             // alert('masi kosong')
-            cartItemsPen.value = localStorage.setItem('cartItemsPen', '[]')
+            cartItemsPen.value = localStorage.setItem('cartItemsPen', '[]');
             getTotal();
             subtotal.value = 0
             total.value = 0
             tax.value = 0
         }else{
             cartItemsPen.value = JSON.parse(localStorage.getItem('cartItemsPen'));
+            getSubtotal();
+            getTotal();
+            
+    // this.isicart = JSON.parse(localStorage.getItem('cartItemsP')).length;
+        }
+
+    }
+    function getCartJasa() {
+        // subtotal.value = []
+        if (localStorage.getItem('cartItemsPenJasa')===null){
+            cartItemsPenJasa.value = localStorage.setItem('cartItemsPenJasa', '[]');
+            // subtotal.value = 0
+            // total.value = 0
+        }else if(localStorage.getItem('cartItemsPenJasa')==='[]'){
+            // alert('masi kosong')
+            cartItemsPenJasa.value = localStorage.setItem('cartItemsPenJasa', '[]');
+            getTotal();
+            subtotaljasa.value = 0
+            total.value = 0
+            tax.value = 0
+        }else{
+            cartItemsPenJasa.value = JSON.parse(localStorage.getItem('cartItemsPenJasa'));
             getSubtotal();
             getTotal();
             
@@ -570,12 +773,20 @@
 
     function getSubtotal(){
         const allItems = JSON.parse(localStorage.getItem('cartItemsPen')) || [];
+        const allItemsJasa = JSON.parse(localStorage.getItem('cartItemsPenJasa')) || [];
         let sum = 0;
+        let sumjasa = 0;
         subtotal.value = 0
         for(let i = 0; i < allItems.length; i++){
-        sum += (parseFloat(allItems[i].total));
+            sum += (parseFloat(allItems[i].total));
         }
-        subtotal.value = sum
+        subtotal.value = sum;
+
+        subtotaljasa.value = 0
+        for(let i = 0; i < allItemsJasa.length; i++){
+            sumjasa += (parseFloat(allItemsJasa[i].total));
+        };
+        subtotaljasa.value = sumjasa;
         // console.log(subtotal.value)
         // return sum;
     }

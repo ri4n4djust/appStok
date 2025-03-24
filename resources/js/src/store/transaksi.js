@@ -194,6 +194,7 @@ const actions = {
                 padding: '2em',
             });
             localStorage.setItem('cartItemsPen', '[]')
+            localStorage.setItem('cartItemsPenJasa', '[]')
             return response ;
         } catch (ex) {
             // Handle error
@@ -470,7 +471,7 @@ const actions = {
             //     })
             //   }
             // console.log(arr)
-
+            
             // localStorage.setItem('cartItemsPen', JSON.stringify(arr))
         } catch (ex) {
             // Handle error
@@ -732,35 +733,35 @@ const actions = {
         try {
             response = await axios.post('/api/delete/penjualan', kd)
             // console.log(response.data.data)
-            const toast = window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em',
-            });
-            toast.fire({
-                icon: 'success',
-                title: 'Penjualan berhasil terhapus',
-                padding: '2em',
-            });
+            // const toast = window.Swal.mixin({
+            //     toast: true,
+            //     position: 'top-center',
+            //     showConfirmButton: false,
+            //     timer: 3000,
+            //     padding: '2em',
+            // });
+            // toast.fire({
+            //     icon: 'success',
+            //     title: 'Penjualan berhasil terhapus',
+            //     padding: '2em',
+            // });
             return response ;
         } catch (ex) {
             // Handle error
-            const toast =  window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em'
-            });
-            toast.fire({
-                title: 'Error!',
-                text: 'Penjualan Gagal Dihapus',
-                icon: 'error',
-                // confirmButtonText: 'Cool',
-                padding: '2em'
-            });
+            // const toast =  window.Swal.mixin({
+            //     toast: true,
+            //     position: 'top-center',
+            //     showConfirmButton: false,
+            //     timer: 3000,
+            //     padding: '2em'
+            // });
+            // toast.fire({
+            //     title: 'Error!',
+            //     text: 'Penjualan Gagal Dihapus',
+            //     icon: 'error',
+            //     // confirmButtonText: 'Cool',
+            //     padding: '2em'
+            // });
             throw 'error' ;
         }
         // await dispatch('GetPembelian')

@@ -53,7 +53,23 @@
                             <template #totalPenjualan="props"> {{ Number(props.row.totalPenjualan).toLocaleString() }} </template>
                             <template #taxPenjualan="props"> {{ Number(props.row.taxPenjualan).toLocaleString() }} </template>
                             <template #action="props">
-
+                                <router-link :to="{name: 'invoice-penjualan', params: {id: props.row.noPenjualan}}">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="feather feather-eye"
+                                    >
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </router-link>
                                 <router-link :to="{name: 'editpenjualan', params: {startDate: props.row.tglPenjualan, kd_trans:props.row.noPenjualan, regu:props.row.r_regu }}" >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -156,12 +172,12 @@
     import moment from "moment";
 
     import { useMeta } from '@/composables/use-meta';
-    useMeta({ title: 'Data Laporan Penjualan BBM' });
+    useMeta({ title: 'Data Laporan Penjualan' });
 
     const store = useStore();
     const router = useRouter()
 
-    const columns = ref(['noPenjualan', 'tglPenjualan', 'nmPelanggan', 'subTotalPenjualan', 'discPenjualan', 'totalPenjualan', 'action']);
+    const columns = ref(['noPenjualan', 'tglPenjualan', 'nmPelanggan', 'subTotalPenjualan', 'totalPenjualan', 'action']);
     const items = ref([]);
     const table_option = ref({
         perPage: 10,
@@ -272,7 +288,6 @@
                 rowhtml += '<td>'+moment(item.tglPenjualan).format("DD-MM-YYYY")+'</td>';
                 rowhtml += '<td>'+item.nmPelanggan+'</td>';
                 rowhtml += '<td>'+Number(item.subTotalPenjualan).toLocaleString()+'</td>';
-                rowhtml += '<td>'+Number(item.discPenjualan).toLocaleString()+'</td>';
                 rowhtml += '<td>'+Number(item.totalPenjualan).toLocaleString()+'</td>';
                 rowhtml += '</tr>';
                 // cols.map((d) => {

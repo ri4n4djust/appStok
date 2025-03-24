@@ -2,6 +2,6 @@
 export const $themeConfig = {
     lang: 'en', // en, da, de, el, es, fr, hu, it, ja, pl, pt, ru, sv, tr, zh
     theme: 'dark', // light, dark, system
-    navigation: 'collapsible-vertical', // vertical, collapsible-vertical, horizontal
+    navigation: 'vertical', // vertical, collapsible-vertical, horizontal
     layout: 'full' // full, boxed-layout, large-boxed-layout
 };

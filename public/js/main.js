@@ -25528,8 +25528,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _assets_images_pom_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/assets/images/pom.jpg */ "./resources/js/src/assets/images/pom.jpg");
-/* harmony import */ var _assets_images_pom_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_pom_jpg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_images_logo1_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/assets/images/logo1.jpg */ "./resources/js/src/assets/images/logo1.jpg");
+/* harmony import */ var _assets_images_logo1_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_logo1_jpg__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _assets_images_user_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/assets/images/user.jpg */ "./resources/js/src/assets/images/user.jpg");
 /* harmony import */ var _assets_images_user_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_user_jpg__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -25549,7 +25549,7 @@ var _hoisted_4 = {
 };
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: (_assets_images_pom_jpg__WEBPACK_IMPORTED_MODULE_1___default()),
+  src: (_assets_images_logo1_jpg__WEBPACK_IMPORTED_MODULE_1___default()),
   "class": "navbar-logo",
   alt: "logo"
 }, null, -1
@@ -25874,7 +25874,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "nav-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" SPBU ")];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" WinMax Bali ")];
     }),
     _: 1
     /* STABLE */
@@ -25933,7 +25933,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[4] || (_cache[4] = function ($event) {
       return $setup.toggleMode('light');
     })
-  }, _hoisted_26)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item language-dropdown btn-group\">\n                        <a href=\"javascript:;\" id=\"ddllang\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\n                            <img v-if=\"selectedLang\" :src=\"require(`@/assets/images/flags/${selectedLang.code}.png`)\" class=\"flag-width\" alt=\"flag\" />\n                        </a>\n                        <ul class=\"dropdown-menu\" aria-labelledby=\"ddllang\">\n                            <perfect-scrollbar>\n                                <li v-for=\"item in countryList\" :key=\"item.code\">\n                                    <a href=\"javascript:;\" class=\"dropdown-item d-flex align-items-center\" :class=\"{ active: $i18n.locale === item.code }\" @click.prevent=\"changeLanguage(item)\">\n                                        <img :src=\"require(`@/assets/images/flags/${item.code}.png`)\" class=\"flag-width\" alt=\"\" /> <span>{{ item.name }}</span>\n                                    </a>\n                                </li>\n                            </perfect-scrollbar>\n                        </ul>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item message-dropdown btn-group\">\n                        <a href=\"javascript:;\" id=\"ddlmsg\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-mail\"\n                            >\n                                <path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path>\n                                <polyline points=\"22,6 12,13 2,6\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"ddlmsg\">\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <div class=\"avatar avatar-xl\"><span class=\"avatar-title rounded-circle\">KY</span></div>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Kara Young</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <img src=\"@/assets/images/profile-15.jpeg\" alt=\"avatar\" />\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Daisy Anderson</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\">\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\n                                    <div class=\"media media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <div class=\"avatar avatar-xl\"><span class=\"avatar-title rounded-circle\">OG</span></div>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <h5 class=\"usr-name\">Oscar Garner</h5>\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                        </ul>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item notification-dropdown btn-group\">\n                        <a href=\"javascript:;\" id=\"ddlnotify\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-bell\"\n                            >\n                                <path d=\"M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9\"></path>\n                                <path d=\"M13.73 21a2 2 0 0 1-3.46 0\"></path>\n                            </svg>\n                            <span class=\"badge badge-success\"></span>\n                        </a>\n                        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"ddlnotify\">\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media server-log\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-server\"\n                                            >\n                                                <rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect>\n                                                <rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect>\n                                                <line x1=\"6\" y1=\"6\" x2=\"6\" y2=\"6\"></line>\n                                                <line x1=\"6\" y1=\"18\" x2=\"6\" y2=\"18\"></line>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6 class=\"\">Server Rebooted</h6>\n                                                <p class=\"\">45 min ago</p>\n                                            </div>\n\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-x\"\n                                                >\n                                                    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n                                                    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n                                                </svg>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\"><hr role=\"separator\" aria-orientation=\"horizontal\" size=\"0\" class=\"dropdown-divider\" /></li>\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-heart\"\n                                            >\n                                                <path\n                                                    d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"\n                                                ></path>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6>Licence Expiring Soon</h6>\n                                                <p>8 hrs ago</p>\n                                            </div>\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-x\"\n                                                >\n                                                    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\n                                                    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\n                                                </svg>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </a>\n                            </li>\n                            <li role=\"presentation\"><hr role=\"separator\" aria-orientation=\"horizontal\" size=\"0\" class=\"dropdown-divider\" /></li>\n                            <li role=\"presentation\">\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\n                                    <div class=\"media file-upload\">\n                                        <div class=\"media-aside align-self-start\">\n                                            <svg\n                                                xmlns=\"http://www.w3.org/2000/svg\"\n                                                width=\"24\"\n                                                height=\"24\"\n                                                viewBox=\"0 0 24 24\"\n                                                fill=\"none\"\n                                                stroke=\"currentColor\"\n                                                stroke-width=\"2\"\n                                                stroke-linecap=\"round\"\n                                                stroke-linejoin=\"round\"\n                                                class=\"feather feather-file-text\"\n                                            >\n                                                <path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path>\n                                                <polyline points=\"14 2 14 8 20 8\"></polyline>\n                                                <line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line>\n                                                <line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line>\n                                                <polyline points=\"10 9 9 9 8 9\"></polyline>\n                                            </svg>\n                                        </div>\n                                        <div class=\"media-body\">\n                                            <div class=\"data-info\">\n                                                <h6>Kelly Portfolio.pdf</h6>\n                                                <p>670 kb</p>\n                                            </div>\n                                            <div class=\"icon-status\">\n                                                <svg\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                                    width=\"24\"\n                                                    height=\"24\"\n                                                    viewBox=\"0 0 24 24\"\n                                                    fill=\"none\"\n                                                    stroke=\"currentColor\"\n                                                    stroke-width=\"2\"\n                                                    stroke-linecap=\"round\"\n                                                    stroke-linejoin=\"round\"\n                                                    class=\"feather feather-check\"\n                                                >\n                                                    <polyline points=\"20 6 9 17 4 12\"></polyline>\n                                                </svg>\n                                            </div>\n                                        </div></div\n                                ></a>\n                            </li>\n                        </ul>\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, _hoisted_26)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item language-dropdown btn-group\">\r\n                        <a href=\"javascript:;\" id=\"ddllang\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\r\n                            <img v-if=\"selectedLang\" :src=\"require(`@/assets/images/flags/${selectedLang.code}.png`)\" class=\"flag-width\" alt=\"flag\" />\r\n                        </a>\r\n                        <ul class=\"dropdown-menu\" aria-labelledby=\"ddllang\">\r\n                            <perfect-scrollbar>\r\n                                <li v-for=\"item in countryList\" :key=\"item.code\">\r\n                                    <a href=\"javascript:;\" class=\"dropdown-item d-flex align-items-center\" :class=\"{ active: $i18n.locale === item.code }\" @click.prevent=\"changeLanguage(item)\">\r\n                                        <img :src=\"require(`@/assets/images/flags/${item.code}.png`)\" class=\"flag-width\" alt=\"\" /> <span>{{ item.name }}</span>\r\n                                    </a>\r\n                                </li>\r\n                            </perfect-scrollbar>\r\n                        </ul>\r\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item message-dropdown btn-group\">\r\n                        <a href=\"javascript:;\" id=\"ddlmsg\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-mail\"\r\n                            >\r\n                                <path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"></path>\r\n                                <polyline points=\"22,6 12,13 2,6\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"ddlmsg\">\r\n                            <li role=\"presentation\">\r\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\r\n                                    <div class=\"media media\">\r\n                                        <div class=\"media-aside align-self-start\">\r\n                                            <div class=\"avatar avatar-xl\"><span class=\"avatar-title rounded-circle\">KY</span></div>\r\n                                        </div>\r\n                                        <div class=\"media-body\">\r\n                                            <h5 class=\"usr-name\">Kara Young</h5>\r\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\r\n                                        </div>\r\n                                    </div>\r\n                                </a>\r\n                            </li>\r\n                            <li role=\"presentation\">\r\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\r\n                                    <div class=\"media media\">\r\n                                        <div class=\"media-aside align-self-start\">\r\n                                            <img src=\"@/assets/images/profile-15.jpeg\" alt=\"avatar\" />\r\n                                        </div>\r\n                                        <div class=\"media-body\">\r\n                                            <h5 class=\"usr-name\">Daisy Anderson</h5>\r\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\r\n                                        </div>\r\n                                    </div>\r\n                                </a>\r\n                            </li>\r\n                            <li role=\"presentation\">\r\n                                <a role=\"menuitem\" href=\"#\" target=\"_self\" class=\"dropdown-item\">\r\n                                    <div class=\"media media\">\r\n                                        <div class=\"media-aside align-self-start\">\r\n                                            <div class=\"avatar avatar-xl\"><span class=\"avatar-title rounded-circle\">OG</span></div>\r\n                                        </div>\r\n                                        <div class=\"media-body\">\r\n                                            <h5 class=\"usr-name\">Oscar Garner</h5>\r\n                                            <p class=\"msg-title\">ACCOUNT UPDATE</p>\r\n                                        </div>\r\n                                    </div>\r\n                                </a>\r\n                            </li>\r\n                        </ul>\r\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"dropdown nav-item notification-dropdown btn-group\">\r\n                        <a href=\"javascript:;\" id=\"ddlnotify\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" class=\"btn dropdown-toggle btn-icon-only nav-link\">\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-bell\"\r\n                            >\r\n                                <path d=\"M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9\"></path>\r\n                                <path d=\"M13.73 21a2 2 0 0 1-3.46 0\"></path>\r\n                            </svg>\r\n                            <span class=\"badge badge-success\"></span>\r\n                        </a>\r\n                        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"ddlnotify\">\r\n                            <li role=\"presentation\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\r\n                                    <div class=\"media server-log\">\r\n                                        <div class=\"media-aside align-self-start\">\r\n                                            <svg\r\n                                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                                width=\"24\"\r\n                                                height=\"24\"\r\n                                                viewBox=\"0 0 24 24\"\r\n                                                fill=\"none\"\r\n                                                stroke=\"currentColor\"\r\n                                                stroke-width=\"2\"\r\n                                                stroke-linecap=\"round\"\r\n                                                stroke-linejoin=\"round\"\r\n                                                class=\"feather feather-server\"\r\n                                            >\r\n                                                <rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect>\r\n                                                <rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\" ry=\"2\"></rect>\r\n                                                <line x1=\"6\" y1=\"6\" x2=\"6\" y2=\"6\"></line>\r\n                                                <line x1=\"6\" y1=\"18\" x2=\"6\" y2=\"18\"></line>\r\n                                            </svg>\r\n                                        </div>\r\n                                        <div class=\"media-body\">\r\n                                            <div class=\"data-info\">\r\n                                                <h6 class=\"\">Server Rebooted</h6>\r\n                                                <p class=\"\">45 min ago</p>\r\n                                            </div>\r\n\r\n                                            <div class=\"icon-status\">\r\n                                                <svg\r\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                                    width=\"24\"\r\n                                                    height=\"24\"\r\n                                                    viewBox=\"0 0 24 24\"\r\n                                                    fill=\"none\"\r\n                                                    stroke=\"currentColor\"\r\n                                                    stroke-width=\"2\"\r\n                                                    stroke-linecap=\"round\"\r\n                                                    stroke-linejoin=\"round\"\r\n                                                    class=\"feather feather-x\"\r\n                                                >\r\n                                                    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\r\n                                                    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\r\n                                                </svg>\r\n                                            </div>\r\n                                        </div>\r\n                                    </div>\r\n                                </a>\r\n                            </li>\r\n                            <li role=\"presentation\"><hr role=\"separator\" aria-orientation=\"horizontal\" size=\"0\" class=\"dropdown-divider\" /></li>\r\n                            <li role=\"presentation\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\r\n                                    <div class=\"media\">\r\n                                        <div class=\"media-aside align-self-start\">\r\n                                            <svg\r\n                                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                                width=\"24\"\r\n                                                height=\"24\"\r\n                                                viewBox=\"0 0 24 24\"\r\n                                                fill=\"none\"\r\n                                                stroke=\"currentColor\"\r\n                                                stroke-width=\"2\"\r\n                                                stroke-linecap=\"round\"\r\n                                                stroke-linejoin=\"round\"\r\n                                                class=\"feather feather-heart\"\r\n                                            >\r\n                                                <path\r\n                                                    d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"\r\n                                                ></path>\r\n                                            </svg>\r\n                                        </div>\r\n                                        <div class=\"media-body\">\r\n                                            <div class=\"data-info\">\r\n                                                <h6>Licence Expiring Soon</h6>\r\n                                                <p>8 hrs ago</p>\r\n                                            </div>\r\n                                            <div class=\"icon-status\">\r\n                                                <svg\r\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                                    width=\"24\"\r\n                                                    height=\"24\"\r\n                                                    viewBox=\"0 0 24 24\"\r\n                                                    fill=\"none\"\r\n                                                    stroke=\"currentColor\"\r\n                                                    stroke-width=\"2\"\r\n                                                    stroke-linecap=\"round\"\r\n                                                    stroke-linejoin=\"round\"\r\n                                                    class=\"feather feather-x\"\r\n                                                >\r\n                                                    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"></line>\r\n                                                    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"></line>\r\n                                                </svg>\r\n                                            </div>\r\n                                        </div>\r\n                                    </div>\r\n                                </a>\r\n                            </li>\r\n                            <li role=\"presentation\"><hr role=\"separator\" aria-orientation=\"horizontal\" size=\"0\" class=\"dropdown-divider\" /></li>\r\n                            <li role=\"presentation\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-item\">\r\n                                    <div class=\"media file-upload\">\r\n                                        <div class=\"media-aside align-self-start\">\r\n                                            <svg\r\n                                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                                width=\"24\"\r\n                                                height=\"24\"\r\n                                                viewBox=\"0 0 24 24\"\r\n                                                fill=\"none\"\r\n                                                stroke=\"currentColor\"\r\n                                                stroke-width=\"2\"\r\n                                                stroke-linecap=\"round\"\r\n                                                stroke-linejoin=\"round\"\r\n                                                class=\"feather feather-file-text\"\r\n                                            >\r\n                                                <path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path>\r\n                                                <polyline points=\"14 2 14 8 20 8\"></polyline>\r\n                                                <line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line>\r\n                                                <line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line>\r\n                                                <polyline points=\"10 9 9 9 8 9\"></polyline>\r\n                                            </svg>\r\n                                        </div>\r\n                                        <div class=\"media-body\">\r\n                                            <div class=\"data-info\">\r\n                                                <h6>Kelly Portfolio.pdf</h6>\r\n                                                <p>670 kb</p>\r\n                                            </div>\r\n                                            <div class=\"icon-status\">\r\n                                                <svg\r\n                                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                                    width=\"24\"\r\n                                                    height=\"24\"\r\n                                                    viewBox=\"0 0 24 24\"\r\n                                                    fill=\"none\"\r\n                                                    stroke=\"currentColor\"\r\n                                                    stroke-width=\"2\"\r\n                                                    stroke-linecap=\"round\"\r\n                                                    stroke-linejoin=\"round\"\r\n                                                    class=\"feather feather-check\"\r\n                                                >\r\n                                                    <polyline points=\"20 6 9 17 4 12\"></polyline>\r\n                                                </svg>\r\n                                            </div>\r\n                                        </div></div\r\n                                ></a>\r\n                            </li>\r\n                        </ul>\r\n                    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/users/profile",
     "class": "dropdown-item"
   }, {
@@ -25976,7 +25976,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[5] || (_cache[5] = function ($event) {
       return _ctx.$store.commit('toggleSideBar', !_ctx.$store.state.is_show_sidebar);
     })
-  }, _hoisted_40), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Portal vue/Teleport for Breadcrumb "), _hoisted_41])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END NAVBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  BEGIN TOPBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"topbar-nav header navbar\" role=\"banner\">\n            <nav class=\"topbar\">\n                <ul class=\"list-unstyled menu-categories\" id=\"topAccordion\">\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle autodroprown\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-home\"\n                                >\n                                    <path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path>\n                                    <polyline points=\"9 22 9 12 15 12 15 22\"></polyline>\n                                </svg>\n                                <span>{{ $t('dashboard') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li>\n                                <router-link to=\"/\"> {{ $t('sales') }} </router-link>\n                            </li>\n                            <li>\n                                <router-link to=\"/index2\">{{ $t('analytics') }}</router-link>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-cpu\"\n                                >\n                                    <rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\" ry=\"2\"></rect>\n                                    <rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect>\n                                    <line x1=\"9\" y1=\"1\" x2=\"9\" y2=\"4\"></line>\n                                    <line x1=\"15\" y1=\"1\" x2=\"15\" y2=\"4\"></line>\n                                    <line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"23\"></line>\n                                    <line x1=\"15\" y1=\"20\" x2=\"15\" y2=\"23\"></line>\n                                    <line x1=\"20\" y1=\"9\" x2=\"23\" y2=\"9\"></line>\n                                    <line x1=\"20\" y1=\"14\" x2=\"23\" y2=\"14\"></line>\n                                    <line x1=\"1\" y1=\"9\" x2=\"4\" y2=\"9\"></line>\n                                    <line x1=\"1\" y1=\"14\" x2=\"4\" y2=\"14\"></line>\n                                </svg>\n                                <span>{{ $t('apps') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/apps/chat\">Chat</router-link></li>\n                            <li><router-link to=\"/apps/mailbox\">Mailbox</router-link></li>\n                            <li><router-link to=\"/apps/todo-list\">Todo List</router-link></li>\n                            <li><router-link to=\"/apps/notes\">Notes</router-link></li>\n                            <li><router-link to=\"/apps/scrumboard\">Scrumboard</router-link></li>\n                            <li><router-link to=\"/apps/contacts\">Contacts</router-link></li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\">\n                                    Invoice\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><router-link to=\"/apps/invoice/list\">List</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/preview\">Preview</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/add\">Add</router-link></li>\n                                    <li><router-link to=\"/apps/invoice/edit\">Edit</router-link></li>\n                                </ul>\n                            </li>\n                            <li><router-link to=\"/apps/calendar\">Calendar</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-box\"\n                                >\n                                    <path d=\"M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z\"></path>\n                                    <polyline points=\"3.27 6.96 12 12.01 20.73 6.96\"></polyline>\n                                    <line x1=\"12\" y1=\"22.08\" x2=\"12\" y2=\"12\"></line>\n                                </svg>\n                                <span>{{ $t('components') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/components/tabs\">Tabs</router-link></li>\n                            <li><router-link to=\"/components/accordions\">Accordions</router-link></li>\n                            <li><router-link to=\"/components/modals\">Modals</router-link></li>\n                            <li><router-link to=\"/components/cards\">Cards</router-link></li>\n                            <li><router-link to=\"/components/carousel\">Carousel</router-link></li>\n                            <li><router-link to=\"/components/countdown\">Countdown</router-link></li>\n                            <li><router-link to=\"/components/counter\">Counter</router-link></li>\n                            <li><router-link to=\"/components/sweetalert\">Sweet Alerts</router-link></li>\n                            <li><router-link to=\"/components/timeline\">Timeline</router-link></li>\n                            <li><router-link to=\"/components/notifications\">Notifications</router-link></li>\n                            <li><router-link to=\"/components/media-object\">Media Object</router-link></li>\n                            <li><router-link to=\"/components/list-group\">List Group</router-link></li>\n                            <li><router-link to=\"/components/pricing-table\">Pricing Tables</router-link></li>\n                            <li><router-link to=\"/components/lightbox\"> Lightbox </router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-zap\"\n                                >\n                                    <polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon>\n                                </svg>\n                                <span>{{ $t('ui_kit') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/elements/alerts\">Alerts</router-link></li>\n                            <li><router-link to=\"/elements/avatar\">Avatar</router-link></li>\n                            <li><router-link to=\"/elements/badges\">Badges</router-link></li>\n                            <li><router-link to=\"/elements/breadcrumbs\">Breadcrumbs</router-link></li>\n                            <li><router-link to=\"/elements/buttons\">Buttons</router-link></li>\n                            <li><router-link to=\"/elements/buttons-group\">Button Groups</router-link></li>\n                            <li><router-link to=\"/elements/color-library\">Color Library</router-link></li>\n                            <li><router-link to=\"/elements/dropdown\">Dropdown</router-link></li>\n                            <li><router-link to=\"/elements/infobox\">Infobox</router-link></li>\n                            <li><router-link to=\"/elements/jumbotron\">Jumbotron</router-link></li>\n                            <li><router-link to=\"/elements/loader\">Loader</router-link></li>\n                            <li><router-link to=\"/elements/pagination\">Pagination</router-link></li>\n                            <li><router-link to=\"/elements/popovers\">Popovers</router-link></li>\n                            <li><router-link to=\"/elements/progress-bar\">Progress Bar</router-link></li>\n                            <li><router-link to=\"/elements/search\">Search</router-link></li>\n                            <li><router-link to=\"/elements/tooltips\">Tooltips</router-link></li>\n                            <li><router-link to=\"/elements/treeview\">Treeview</router-link></li>\n                            <li><router-link to=\"/elements/typography\">Typography</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-layout\"\n                                >\n                                    <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>\n                                    <line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line>\n                                    <line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"></line>\n                                </svg>\n                                <span>{{ $t('tables') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/tables/basic\">Basic</router-link></li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    DataTables\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><router-link to=\"/tables/basic\">Basic</router-link></li>\n                                    <li><router-link to=\"/tables/striped\">Striped Table</router-link></li>\n                                    <li><router-link to=\"/tables/order-sorting\">Order Sorting</router-link></li>\n                                    <li><router-link to=\"/tables/multi-column\">Multi Column</router-link></li>\n                                    <li><router-link to=\"/tables/multiple-tables\">Multiple Tables</router-link></li>\n                                    <li><router-link to=\"/tables/alt-pagination\">Alt. Pagination</router-link></li>\n                                    <li><router-link to=\"/tables/custom\">Custom</router-link></li>\n                                    <li><router-link to=\"/tables/range-search\">Range Search</router-link></li>\n                                    <li><router-link to=\"/tables/export\">Export</router-link></li>\n                                    <li><router-link to=\"/tables/live-dom-ordering\">Live DOM ordering</router-link></li>\n                                    <li><router-link to=\"/tables/miscellaneous\">Miscellaneous</router-link></li>\n                                </ul>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-clipboard\"\n                                >\n                                    <path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path>\n                                    <rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\" ry=\"1\"></rect>\n                                </svg>\n                                <span>{{ $t('forms') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/forms/basic\">Basic</router-link></li>\n                            <li><router-link to=\"/forms/input-group\">Input Group</router-link></li>\n                            <li><router-link to=\"/forms/layouts\">Layouts</router-link></li>\n                            <li><router-link to=\"/forms/validation\">Validation</router-link></li>\n                            <li><router-link to=\"/forms/input-mask\">Input Mask</router-link></li>\n                            <li><router-link to=\"/forms/select2\">Select2</router-link></li>\n                            <li><router-link to=\"/forms/touchspin\">TouchSpin</router-link></li>\n                            <li><router-link to=\"/forms/checkbox-radio\">Checkbox &amp; Radio</router-link></li>\n                            <li><router-link to=\"/forms/switches\">Switches</router-link></li>\n                            <li><router-link to=\"/forms/wizards\">Wizards</router-link></li>\n                            <li><router-link to=\"/forms/file-upload\">File Upload</router-link></li>\n                            <li><router-link to=\"/forms/quill-editor\">Quill Editor</router-link></li>\n                            <li><router-link to=\"/forms/markdown-editor\">Markdown Editor</router-link></li>\n                            <li><router-link to=\"/forms/date-picker\">Date &amp; Range Picker </router-link></li>\n                            <li><router-link to=\"/forms/clipboard\">Clipboard</router-link></li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-file\"\n                                >\n                                    <path d=\"M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"></path>\n                                    <polyline points=\"13 2 13 9 20 9\"></polyline>\n                                </svg>\n                                <span>{{ $t('pages') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/pages/helpdesk\">Helpdesk</router-link></li>\n                            <li><router-link to=\"/pages/contact-us\">Contact Form</router-link></li>\n                            <li><router-link to=\"/pages/faq\">FAQ</router-link></li>\n                            <li><router-link to=\"/pages/faq2\">FAQ 2</router-link></li>\n                            <li><router-link to=\"/pages/privacy-policy\">Privacy Policy</router-link></li>\n                            <li><a target=\"_blank\" href=\"/pages/coming-soon\">Coming Soon</a></li>\n                            <li><router-link to=\"/pages/blank-page\">Blank Page</router-link></li>\n                            <li><router-link to=\"/pages/sample\">Sample Page</router-link></li>\n\n                            <li><router-link to=\"/users/profile\">Profile</router-link></li>\n                            <li><router-link to=\"/users/account-setting\">Account Settings</router-link></li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Error\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/pages/error404\">404</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/error500\">500</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/error503\">503</a></li>\n                                    <li><a target=\"_blank\" href=\"/pages/maintenence\">Maintanence</a></li>\n                                </ul>\n                            </li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Login\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/login\">Login Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/login-boxed\">Login Boxed</a></li>\n                                </ul>\n                            </li>\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Register\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/register\">Register Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/register-boxed\">Register Boxed</a></li>\n                                </ul>\n                            </li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Password Recovery\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/pass-recovery\">Recover ID Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/pass-recovery-boxed\">Recover ID Boxed</a></li>\n                                </ul>\n                            </li>\n\n                            <li class=\"sub-sub-submenu-list\">\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                                    Lockscreen\n                                    <svg\n                                        xmlns=\"http://www.w3.org/2000/svg\"\n                                        width=\"24\"\n                                        height=\"24\"\n                                        viewBox=\"0 0 24 24\"\n                                        fill=\"none\"\n                                        stroke=\"currentColor\"\n                                        stroke-width=\"2\"\n                                        stroke-linecap=\"round\"\n                                        stroke-linejoin=\"round\"\n                                        class=\"feather feather-chevron-right\"\n                                    >\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                    </svg>\n                                </a>\n                                <ul class=\"collapse list-unstyled sub-submenu\">\n                                    <li><a target=\"_blank\" href=\"/auth/lockscreen\">Unlock Cover</a></li>\n                                    <li><a target=\"_blank\" href=\"/auth/lockscreen-boxed\">Unlock Boxed</a></li>\n                                </ul>\n                            </li>\n                        </ul>\n                    </li>\n\n                    <li class=\"menu single-menu\">\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\n                            <div class=\"\">\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-plus-circle\"\n                                >\n                                    <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n                                    <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n                                    <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n                                </svg>\n                                <span>{{ $t('more') }}</span>\n                            </div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-down\"\n                            >\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\n                            </svg>\n                        </a>\n                        <ul class=\"collapse submenu list-unstyled\">\n                            <li><router-link to=\"/dragndrop\">Drag and Drop</router-link></li>\n                            <li><router-link to=\"/widgets\">Widgets</router-link></li>\n                            <li><router-link to=\"/charts/apex-chart\">Charts</router-link></li>\n                            <li><router-link to=\"/font-icons\">Font Icons</router-link></li>\n                            <li>\n                                <a target=\"_blank\" href=\"https://cork-vue.sbthemes.com\"> Documentation </a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n            </nav>\n        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END TOPBAR  ")]);
+  }, _hoisted_40), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Portal vue/Teleport for Breadcrumb "), _hoisted_41])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END NAVBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  BEGIN TOPBAR  "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"topbar-nav header navbar\" role=\"banner\">\r\n            <nav class=\"topbar\">\r\n                <ul class=\"list-unstyled menu-categories\" id=\"topAccordion\">\r\n                    <li class=\"menu single-menu\">\r\n                        <a href=\"javascript:;\" class=\"dropdown-toggle autodroprown\">\r\n                            <div class=\"\">\r\n                                <svg\r\n                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                    width=\"24\"\r\n                                    height=\"24\"\r\n                                    viewBox=\"0 0 24 24\"\r\n                                    fill=\"none\"\r\n                                    stroke=\"currentColor\"\r\n                                    stroke-width=\"2\"\r\n                                    stroke-linecap=\"round\"\r\n                                    stroke-linejoin=\"round\"\r\n                                    class=\"feather feather-home\"\r\n                                >\r\n                                    <path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path>\r\n                                    <polyline points=\"9 22 9 12 15 12 15 22\"></polyline>\r\n                                </svg>\r\n                                <span>{{ $t('dashboard') }}</span>\r\n                            </div>\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-chevron-down\"\r\n                            >\r\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"collapse submenu list-unstyled\">\r\n                            <li>\r\n                                <router-link to=\"/\"> {{ $t('sales') }} </router-link>\r\n                            </li>\r\n                            <li>\r\n                                <router-link to=\"/index2\">{{ $t('analytics') }}</router-link>\r\n                            </li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu single-menu\">\r\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                            <div class=\"\">\r\n                                <svg\r\n                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                    width=\"24\"\r\n                                    height=\"24\"\r\n                                    viewBox=\"0 0 24 24\"\r\n                                    fill=\"none\"\r\n                                    stroke=\"currentColor\"\r\n                                    stroke-width=\"2\"\r\n                                    stroke-linecap=\"round\"\r\n                                    stroke-linejoin=\"round\"\r\n                                    class=\"feather feather-cpu\"\r\n                                >\r\n                                    <rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\" ry=\"2\"></rect>\r\n                                    <rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"></rect>\r\n                                    <line x1=\"9\" y1=\"1\" x2=\"9\" y2=\"4\"></line>\r\n                                    <line x1=\"15\" y1=\"1\" x2=\"15\" y2=\"4\"></line>\r\n                                    <line x1=\"9\" y1=\"20\" x2=\"9\" y2=\"23\"></line>\r\n                                    <line x1=\"15\" y1=\"20\" x2=\"15\" y2=\"23\"></line>\r\n                                    <line x1=\"20\" y1=\"9\" x2=\"23\" y2=\"9\"></line>\r\n                                    <line x1=\"20\" y1=\"14\" x2=\"23\" y2=\"14\"></line>\r\n                                    <line x1=\"1\" y1=\"9\" x2=\"4\" y2=\"9\"></line>\r\n                                    <line x1=\"1\" y1=\"14\" x2=\"4\" y2=\"14\"></line>\r\n                                </svg>\r\n                                <span>{{ $t('apps') }}</span>\r\n                            </div>\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-chevron-down\"\r\n                            >\r\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"collapse submenu list-unstyled\">\r\n                            <li><router-link to=\"/apps/chat\">Chat</router-link></li>\r\n                            <li><router-link to=\"/apps/mailbox\">Mailbox</router-link></li>\r\n                            <li><router-link to=\"/apps/todo-list\">Todo List</router-link></li>\r\n                            <li><router-link to=\"/apps/notes\">Notes</router-link></li>\r\n                            <li><router-link to=\"/apps/scrumboard\">Scrumboard</router-link></li>\r\n                            <li><router-link to=\"/apps/contacts\">Contacts</router-link></li>\r\n\r\n                            <li class=\"sub-sub-submenu-list\">\r\n                                <a href=\"javascript:;\">\r\n                                    Invoice\r\n                                    <svg\r\n                                        xmlns=\"http://www.w3.org/2000/svg\"\r\n                                        width=\"24\"\r\n                                        height=\"24\"\r\n                                        viewBox=\"0 0 24 24\"\r\n                                        fill=\"none\"\r\n                                        stroke=\"currentColor\"\r\n                                        stroke-width=\"2\"\r\n                                        stroke-linecap=\"round\"\r\n                                        stroke-linejoin=\"round\"\r\n                                        class=\"feather feather-chevron-right\"\r\n                                    >\r\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\r\n                                    </svg>\r\n                                </a>\r\n                                <ul class=\"collapse list-unstyled sub-submenu\">\r\n                                    <li><router-link to=\"/apps/invoice/list\">List</router-link></li>\r\n                                    <li><router-link to=\"/apps/invoice/preview\">Preview</router-link></li>\r\n                                    <li><router-link to=\"/apps/invoice/add\">Add</router-link></li>\r\n                                    <li><router-link to=\"/apps/invoice/edit\">Edit</router-link></li>\r\n                                </ul>\r\n                            </li>\r\n                            <li><router-link to=\"/apps/calendar\">Calendar</router-link></li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu single-menu\">\r\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                            <div class=\"\">\r\n                                <svg\r\n                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                    width=\"24\"\r\n                                    height=\"24\"\r\n                                    viewBox=\"0 0 24 24\"\r\n                                    fill=\"none\"\r\n                                    stroke=\"currentColor\"\r\n                                    stroke-width=\"2\"\r\n                                    stroke-linecap=\"round\"\r\n                                    stroke-linejoin=\"round\"\r\n                                    class=\"feather feather-box\"\r\n                                >\r\n                                    <path d=\"M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z\"></path>\r\n                                    <polyline points=\"3.27 6.96 12 12.01 20.73 6.96\"></polyline>\r\n                                    <line x1=\"12\" y1=\"22.08\" x2=\"12\" y2=\"12\"></line>\r\n                                </svg>\r\n                                <span>{{ $t('components') }}</span>\r\n                            </div>\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-chevron-down\"\r\n                            >\r\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"collapse submenu list-unstyled\">\r\n                            <li><router-link to=\"/components/tabs\">Tabs</router-link></li>\r\n                            <li><router-link to=\"/components/accordions\">Accordions</router-link></li>\r\n                            <li><router-link to=\"/components/modals\">Modals</router-link></li>\r\n                            <li><router-link to=\"/components/cards\">Cards</router-link></li>\r\n                            <li><router-link to=\"/components/carousel\">Carousel</router-link></li>\r\n                            <li><router-link to=\"/components/countdown\">Countdown</router-link></li>\r\n                            <li><router-link to=\"/components/counter\">Counter</router-link></li>\r\n                            <li><router-link to=\"/components/sweetalert\">Sweet Alerts</router-link></li>\r\n                            <li><router-link to=\"/components/timeline\">Timeline</router-link></li>\r\n                            <li><router-link to=\"/components/notifications\">Notifications</router-link></li>\r\n                            <li><router-link to=\"/components/media-object\">Media Object</router-link></li>\r\n                            <li><router-link to=\"/components/list-group\">List Group</router-link></li>\r\n                            <li><router-link to=\"/components/pricing-table\">Pricing Tables</router-link></li>\r\n                            <li><router-link to=\"/components/lightbox\"> Lightbox </router-link></li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu single-menu\">\r\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                            <div class=\"\">\r\n                                <svg\r\n                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                    width=\"24\"\r\n                                    height=\"24\"\r\n                                    viewBox=\"0 0 24 24\"\r\n                                    fill=\"none\"\r\n                                    stroke=\"currentColor\"\r\n                                    stroke-width=\"2\"\r\n                                    stroke-linecap=\"round\"\r\n                                    stroke-linejoin=\"round\"\r\n                                    class=\"feather feather-zap\"\r\n                                >\r\n                                    <polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon>\r\n                                </svg>\r\n                                <span>{{ $t('ui_kit') }}</span>\r\n                            </div>\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-chevron-down\"\r\n                            >\r\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"collapse submenu list-unstyled\">\r\n                            <li><router-link to=\"/elements/alerts\">Alerts</router-link></li>\r\n                            <li><router-link to=\"/elements/avatar\">Avatar</router-link></li>\r\n                            <li><router-link to=\"/elements/badges\">Badges</router-link></li>\r\n                            <li><router-link to=\"/elements/breadcrumbs\">Breadcrumbs</router-link></li>\r\n                            <li><router-link to=\"/elements/buttons\">Buttons</router-link></li>\r\n                            <li><router-link to=\"/elements/buttons-group\">Button Groups</router-link></li>\r\n                            <li><router-link to=\"/elements/color-library\">Color Library</router-link></li>\r\n                            <li><router-link to=\"/elements/dropdown\">Dropdown</router-link></li>\r\n                            <li><router-link to=\"/elements/infobox\">Infobox</router-link></li>\r\n                            <li><router-link to=\"/elements/jumbotron\">Jumbotron</router-link></li>\r\n                            <li><router-link to=\"/elements/loader\">Loader</router-link></li>\r\n                            <li><router-link to=\"/elements/pagination\">Pagination</router-link></li>\r\n                            <li><router-link to=\"/elements/popovers\">Popovers</router-link></li>\r\n                            <li><router-link to=\"/elements/progress-bar\">Progress Bar</router-link></li>\r\n                            <li><router-link to=\"/elements/search\">Search</router-link></li>\r\n                            <li><router-link to=\"/elements/tooltips\">Tooltips</router-link></li>\r\n                            <li><router-link to=\"/elements/treeview\">Treeview</router-link></li>\r\n                            <li><router-link to=\"/elements/typography\">Typography</router-link></li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu single-menu\">\r\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                            <div class=\"\">\r\n                                <svg\r\n                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                    width=\"24\"\r\n                                    height=\"24\"\r\n                                    viewBox=\"0 0 24 24\"\r\n                                    fill=\"none\"\r\n                                    stroke=\"currentColor\"\r\n                                    stroke-width=\"2\"\r\n                                    stroke-linecap=\"round\"\r\n                                    stroke-linejoin=\"round\"\r\n                                    class=\"feather feather-layout\"\r\n                                >\r\n                                    <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>\r\n                                    <line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line>\r\n                                    <line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"></line>\r\n                                </svg>\r\n                                <span>{{ $t('tables') }}</span>\r\n                            </div>\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-chevron-down\"\r\n                            >\r\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"collapse submenu list-unstyled\">\r\n                            <li><router-link to=\"/tables/basic\">Basic</router-link></li>\r\n                            <li class=\"sub-sub-submenu-list\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                                    DataTables\r\n                                    <svg\r\n                                        xmlns=\"http://www.w3.org/2000/svg\"\r\n                                        width=\"24\"\r\n                                        height=\"24\"\r\n                                        viewBox=\"0 0 24 24\"\r\n                                        fill=\"none\"\r\n                                        stroke=\"currentColor\"\r\n                                        stroke-width=\"2\"\r\n                                        stroke-linecap=\"round\"\r\n                                        stroke-linejoin=\"round\"\r\n                                        class=\"feather feather-chevron-right\"\r\n                                    >\r\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\r\n                                    </svg>\r\n                                </a>\r\n                                <ul class=\"collapse list-unstyled sub-submenu\">\r\n                                    <li><router-link to=\"/tables/basic\">Basic</router-link></li>\r\n                                    <li><router-link to=\"/tables/striped\">Striped Table</router-link></li>\r\n                                    <li><router-link to=\"/tables/order-sorting\">Order Sorting</router-link></li>\r\n                                    <li><router-link to=\"/tables/multi-column\">Multi Column</router-link></li>\r\n                                    <li><router-link to=\"/tables/multiple-tables\">Multiple Tables</router-link></li>\r\n                                    <li><router-link to=\"/tables/alt-pagination\">Alt. Pagination</router-link></li>\r\n                                    <li><router-link to=\"/tables/custom\">Custom</router-link></li>\r\n                                    <li><router-link to=\"/tables/range-search\">Range Search</router-link></li>\r\n                                    <li><router-link to=\"/tables/export\">Export</router-link></li>\r\n                                    <li><router-link to=\"/tables/live-dom-ordering\">Live DOM ordering</router-link></li>\r\n                                    <li><router-link to=\"/tables/miscellaneous\">Miscellaneous</router-link></li>\r\n                                </ul>\r\n                            </li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu single-menu\">\r\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                            <div class=\"\">\r\n                                <svg\r\n                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                    width=\"24\"\r\n                                    height=\"24\"\r\n                                    viewBox=\"0 0 24 24\"\r\n                                    fill=\"none\"\r\n                                    stroke=\"currentColor\"\r\n                                    stroke-width=\"2\"\r\n                                    stroke-linecap=\"round\"\r\n                                    stroke-linejoin=\"round\"\r\n                                    class=\"feather feather-clipboard\"\r\n                                >\r\n                                    <path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path>\r\n                                    <rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\" ry=\"1\"></rect>\r\n                                </svg>\r\n                                <span>{{ $t('forms') }}</span>\r\n                            </div>\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-chevron-down\"\r\n                            >\r\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"collapse submenu list-unstyled\">\r\n                            <li><router-link to=\"/forms/basic\">Basic</router-link></li>\r\n                            <li><router-link to=\"/forms/input-group\">Input Group</router-link></li>\r\n                            <li><router-link to=\"/forms/layouts\">Layouts</router-link></li>\r\n                            <li><router-link to=\"/forms/validation\">Validation</router-link></li>\r\n                            <li><router-link to=\"/forms/input-mask\">Input Mask</router-link></li>\r\n                            <li><router-link to=\"/forms/select2\">Select2</router-link></li>\r\n                            <li><router-link to=\"/forms/touchspin\">TouchSpin</router-link></li>\r\n                            <li><router-link to=\"/forms/checkbox-radio\">Checkbox &amp; Radio</router-link></li>\r\n                            <li><router-link to=\"/forms/switches\">Switches</router-link></li>\r\n                            <li><router-link to=\"/forms/wizards\">Wizards</router-link></li>\r\n                            <li><router-link to=\"/forms/file-upload\">File Upload</router-link></li>\r\n                            <li><router-link to=\"/forms/quill-editor\">Quill Editor</router-link></li>\r\n                            <li><router-link to=\"/forms/markdown-editor\">Markdown Editor</router-link></li>\r\n                            <li><router-link to=\"/forms/date-picker\">Date &amp; Range Picker </router-link></li>\r\n                            <li><router-link to=\"/forms/clipboard\">Clipboard</router-link></li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu single-menu\">\r\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                            <div class=\"\">\r\n                                <svg\r\n                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                    width=\"24\"\r\n                                    height=\"24\"\r\n                                    viewBox=\"0 0 24 24\"\r\n                                    fill=\"none\"\r\n                                    stroke=\"currentColor\"\r\n                                    stroke-width=\"2\"\r\n                                    stroke-linecap=\"round\"\r\n                                    stroke-linejoin=\"round\"\r\n                                    class=\"feather feather-file\"\r\n                                >\r\n                                    <path d=\"M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"></path>\r\n                                    <polyline points=\"13 2 13 9 20 9\"></polyline>\r\n                                </svg>\r\n                                <span>{{ $t('pages') }}</span>\r\n                            </div>\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-chevron-down\"\r\n                            >\r\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"collapse submenu list-unstyled\">\r\n                            <li><router-link to=\"/pages/helpdesk\">Helpdesk</router-link></li>\r\n                            <li><router-link to=\"/pages/contact-us\">Contact Form</router-link></li>\r\n                            <li><router-link to=\"/pages/faq\">FAQ</router-link></li>\r\n                            <li><router-link to=\"/pages/faq2\">FAQ 2</router-link></li>\r\n                            <li><router-link to=\"/pages/privacy-policy\">Privacy Policy</router-link></li>\r\n                            <li><a target=\"_blank\" href=\"/pages/coming-soon\">Coming Soon</a></li>\r\n                            <li><router-link to=\"/pages/blank-page\">Blank Page</router-link></li>\r\n                            <li><router-link to=\"/pages/sample\">Sample Page</router-link></li>\r\n\r\n                            <li><router-link to=\"/users/profile\">Profile</router-link></li>\r\n                            <li><router-link to=\"/users/account-setting\">Account Settings</router-link></li>\r\n                            <li class=\"sub-sub-submenu-list\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                                    Error\r\n                                    <svg\r\n                                        xmlns=\"http://www.w3.org/2000/svg\"\r\n                                        width=\"24\"\r\n                                        height=\"24\"\r\n                                        viewBox=\"0 0 24 24\"\r\n                                        fill=\"none\"\r\n                                        stroke=\"currentColor\"\r\n                                        stroke-width=\"2\"\r\n                                        stroke-linecap=\"round\"\r\n                                        stroke-linejoin=\"round\"\r\n                                        class=\"feather feather-chevron-right\"\r\n                                    >\r\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\r\n                                    </svg>\r\n                                </a>\r\n                                <ul class=\"collapse list-unstyled sub-submenu\">\r\n                                    <li><a target=\"_blank\" href=\"/pages/error404\">404</a></li>\r\n                                    <li><a target=\"_blank\" href=\"/pages/error500\">500</a></li>\r\n                                    <li><a target=\"_blank\" href=\"/pages/error503\">503</a></li>\r\n                                    <li><a target=\"_blank\" href=\"/pages/maintenence\">Maintanence</a></li>\r\n                                </ul>\r\n                            </li>\r\n                            <li class=\"sub-sub-submenu-list\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                                    Login\r\n                                    <svg\r\n                                        xmlns=\"http://www.w3.org/2000/svg\"\r\n                                        width=\"24\"\r\n                                        height=\"24\"\r\n                                        viewBox=\"0 0 24 24\"\r\n                                        fill=\"none\"\r\n                                        stroke=\"currentColor\"\r\n                                        stroke-width=\"2\"\r\n                                        stroke-linecap=\"round\"\r\n                                        stroke-linejoin=\"round\"\r\n                                        class=\"feather feather-chevron-right\"\r\n                                    >\r\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\r\n                                    </svg>\r\n                                </a>\r\n                                <ul class=\"collapse list-unstyled sub-submenu\">\r\n                                    <li><a target=\"_blank\" href=\"/auth/login\">Login Cover</a></li>\r\n                                    <li><a target=\"_blank\" href=\"/auth/login-boxed\">Login Boxed</a></li>\r\n                                </ul>\r\n                            </li>\r\n                            <li class=\"sub-sub-submenu-list\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                                    Register\r\n                                    <svg\r\n                                        xmlns=\"http://www.w3.org/2000/svg\"\r\n                                        width=\"24\"\r\n                                        height=\"24\"\r\n                                        viewBox=\"0 0 24 24\"\r\n                                        fill=\"none\"\r\n                                        stroke=\"currentColor\"\r\n                                        stroke-width=\"2\"\r\n                                        stroke-linecap=\"round\"\r\n                                        stroke-linejoin=\"round\"\r\n                                        class=\"feather feather-chevron-right\"\r\n                                    >\r\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\r\n                                    </svg>\r\n                                </a>\r\n                                <ul class=\"collapse list-unstyled sub-submenu\">\r\n                                    <li><a target=\"_blank\" href=\"/auth/register\">Register Cover</a></li>\r\n                                    <li><a target=\"_blank\" href=\"/auth/register-boxed\">Register Boxed</a></li>\r\n                                </ul>\r\n                            </li>\r\n\r\n                            <li class=\"sub-sub-submenu-list\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                                    Password Recovery\r\n                                    <svg\r\n                                        xmlns=\"http://www.w3.org/2000/svg\"\r\n                                        width=\"24\"\r\n                                        height=\"24\"\r\n                                        viewBox=\"0 0 24 24\"\r\n                                        fill=\"none\"\r\n                                        stroke=\"currentColor\"\r\n                                        stroke-width=\"2\"\r\n                                        stroke-linecap=\"round\"\r\n                                        stroke-linejoin=\"round\"\r\n                                        class=\"feather feather-chevron-right\"\r\n                                    >\r\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\r\n                                    </svg>\r\n                                </a>\r\n                                <ul class=\"collapse list-unstyled sub-submenu\">\r\n                                    <li><a target=\"_blank\" href=\"/auth/pass-recovery\">Recover ID Cover</a></li>\r\n                                    <li><a target=\"_blank\" href=\"/auth/pass-recovery-boxed\">Recover ID Boxed</a></li>\r\n                                </ul>\r\n                            </li>\r\n\r\n                            <li class=\"sub-sub-submenu-list\">\r\n                                <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                                    Lockscreen\r\n                                    <svg\r\n                                        xmlns=\"http://www.w3.org/2000/svg\"\r\n                                        width=\"24\"\r\n                                        height=\"24\"\r\n                                        viewBox=\"0 0 24 24\"\r\n                                        fill=\"none\"\r\n                                        stroke=\"currentColor\"\r\n                                        stroke-width=\"2\"\r\n                                        stroke-linecap=\"round\"\r\n                                        stroke-linejoin=\"round\"\r\n                                        class=\"feather feather-chevron-right\"\r\n                                    >\r\n                                        <polyline points=\"9 18 15 12 9 6\"></polyline>\r\n                                    </svg>\r\n                                </a>\r\n                                <ul class=\"collapse list-unstyled sub-submenu\">\r\n                                    <li><a target=\"_blank\" href=\"/auth/lockscreen\">Unlock Cover</a></li>\r\n                                    <li><a target=\"_blank\" href=\"/auth/lockscreen-boxed\">Unlock Boxed</a></li>\r\n                                </ul>\r\n                            </li>\r\n                        </ul>\r\n                    </li>\r\n\r\n                    <li class=\"menu single-menu\">\r\n                        <a href=\"javascript:;\" class=\"dropdown-toggle\">\r\n                            <div class=\"\">\r\n                                <svg\r\n                                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                                    width=\"24\"\r\n                                    height=\"24\"\r\n                                    viewBox=\"0 0 24 24\"\r\n                                    fill=\"none\"\r\n                                    stroke=\"currentColor\"\r\n                                    stroke-width=\"2\"\r\n                                    stroke-linecap=\"round\"\r\n                                    stroke-linejoin=\"round\"\r\n                                    class=\"feather feather-plus-circle\"\r\n                                >\r\n                                    <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\r\n                                    <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\r\n                                    <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\r\n                                </svg>\r\n                                <span>{{ $t('more') }}</span>\r\n                            </div>\r\n                            <svg\r\n                                xmlns=\"http://www.w3.org/2000/svg\"\r\n                                width=\"24\"\r\n                                height=\"24\"\r\n                                viewBox=\"0 0 24 24\"\r\n                                fill=\"none\"\r\n                                stroke=\"currentColor\"\r\n                                stroke-width=\"2\"\r\n                                stroke-linecap=\"round\"\r\n                                stroke-linejoin=\"round\"\r\n                                class=\"feather feather-chevron-down\"\r\n                            >\r\n                                <polyline points=\"6 9 12 15 18 9\"></polyline>\r\n                            </svg>\r\n                        </a>\r\n                        <ul class=\"collapse submenu list-unstyled\">\r\n                            <li><router-link to=\"/dragndrop\">Drag and Drop</router-link></li>\r\n                            <li><router-link to=\"/widgets\">Widgets</router-link></li>\r\n                            <li><router-link to=\"/charts/apex-chart\">Charts</router-link></li>\r\n                            <li><router-link to=\"/font-icons\">Font Icons</router-link></li>\r\n                            <li>\r\n                                <a target=\"_blank\" href=\"https://cork-vue.sbthemes.com\"> Documentation </a>\r\n                            </li>\r\n                        </ul>\r\n                    </li>\r\n                </ul>\r\n            </nav>\r\n        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  END TOPBAR  ")]);
 }
 
 /***/ }),
@@ -26038,7 +26038,7 @@ var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 /* HOISTED */
 );
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Dashboard", -1
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "DASHBOARD", -1
 /* HOISTED */
 );
 
@@ -26077,7 +26077,7 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Aplusan", -1
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "BARANG", -1
 /* HOISTED */
 );
 
@@ -26116,54 +26116,15 @@ var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "BBM", -1
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "JASA", -1
 /* HOISTED */
 );
 
 var _hoisted_16 = {
   "class": "menu"
 };
-var _hoisted_17 = {
-  "class": "dropdown-toggle",
-  "data-bs-toggle": "collapse",
-  "data-bs-target": "#components",
-  "aria-controls": "components",
-  "aria-expanded": "false"
-};
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
-  xmlns: "http://www.w3.org/2000/svg",
-  width: "24",
-  height: "24",
-  viewBox: "0 0 24 24",
-  fill: "none",
-  stroke: "currentColor",
-  "stroke-width": "2",
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round",
-  "class": "feather feather-box"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("polyline", {
-  points: "3.27 6.96 12 12.01 20.73 6.96"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("line", {
-  x1: "12",
-  y1: "22.08",
-  x2: "12",
-  y2: "12"
-})], -1
-/* HOISTED */
-);
-
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Barang", -1
-/* HOISTED */
-);
-
-var _hoisted_20 = {
-  "class": "menu"
-};
-
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#datatables",
@@ -26188,7 +26149,7 @@ var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   points: "2 17 12 22 22 17"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("polyline", {
   points: "2 12 12 17 22 12"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Master"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{ $t('Master') }}</span> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "MASTER"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{ $t('Master') }}</span> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -26205,16 +26166,16 @@ var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_22 = {
+var _hoisted_18 = {
   id: "datatables",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#sidebar"
 };
-var _hoisted_23 = {
+var _hoisted_19 = {
   "class": "menu"
 };
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#labarugi",
@@ -26222,7 +26183,7 @@ var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "aria-expanded": "false"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Laba Rugi"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{ $t('Master') }}</span> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "LABA RUGI"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{ $t('Master') }}</span> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -26239,16 +26200,16 @@ var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_25 = {
+var _hoisted_21 = {
   id: "labarugi",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#datatables"
 };
-var _hoisted_26 = {
+var _hoisted_22 = {
   "class": "menu"
 };
 
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#apps",
@@ -26319,7 +26280,7 @@ var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   y1: "14",
   x2: "4",
   y2: "14"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Transaksi")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "TRANSAKSI")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -26336,16 +26297,16 @@ var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_28 = {
+var _hoisted_24 = {
   id: "apps",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#sidebar"
 };
-var _hoisted_29 = {
+var _hoisted_25 = {
   "class": "menu"
 };
 
-var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#opnum",
@@ -26353,7 +26314,7 @@ var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "aria-expanded": "false"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": ""
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Opnum"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{ $t('Master') }}</span> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "OPNUM"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" {{ $t('Master') }}</span> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -26370,16 +26331,16 @@ var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_31 = {
+var _hoisted_27 = {
   id: "opnum",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#apps"
 };
-var _hoisted_32 = {
+var _hoisted_28 = {
   "class": "menu"
 };
 
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   "class": "dropdown-toggle",
   "data-bs-toggle": "collapse",
   "data-bs-target": "#forms",
@@ -26407,7 +26368,7 @@ var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   height: "4",
   rx: "1",
   ry: "1"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Laporan")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "LAPORAN")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -26424,7 +26385,7 @@ var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_34 = {
+var _hoisted_30 = {
   id: "forms",
   "class": "collapse submenu list-unstyled",
   "data-bs-parent": "#sidebar"
@@ -26456,7 +26417,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         /* STABLE */
 
       })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/transaksi-aplusan"
+        to: "/barang"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [_hoisted_10, _hoisted_11];
@@ -26465,7 +26426,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         /* STABLE */
 
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span>{{ $t('Barang') }}</span> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/bbm"
+        to: "/jasa"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [_hoisted_14, _hoisted_15];
@@ -26473,21 +26434,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         _: 1
         /* STABLE */
 
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span>{{ $t('Barang') }}</span> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/barang"
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [_hoisted_18, _hoisted_19];
-        }),
-        _: 1
-        /* STABLE */
-
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span>{{ $t('Barang') }}</span> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <span>{{ $t('Barang') }}</span> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/pegawai",
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Pegawai")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("PEGAWAI")];
         }),
         _: 1
         /* STABLE */
@@ -26497,7 +26449,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Supplier")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("SUPPLIER")];
         }),
         _: 1
         /* STABLE */
@@ -26507,7 +26459,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Pelanggan")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("PELANGGAN")];
         }),
         _: 1
         /* STABLE */
@@ -26517,7 +26469,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Persediaan")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("PERSEDIAAN")];
         }),
         _: 1
         /* STABLE */
@@ -26527,7 +26479,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Inventaris")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("INVENTARIS")];
         }),
         _: 1
         /* STABLE */
@@ -26537,7 +26489,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Buku Kas")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("BUKU KAS")];
         }),
         _: 1
         /* STABLE */
@@ -26547,17 +26499,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Neraca")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("NERACA")];
         }),
         _: 1
         /* STABLE */
 
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/coa/pendapatan",
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Pendapatan")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("PENDAPATAN")];
         }),
         _: 1
         /* STABLE */
@@ -26567,7 +26519,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Biaya Penjualan")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("BIAYA PENJUALAN")];
         }),
         _: 1
         /* STABLE */
@@ -26577,37 +26529,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Biaya")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("BIAYA")];
         }),
         _: 1
         /* STABLE */
 
-      })])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/po-bbm",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("PO BBM / ORDER")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/bbm-datang",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Kedatangan BBM")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      })])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_22, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/pembelian",
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Pembelian GAS & OLI")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("PEMBELIAN BARANG")];
         }),
         _: 1
         /* STABLE */
@@ -26617,7 +26549,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Pembelian Inventaris")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("PEMBELIAN INVENTARIS")];
         }),
         _: 1
         /* STABLE */
@@ -26627,37 +26559,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Penjualan GAS & OLI")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("PENJUALAN BARANG")];
         }),
         _: 1
         /* STABLE */
 
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/penjualan-kupon",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Penjualan Kupon")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_29, [_hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/opnum-bbm",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Opnum BBM")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/opnum-barang",
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Opnum Barang")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("OPNUM BARANG")];
         }),
         _: 1
         /* STABLE */
@@ -26667,7 +26579,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Biaya")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("BIAYA")];
         }),
         _: 1
         /* STABLE */
@@ -26677,37 +26589,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Jurnal Umum")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("JURNAL UMUM")];
         }),
         _: 1
         /* STABLE */
 
-      })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_32, [_hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/rekapan/harian",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Rekapan Harian")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/laporan/aplusan-bbm",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Daftar Aplusan BBM")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+      })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_28, [_hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
         to: "/laporan/penjualan-barang",
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Lap. Penjualan GAS & OLI")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("LAP. PENJUALAN BARANG")];
         }),
         _: 1
         /* STABLE */
@@ -26717,7 +26609,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Lap. Pembelian GAS & OLI")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("LAP. PEMBELIAN BARANG")];
         }),
         _: 1
         /* STABLE */
@@ -26727,17 +26619,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Laporan Opnum")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/laporan/tera",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Laporan Tera")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("LAP. OPNUM")];
         }),
         _: 1
         /* STABLE */
@@ -26747,7 +26629,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Lap. Pembelian inventaris")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("LAP. PEMBELIAN INVENTARIS")];
         }),
         _: 1
         /* STABLE */
@@ -26757,7 +26639,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Laporan Penyusutan")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("LAP. PENYUSUTAN")];
         }),
         _: 1
         /* STABLE */
@@ -26767,7 +26649,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Laba Rugi")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("LAP. LABA RUGI")];
         }),
         _: 1
         /* STABLE */
@@ -26777,7 +26659,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Neraca Keuangan")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("NERACA KEUANGAN")];
         }),
         _: 1
         /* STABLE */
@@ -26787,17 +26669,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("General Ledger/Buku Besar")];
-        }),
-        _: 1
-        /* STABLE */
-
-      })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-        to: "/forms/checkbox-radio",
-        onClick: $setup.toggleMobileMenu
-      }, {
-        "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Checkbox & Radio")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("GENERAL LEDGER")];
         }),
         _: 1
         /* STABLE */
@@ -26807,12 +26679,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         onClick: $setup.toggleMobileMenu
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Lock")];
+          return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("LOCK")];
         }),
         _: 1
         /* STABLE */
 
-      })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li class=\"menu\">\n                    <a class=\"dropdown-toggle\" data-bs-toggle=\"collapse\" data-bs-target=\"#elements\" aria-controls=\"elements\" aria-expanded=\"false\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-zap\"\n                            >\n                                <polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"></polygon>\n                            </svg>\n                            <span>{{ $t('elements') }}</span>\n                        </div>\n                        <div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-right\"\n                            >\n                                <polyline points=\"9 18 15 12 9 6\"></polyline>\n                            </svg>\n                        </div>\n                    </a>\n\n                    <ul id=\"elements\" class=\"collapse submenu list-unstyled\" data-bs-parent=\"#sidebar\">\n                        <li>\n                            <router-link to=\"/elements/alerts\" @click=\"toggleMobileMenu\">Alerts</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/avatar\" @click=\"toggleMobileMenu\">Avatar</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/badges\" @click=\"toggleMobileMenu\">Badges</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/breadcrumbs\" @click=\"toggleMobileMenu\">Breadcrumbs</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/buttons\" @click=\"toggleMobileMenu\">Buttons</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/buttons-group\" @click=\"toggleMobileMenu\">Button Groups</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/color-library\" @click=\"toggleMobileMenu\">Color Library</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/dropdown\" @click=\"toggleMobileMenu\">Dropdown</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/infobox\" @click=\"toggleMobileMenu\">Infobox</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/jumbotron\" @click=\"toggleMobileMenu\">Jumbotron</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/loader\" @click=\"toggleMobileMenu\">Loader</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/pagination\" @click=\"toggleMobileMenu\">Pagination</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/popovers\" @click=\"toggleMobileMenu\">Popovers</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/progress-bar\" @click=\"toggleMobileMenu\">Progress Bar</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/search\" @click=\"toggleMobileMenu\">Search</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/tooltips\" @click=\"toggleMobileMenu\">Tooltips</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/treeview\" @click=\"toggleMobileMenu\">Treeview</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/elements/typography\" @click=\"toggleMobileMenu\">Typography</router-link>\n                        </li>\n                    </ul>\n                </li>\n\n                <li class=\"menu\">\n                    <router-link to=\"/font-icons\" class=\"dropdown-toggle\" @click=\"toggleMobileMenu\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-target\"\n                            >\n                                <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n                                <circle cx=\"12\" cy=\"12\" r=\"6\"></circle>\n                                <circle cx=\"12\" cy=\"12\" r=\"2\"></circle>\n                            </svg>\n                            <span>{{ $t('font_icons') }}</span>\n                        </div>\n                    </router-link>\n                </li>\n\n                <li class=\"menu\">\n                    <router-link to=\"/widgets\" class=\"dropdown-toggle\" @click=\"toggleMobileMenu\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-airplay\"\n                            >\n                                <path d=\"M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1\"></path>\n                                <polygon points=\"12 15 17 21 7 21 12 15\"></polygon>\n                            </svg>\n                            <span>{{ $t('widgets') }}</span>\n                        </div>\n                    </router-link>\n                </li>\n\n                <li class=\"menu\">\n                    <router-link to=\"/tables\" class=\"dropdown-toggle\" @click=\"toggleMobileMenu\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-layout\"\n                            >\n                                <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>\n                                <line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line>\n                                <line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"></line>\n                            </svg>\n                            <span>{{ $t('tables') }}</span>\n                        </div>\n                    </router-link>\n                </li>\n\n                <li class=\"menu\">\n                    <a class=\"dropdown-toggle\" data-bs-toggle=\"collapse\" data-bs-target=\"#datatables\" aria-controls=\"datatables\" aria-expanded=\"false\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-layers\"\n                            >\n                                <polygon points=\"12 2 2 7 12 12 22 7 12 2\"></polygon>\n                                <polyline points=\"2 17 12 22 22 17\"></polyline>\n                                <polyline points=\"2 12 12 17 22 12\"></polyline>\n                            </svg>\n                            <span>{{ $t('datatables') }}</span>\n                        </div>\n                        <div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-right\"\n                            >\n                                <polyline points=\"9 18 15 12 9 6\"></polyline>\n                            </svg>\n                        </div>\n                    </a>\n\n                    <ul id=\"datatables\" class=\"collapse submenu list-unstyled\" data-bs-parent=\"#sidebar\">\n                        <li>\n                            <router-link to=\"/tables/basic\" @click=\"toggleMobileMenu\">Basic</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/striped\" @click=\"toggleMobileMenu\">Striped Table</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/order-sorting\" @click=\"toggleMobileMenu\">Order Sorting</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/multi-column\" @click=\"toggleMobileMenu\">Multi Column</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/multiple-tables\" @click=\"toggleMobileMenu\">Multiple Tables</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/alt-pagination\" @click=\"toggleMobileMenu\">Alt. Pagination</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/custom\" @click=\"toggleMobileMenu\">Custom</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/range-search\" @click=\"toggleMobileMenu\">Range Search</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/export\" @click=\"toggleMobileMenu\">Export</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/live-dom-ordering\" @click=\"toggleMobileMenu\">Live DOM ordering</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/tables/miscellaneous\" @click=\"toggleMobileMenu\">Miscellaneous</router-link>\n                        </li>\n                    </ul>\n                </li>\n\n                <li class=\"menu\">\n                    <a class=\"dropdown-toggle\" data-bs-toggle=\"collapse\" data-bs-target=\"#forms\" aria-controls=\"forms\" aria-expanded=\"false\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-clipboard\"\n                            >\n                                <path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"></path>\n                                <rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\" ry=\"1\"></rect>\n                            </svg>\n                            <span>{{ $t('forms') }}</span>\n                        </div>\n                        <div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-right\"\n                            >\n                                <polyline points=\"9 18 15 12 9 6\"></polyline>\n                            </svg>\n                        </div>\n                    </a>\n\n                    <ul id=\"forms\" class=\"collapse submenu list-unstyled\" data-bs-parent=\"#sidebar\">\n                        <li>\n                            <router-link to=\"/forms/basic\" @click=\"toggleMobileMenu\">Basic</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/input-group\" @click=\"toggleMobileMenu\">Input Group</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/layouts\" @click=\"toggleMobileMenu\">Layouts</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/validation\" @click=\"toggleMobileMenu\">Validation</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/input-mask\" @click=\"toggleMobileMenu\">Input Mask</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/select2\" @click=\"toggleMobileMenu\">Select2</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/touchspin\" @click=\"toggleMobileMenu\">TouchSpin</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/checkbox-radio\" @click=\"toggleMobileMenu\">Checkbox &amp; Radio</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/switches\" @click=\"toggleMobileMenu\">Switches</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/wizards\" @click=\"toggleMobileMenu\">Wizards</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/file-upload\" @click=\"toggleMobileMenu\">File Upload</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/quill-editor\" @click=\"toggleMobileMenu\">Quill Editor</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/markdown-editor\" @click=\"toggleMobileMenu\">Markdown Editor</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/date-picker\" @click=\"toggleMobileMenu\">Date &amp; Range Picker </router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/forms/clipboard\" @click=\"toggleMobileMenu\">Clipboard</router-link>\n                        </li>\n                    </ul>\n                </li>\n\n                <li class=\"menu\">\n                    <a class=\"dropdown-toggle\" data-bs-toggle=\"collapse\" data-bs-target=\"#users\" aria-controls=\"users\" aria-expanded=\"false\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-users\"\n                            >\n                                <path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"></path>\n                                <circle cx=\"9\" cy=\"7\" r=\"4\"></circle>\n                                <path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"></path>\n                                <path d=\"M16 3.13a4 4 0 0 1 0 7.75\"></path>\n                            </svg>\n                            <span>{{ $t('users') }}</span>\n                        </div>\n                        <div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-right\"\n                            >\n                                <polyline points=\"9 18 15 12 9 6\"></polyline>\n                            </svg>\n                        </div>\n                    </a>\n\n                    <ul id=\"users\" class=\"collapse submenu list-unstyled\" data-bs-parent=\"#sidebar\">\n                        <li>\n                            <router-link to=\"/users/profile\" @click=\"toggleMobileMenu\">Profile</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/users/account-setting\" @click=\"toggleMobileMenu\">Account Settings</router-link>\n                        </li>\n                    </ul>\n                </li>\n\n                <li class=\"menu\">\n                    <a class=\"dropdown-toggle\" data-bs-toggle=\"collapse\" data-bs-target=\"#pages\" aria-controls=\"pages\" aria-expanded=\"false\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-file\"\n                            >\n                                <path d=\"M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z\"></path>\n                                <polyline points=\"13 2 13 9 20 9\"></polyline>\n                            </svg>\n                            <span>{{ $t('pages') }}</span>\n                        </div>\n                        <div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-right\"\n                            >\n                                <polyline points=\"9 18 15 12 9 6\"></polyline>\n                            </svg>\n                        </div>\n                    </a>\n\n                    <ul id=\"pages\" class=\"collapse submenu list-unstyled\" data-bs-parent=\"#sidebar\">\n                        <li>\n                            <router-link to=\"/pages/helpdesk\" @click=\"toggleMobileMenu\">Helpdesk</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/pages/contact-us\" @click=\"toggleMobileMenu\">Contact Form</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/pages/faq\" @click=\"toggleMobileMenu\">FAQ</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/pages/faq2\" @click=\"toggleMobileMenu\">FAQ 2</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/pages/privacy-policy\" @click=\"toggleMobileMenu\">Privacy Policy</router-link>\n                        </li>\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/pages/coming-soon\">Coming Soon</a></li>\n\n                        <li>\n                            <a class=\"dropdown-toggle\" href=\"#pages-error\" data-bs-parent=\"#pages\" data-bs-toggle=\"collapse\" role=\"button\" aria-expanded=\"false\">\n                                Error\n                                <svg\n                                    xmlns=\"http://www.w3.org/2000/svg\"\n                                    width=\"24\"\n                                    height=\"24\"\n                                    viewBox=\"0 0 24 24\"\n                                    fill=\"none\"\n                                    stroke=\"currentColor\"\n                                    stroke-width=\"2\"\n                                    stroke-linecap=\"round\"\n                                    stroke-linejoin=\"round\"\n                                    class=\"feather feather-chevron-right\"\n                                >\n                                    <polyline points=\"9 18 15 12 9 6\"></polyline>\n                                </svg>\n                            </a>\n\n                            <ul id=\"pages-error\" class=\"collapse list-unstyled sub-submenu\">\n                                <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/pages/error404\">404</a></li>\n                                <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/pages/error500\">500</a></li>\n                                <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/pages/error503\">503</a></li>\n                                <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/pages/maintenence\">Maintanence</a></li>\n                            </ul>\n                        </li>\n\n                        <li>\n                            <router-link to=\"/pages/blank-page\" @click=\"toggleMobileMenu\">Blank Page</router-link>\n                        </li>\n                        <li>\n                            <router-link to=\"/pages/sample\" @click=\"toggleMobileMenu\">Sample Page</router-link>\n                        </li>\n                    </ul>\n                </li>\n\n                <li class=\"menu\">\n                    <a class=\"dropdown-toggle\" data-bs-toggle=\"collapse\" data-bs-target=\"#authentication\" aria-controls=\"authentication\" aria-expanded=\"false\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-lock\"\n                            >\n                                <rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect>\n                                <path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path>\n                            </svg>\n                            <span>{{ $t('authentication') }}</span>\n                        </div>\n                        <div>\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-chevron-right\"\n                            >\n                                <polyline points=\"9 18 15 12 9 6\"></polyline>\n                            </svg>\n                        </div>\n                    </a>\n\n                    <ul id=\"authentication\" class=\"collapse submenu list-unstyled\" data-bs-parent=\"#sidebar\">\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/auth/login-boxed\">Login Boxed</a></li>\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/auth/register-boxed\">Register Boxed</a></li>\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/auth/lockscreen-boxed\">Unlock Boxed</a></li>\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/auth/pass-recovery-boxed\">Recover ID Boxed</a></li>\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/auth/login\">Login Cover</a></li>\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/auth/register\">Register Cover</a></li>\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/auth/lockscreen\">Unlock Cover</a></li>\n                        <li @click=\"toggleMobileMenu\"><a target=\"_blank\" href=\"/auth/pass-recovery\">Recover ID Cover</a></li>\n                    </ul>\n                </li>\n\n                <li class=\"menu\">\n                    <router-link to=\"/dragndrop\" class=\"dropdown-toggle\" @click=\"toggleMobileMenu\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-move\"\n                            >\n                                <polyline points=\"5 9 2 12 5 15\"></polyline>\n                                <polyline points=\"9 5 12 2 15 5\"></polyline>\n                                <polyline points=\"15 19 12 22 9 19\"></polyline>\n                                <polyline points=\"19 9 22 12 19 15\"></polyline>\n                                <line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"></line>\n                                <line x1=\"12\" y1=\"2\" x2=\"12\" y2=\"22\"></line>\n                            </svg>\n                            <span>{{ $t('drag_and_drop') }}</span>\n                        </div>\n                    </router-link>\n                </li>\n\n                <li class=\"menu\">\n                    <router-link to=\"/charts/apex-chart\" class=\"dropdown-toggle\" @click=\"toggleMobileMenu\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-pie-chart\"\n                            >\n                                <path d=\"M21.21 15.89A10 10 0 1 1 8 2.83\"></path>\n                                <path d=\"M22 12A10 10 0 0 0 12 2v10z\"></path>\n                            </svg>\n                            <span>{{ $t('charts') }}</span>\n                        </div>\n                    </router-link>\n                </li>\n\n                <li class=\"menu\" @click=\"toggleMobileMenu\">\n                    <a target=\"_blank\" href=\"https://cork-vue.sbthemes.com\" aria-expanded=\"false\" class=\"dropdown-toggle\">\n                        <div class=\"\">\n                            <svg\n                                xmlns=\"http://www.w3.org/2000/svg\"\n                                width=\"24\"\n                                height=\"24\"\n                                viewBox=\"0 0 24 24\"\n                                fill=\"none\"\n                                stroke=\"currentColor\"\n                                stroke-width=\"2\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"\n                                class=\"feather feather-book\"\n                            >\n                                <path d=\"M4 19.5A2.5 2.5 0 0 1 6.5 17H20\"></path>\n                                <path d=\"M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z\"></path>\n                            </svg>\n                            <span>{{ $t('documentation') }}</span>\n                        </div>\n                    </a>\n                </li> ")];
+      })])])])];
     }),
     _: 1
     /* STABLE */
@@ -27718,7 +27590,7 @@ var usePageTitle = function usePageTitle(pageTitle) {
 };
 var useMeta = function useMeta(data) {
   return (0,_vueuse_head__WEBPACK_IMPORTED_MODULE_1__.useHead)(_objectSpread(_objectSpread({}, data), {}, {
-    title: "".concat(data.title, " | Sistem Informasi POM BENSIN")
+    title: "".concat(data.title, " | WinMax Bali")
   }));
 };
 
@@ -27884,13 +27756,6 @@ var routes = [//dashboard
   component: function component() {
     return __webpack_require__.e(/*! import() | index2 */ "index2").then(__webpack_require__.bind(__webpack_require__, /*! ../views/index2.vue */ "./resources/js/src/views/index2.vue"));
   }
-}, {
-  path: '/bbm',
-  name: 'bbm',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexBbm.vue */ "./resources/js/src/views/master/indexBbm.vue"));
-  } // meta: { requiresAuth: true },
-
 }, //======================COA
 {
   path: '/coa',
@@ -27937,25 +27802,17 @@ var routes = [//dashboard
   } // meta: { requiresAuth: true },
 
 }, {
-  path: '/transaksi-aplusan',
-  name: 'transaksi-aplusan',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexNosel.vue */ "./resources/js/src/views/master/indexNosel.vue"));
-  } // meta: { requiresAuth: true },
-
-}, {
-  path: '/edit-aplusan',
-  name: 'edit-aplusan',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/editAplusan.vue */ "./resources/js/src/views/master/editAplusan.vue"));
-  },
-  // meta: { requiresAuth: true },
-  props: true
-}, {
   path: '/barang',
   name: 'barang',
   component: function component() {
     return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexBarang.vue */ "./resources/js/src/views/master/indexBarang.vue"));
+  } // meta: { requiresAuth: true },
+
+}, {
+  path: '/jasa',
+  name: 'jasa',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexJasa.vue */ "./resources/js/src/views/master/indexJasa.vue"));
   } // meta: { requiresAuth: true },
 
 }, {
@@ -27979,31 +27836,9 @@ var routes = [//dashboard
     return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexInventaris.vue */ "./resources/js/src/views/master/indexInventaris.vue"));
   } // meta: { requiresAuth: true },
 
-}, {
-  path: '/nosel',
-  name: 'nosel',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/indexNosel.vue */ "./resources/js/src/views/master/indexNosel.vue"));
-  },
-  // meta: { requiresAuth: true },
-  props: true
 }, //================end of master
 // transaksi
 {
-  path: '/po-bbm',
-  name: 'po-bbm',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/poBbm.vue */ "./resources/js/src/views/transaksi/poBbm.vue"));
-  },
-  props: true
-}, {
-  path: '/bbm-datang',
-  name: 'bbm-datang',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/bbmDatang.vue */ "./resources/js/src/views/transaksi/bbmDatang.vue"));
-  },
-  props: true
-}, {
   path: '/pembelian',
   name: 'pembelian',
   component: function component() {
@@ -28032,12 +27867,11 @@ var routes = [//dashboard
   },
   props: true
 }, {
-  path: '/penjualan-kupon',
-  name: 'penjualan-kupon',
+  path: '/invoice/penjualan',
+  name: 'invoice-penjualan',
   component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/penjualanKupon.vue */ "./resources/js/src/views/transaksi/penjualanKupon.vue"));
-  },
-  props: true
+    return __webpack_require__.e(/*! import() | apps-invoice-preview */ "apps-invoice-preview").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/invoicePenjualan.vue */ "./resources/js/src/views/transaksi/invoicePenjualan.vue"));
+  }
 }, {
   path: '/editpenjualan',
   name: 'editpenjualan',
@@ -28059,14 +27893,6 @@ var routes = [//dashboard
   name: 'opnum-barang',
   component: function component() {
     return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/opnumBarang.vue */ "./resources/js/src/views/transaksi/opnumBarang.vue"));
-  } // props: true,
-  // meta: { requiresAuth: true },
-
-}, {
-  path: '/opnum-bbm',
-  name: 'opnum-bbm',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/transaksi/opnumBbm.vue */ "./resources/js/src/views/transaksi/opnumBbm.vue"));
   } // props: true,
   // meta: { requiresAuth: true },
 
@@ -28096,31 +27922,10 @@ var routes = [//dashboard
 
 }, // laporan
 {
-  path: '/rekapan/harian',
-  name: 'rekapan',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/laporan/rekapanHarian.vue */ "./resources/js/src/views/laporan/rekapanHarian.vue"));
-  },
-  props: true
-}, {
   path: '/rekapan/kartu-stok',
   name: 'kartu-stok',
   component: function component() {
     return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/master/kartuStok.vue */ "./resources/js/src/views/master/kartuStok.vue"));
-  },
-  props: true
-}, {
-  path: '/laporan/aplusan-bbm',
-  name: 'aplusan-bbm',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/laporan/aplusanBbm.vue */ "./resources/js/src/views/laporan/aplusanBbm.vue"));
-  },
-  props: true
-}, {
-  path: '/laporan/penjualan-bbm',
-  name: 'penjualan-bbm',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/laporan/penjualanBbm.vue */ "./resources/js/src/views/laporan/penjualanBbm.vue"));
   },
   props: true
 }, {
@@ -28156,13 +27961,6 @@ var routes = [//dashboard
   name: 'laporan-opnum',
   component: function component() {
     return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/laporan/laporanOpnum.vue */ "./resources/js/src/views/laporan/laporanOpnum.vue"));
-  },
-  props: true
-}, {
-  path: '/laporan/tera',
-  name: 'laporan-tera',
-  component: function component() {
-    return __webpack_require__.e(/*! import() | components-tabs */ "components-tabs").then(__webpack_require__.bind(__webpack_require__, /*! ../views/laporan/laporanTera.vue */ "./resources/js/src/views/laporan/laporanTera.vue"));
   },
   props: true
 }, {
@@ -29847,7 +29645,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm-bundler.js");
 /* harmony import */ var _i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../i18n */ "./resources/js/src/i18n.js");
 /* harmony import */ var _auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth */ "./resources/js/src/store/auth.js");
 /* harmony import */ var _barang__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./barang */ "./resources/js/src/store/barang.js");
@@ -29864,6 +29662,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _coa__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./coa */ "./resources/js/src/store/coa.js");
 /* harmony import */ var _inventaris__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./inventaris */ "./resources/js/src/store/inventaris.js");
 /* harmony import */ var _tax__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./tax */ "./resources/js/src/store/tax.js");
+/* harmony import */ var _jasa__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./jasa */ "./resources/js/src/store/jasa.js");
 
  // import createPersistedState from "vuex-persistedstate";
 
@@ -29883,7 +29682,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_16__.createStore({
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_17__.createStore({
   state: {
     pajak: 11,
     layout: 'app',
@@ -30022,7 +29822,8 @@ __webpack_require__.r(__webpack_exports__);
     labarugi: _labarugi__WEBPACK_IMPORTED_MODULE_12__["default"],
     coa: _coa__WEBPACK_IMPORTED_MODULE_13__["default"],
     inventaris: _inventaris__WEBPACK_IMPORTED_MODULE_14__["default"],
-    tax: _tax__WEBPACK_IMPORTED_MODULE_15__["default"]
+    tax: _tax__WEBPACK_IMPORTED_MODULE_15__["default"],
+    jasa: _jasa__WEBPACK_IMPORTED_MODULE_16__["default"]
   } // plugins: [createPersistedState()]
 
 }));
@@ -30530,6 +30331,229 @@ var mutations = {
   //     // await commit('setUser', detUser.data.user)
   // },
 
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  state: state,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/js/src/store/jasa.js":
+/*!****************************************!*\
+  !*** ./resources/js/src/store/jasa.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return generator._invoke = function (innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; }(innerFn, self, context), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; this._invoke = function (method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); }; } function maybeInvokeDelegate(delegate, context) { var method = delegate.iterator[context.method]; if (undefined === method) { if (context.delegate = null, "throw" === context.method) { if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel; context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method"); } return ContinueSentinel; } var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) { if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; } return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (object) { var keys = []; for (var key in object) { keys.push(key); } return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) { "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); } }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//store/modules/auth.js
+
+var state = {
+  jasa: []
+};
+var getters = {
+  StateJasa: function StateJasa(state) {
+    return state.jasa;
+  }
+};
+var actions = {
+  CreateJasa: function CreateJasa(_ref, post) {
+    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var dispatch, toast, _toast;
+
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              dispatch = _ref.dispatch;
+              _context.prev = 1;
+              _context.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/store/jasa', post);
+
+            case 4:
+              _context.next = 6;
+              return dispatch('GetBarang');
+
+            case 6:
+              toast = window.Swal.mixin({
+                toast: true,
+                position: 'top-center',
+                showConfirmButton: false,
+                timer: 3000,
+                padding: '2em'
+              });
+              toast.fire({
+                icon: 'success',
+                title: 'Jasa Simpan Barang',
+                padding: '2em'
+              });
+              _context.next = 14;
+              break;
+
+            case 10:
+              _context.prev = 10;
+              _context.t0 = _context["catch"](1);
+              _toast = window.Swal.mixin({
+                toast: true,
+                position: 'top-center',
+                showConfirmButton: false,
+                timer: 3000,
+                padding: '2em'
+              });
+
+              _toast.fire({
+                title: 'Error!',
+                text: 'gagal disimpan',
+                icon: 'error',
+                // confirmButtonText: 'Cool',
+                padding: '2em'
+              });
+
+            case 14:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[1, 10]]);
+    }))();
+  },
+  GetJasa: function GetJasa(_ref2) {
+    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+      var commit, response;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              commit = _ref2.commit;
+              _context2.prev = 1;
+              _context2.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/jasa');
+
+            case 4:
+              response = _context2.sent;
+              commit('setJasa', response.data.data);
+              _context2.next = 11;
+              break;
+
+            case 8:
+              _context2.prev = 8;
+              _context2.t0 = _context2["catch"](1);
+              return _context2.abrupt("return");
+
+            case 11:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2, null, [[1, 8]]);
+    }))();
+  },
+  EditJasa: function EditJasa(_ref3, Brg) {
+    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+      var dispatch;
+      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              dispatch = _ref3.dispatch;
+              _context3.next = 3;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/update/jasa', Brg);
+
+            case 3:
+              _context3.next = 5;
+              return dispatch('GetJasa');
+
+            case 5:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3);
+    }))();
+  },
+  DeleteJasa: function DeleteJasa(_ref4, id) {
+    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+      var dispatch, response, toast, _toast2;
+
+      return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+        while (1) {
+          switch (_context4.prev = _context4.next) {
+            case 0:
+              dispatch = _ref4.dispatch;
+              _context4.prev = 1;
+              _context4.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"]["delete"]("/api/hapus/jasa/".concat(id));
+
+            case 4:
+              response = _context4.sent;
+              _context4.next = 7;
+              return dispatch('GetJasa');
+
+            case 7:
+              toast = window.Swal.mixin({
+                toast: true,
+                position: 'top-center',
+                showConfirmButton: false,
+                timer: 3000,
+                padding: '2em'
+              });
+              toast.fire({
+                icon: 'success',
+                title: 'Jasa berhasil terhapus',
+                padding: '2em'
+              });
+              return _context4.abrupt("return", response);
+
+            case 12:
+              _context4.prev = 12;
+              _context4.t0 = _context4["catch"](1);
+              // Handle error
+              _toast2 = window.Swal.mixin({
+                toast: true,
+                position: 'top-center',
+                showConfirmButton: false,
+                timer: 3000,
+                padding: '2em'
+              });
+
+              _toast2.fire({
+                title: 'Error!',
+                text: 'Jasa Gagal Dihapus',
+                icon: 'error',
+                // confirmButtonText: 'Cool',
+                padding: '2em'
+              });
+
+              throw 'error';
+
+            case 17:
+            case "end":
+              return _context4.stop();
+          }
+        }
+      }, _callee4, null, [[1, 12]]);
+    }))();
+  }
+};
+var mutations = {
+  setJasa: function setJasa(state, jasa) {
+    state.jasa = jasa;
+  }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   state: state,
@@ -31557,6 +31581,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var state = {
   nopembelian: [],
   nobarang: [],
+  nojasa: [],
   noopnum: [],
   nopobbm: [],
   noterimabbm: [],
@@ -31570,6 +31595,9 @@ var state = {
 var getters = {
   NoBarang: function NoBarang(state) {
     return state.nobarang;
+  },
+  NoJasa: function NoJasa(state) {
+    return state.nojasa;
   },
   NoPembelian: function NoPembelian(state) {
     return state.nopembelian;
@@ -31705,7 +31733,7 @@ var actions = {
       }, _callee3, null, [[1, 8]]);
     }))();
   },
-  GetNoOpnum: function GetNoOpnum(_ref4) {
+  GetNoJasa: function GetNoJasa(_ref4) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee4$(_context4) {
@@ -31715,11 +31743,11 @@ var actions = {
               commit = _ref4.commit;
               _context4.prev = 1;
               _context4.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdopnum');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdjasa');
 
             case 4:
               response = _context4.sent;
-              commit('setNoOpnum', response.data.kdOpnum);
+              commit('setNoJasa', response.data.kdJasa);
               _context4.next = 12;
               break;
 
@@ -31727,7 +31755,7 @@ var actions = {
               _context4.prev = 8;
               _context4.t0 = _context4["catch"](1);
               // Handle error
-              alert('error no opnum');
+              alert('error no barang');
               return _context4.abrupt("return");
 
             case 12:
@@ -31738,7 +31766,7 @@ var actions = {
       }, _callee4, null, [[1, 8]]);
     }))();
   },
-  GetNoBiaya: function GetNoBiaya(_ref5) {
+  GetNoOpnum: function GetNoOpnum(_ref5) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee5$(_context5) {
@@ -31748,11 +31776,11 @@ var actions = {
               commit = _ref5.commit;
               _context5.prev = 1;
               _context5.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdbiaya');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdopnum');
 
             case 4:
               response = _context5.sent;
-              commit('setNoBiaya', response.data.kdBiaya);
+              commit('setNoOpnum', response.data.kdOpnum);
               _context5.next = 12;
               break;
 
@@ -31760,7 +31788,7 @@ var actions = {
               _context5.prev = 8;
               _context5.t0 = _context5["catch"](1);
               // Handle error
-              alert('error no biaya');
+              alert('error no opnum');
               return _context5.abrupt("return");
 
             case 12:
@@ -31771,7 +31799,7 @@ var actions = {
       }, _callee5, null, [[1, 8]]);
     }))();
   },
-  GetNoJurnalUmum: function GetNoJurnalUmum(_ref6) {
+  GetNoBiaya: function GetNoBiaya(_ref6) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee6$(_context6) {
@@ -31781,11 +31809,11 @@ var actions = {
               commit = _ref6.commit;
               _context6.prev = 1;
               _context6.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdjurnal-umum');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdbiaya');
 
             case 4:
               response = _context6.sent;
-              commit('setNoJurnalUmum', response.data.kdJurnal);
+              commit('setNoBiaya', response.data.kdBiaya);
               _context6.next = 12;
               break;
 
@@ -31804,7 +31832,7 @@ var actions = {
       }, _callee6, null, [[1, 8]]);
     }))();
   },
-  GetNoKupon: function GetNoKupon(_ref7) {
+  GetNoJurnalUmum: function GetNoJurnalUmum(_ref7) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee7$(_context7) {
@@ -31814,11 +31842,11 @@ var actions = {
               commit = _ref7.commit;
               _context7.prev = 1;
               _context7.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdkupon');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdjurnal-umum');
 
             case 4:
               response = _context7.sent;
-              commit('setNoKupon', response.data.kdKupon);
+              commit('setNoJurnalUmum', response.data.kdJurnal);
               _context7.next = 12;
               break;
 
@@ -31826,7 +31854,7 @@ var actions = {
               _context7.prev = 8;
               _context7.t0 = _context7["catch"](1);
               // Handle error
-              alert('error no Kupon');
+              alert('error no biaya');
               return _context7.abrupt("return");
 
             case 12:
@@ -31837,7 +31865,7 @@ var actions = {
       }, _callee7, null, [[1, 8]]);
     }))();
   },
-  GetNoPobbm: function GetNoPobbm(_ref8) {
+  GetNoKupon: function GetNoKupon(_ref8) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee8$(_context8) {
@@ -31847,11 +31875,11 @@ var actions = {
               commit = _ref8.commit;
               _context8.prev = 1;
               _context8.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdpobbm');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdkupon');
 
             case 4:
               response = _context8.sent;
-              commit('setNoPobbm', response.data.kdPobbm);
+              commit('setNoKupon', response.data.kdKupon);
               _context8.next = 12;
               break;
 
@@ -31859,7 +31887,7 @@ var actions = {
               _context8.prev = 8;
               _context8.t0 = _context8["catch"](1);
               // Handle error
-              alert('error no po bbm');
+              alert('error no Kupon');
               return _context8.abrupt("return");
 
             case 12:
@@ -31870,7 +31898,7 @@ var actions = {
       }, _callee8, null, [[1, 8]]);
     }))();
   },
-  GetTerimabbm: function GetTerimabbm(_ref9) {
+  GetNoPobbm: function GetNoPobbm(_ref9) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee9$(_context9) {
@@ -31880,11 +31908,11 @@ var actions = {
               commit = _ref9.commit;
               _context9.prev = 1;
               _context9.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdbbmdatang');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdpobbm');
 
             case 4:
               response = _context9.sent;
-              commit('setTerimabbm', response.data.kdBbmdatang);
+              commit('setNoPobbm', response.data.kdPobbm);
               _context9.next = 12;
               break;
 
@@ -31903,7 +31931,7 @@ var actions = {
       }, _callee9, null, [[1, 8]]);
     }))();
   },
-  GetNoInventaris: function GetNoInventaris(_ref10) {
+  GetTerimabbm: function GetTerimabbm(_ref10) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee10$(_context10) {
@@ -31913,11 +31941,11 @@ var actions = {
               commit = _ref10.commit;
               _context10.prev = 1;
               _context10.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdinventaris');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdbbmdatang');
 
             case 4:
               response = _context10.sent;
-              commit('setKdInventaris', response.data.kdInventaris);
+              commit('setTerimabbm', response.data.kdBbmdatang);
               _context10.next = 12;
               break;
 
@@ -31936,7 +31964,7 @@ var actions = {
       }, _callee10, null, [[1, 8]]);
     }))();
   },
-  GetNoPengadaan: function GetNoPengadaan(_ref11) {
+  GetNoInventaris: function GetNoInventaris(_ref11) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee11() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee11$(_context11) {
@@ -31946,11 +31974,11 @@ var actions = {
               commit = _ref11.commit;
               _context11.prev = 1;
               _context11.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdpengadaan');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdinventaris');
 
             case 4:
               response = _context11.sent;
-              commit('setKdPengadaan', response.data.kdPengadaan);
+              commit('setKdInventaris', response.data.kdInventaris);
               _context11.next = 12;
               break;
 
@@ -31958,7 +31986,7 @@ var actions = {
               _context11.prev = 8;
               _context11.t0 = _context11["catch"](1);
               // Handle error
-              alert('error no pengadaan');
+              alert('error no po bbm');
               return _context11.abrupt("return");
 
             case 12:
@@ -31969,7 +31997,7 @@ var actions = {
       }, _callee11, null, [[1, 8]]);
     }))();
   },
-  GetNoPenyusutan: function GetNoPenyusutan(_ref12) {
+  GetNoPengadaan: function GetNoPengadaan(_ref12) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee12() {
       var commit, response;
       return _regeneratorRuntime().wrap(function _callee12$(_context12) {
@@ -31979,11 +32007,11 @@ var actions = {
               commit = _ref12.commit;
               _context12.prev = 1;
               _context12.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdpenyusutan');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdpengadaan');
 
             case 4:
               response = _context12.sent;
-              commit('setKdPenyusutan', response.data.kdPenyusutan);
+              commit('setKdPengadaan', response.data.kdPengadaan);
               _context12.next = 12;
               break;
 
@@ -31991,7 +32019,7 @@ var actions = {
               _context12.prev = 8;
               _context12.t0 = _context12["catch"](1);
               // Handle error
-              alert('error no Penyusutan');
+              alert('error no pengadaan');
               return _context12.abrupt("return");
 
             case 12:
@@ -32000,6 +32028,39 @@ var actions = {
           }
         }
       }, _callee12, null, [[1, 8]]);
+    }))();
+  },
+  GetNoPenyusutan: function GetNoPenyusutan(_ref13) {
+    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee13() {
+      var commit, response;
+      return _regeneratorRuntime().wrap(function _callee13$(_context13) {
+        while (1) {
+          switch (_context13.prev = _context13.next) {
+            case 0:
+              commit = _ref13.commit;
+              _context13.prev = 1;
+              _context13.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdpenyusutan');
+
+            case 4:
+              response = _context13.sent;
+              commit('setKdPenyusutan', response.data.kdPenyusutan);
+              _context13.next = 12;
+              break;
+
+            case 8:
+              _context13.prev = 8;
+              _context13.t0 = _context13["catch"](1);
+              // Handle error
+              alert('error no Penyusutan');
+              return _context13.abrupt("return");
+
+            case 12:
+            case "end":
+              return _context13.stop();
+          }
+        }
+      }, _callee13, null, [[1, 8]]);
     }))();
   }
 };
@@ -32012,6 +32073,9 @@ var mutations = {
   },
   setNoBarang: function setNoBarang(state, barang) {
     state.nobarang = barang;
+  },
+  setNoJasa: function setNoJasa(state, jasa) {
+    state.nojasa = jasa;
   },
   setNoOpnum: function setNoOpnum(state, op) {
     state.noopnum = op;
@@ -33146,10 +33210,11 @@ var actions = {
                 padding: '2em'
               });
               localStorage.setItem('cartItemsPen', '[]');
+              localStorage.setItem('cartItemsPenJasa', '[]');
               return _context5.abrupt("return", response);
 
-            case 11:
-              _context5.prev = 11;
+            case 12:
+              _context5.prev = 12;
               _context5.t0 = _context5["catch"](1);
               // Handle error
               _toast4 = window.Swal.mixin({
@@ -33170,12 +33235,12 @@ var actions = {
 
               throw 'error';
 
-            case 16:
+            case 17:
             case "end":
               return _context5.stop();
           }
         }
-      }, _callee5, null, [[1, 11]]);
+      }, _callee5, null, [[1, 12]]);
     }))();
   },
   CreatePenjualanKupon: function CreatePenjualanKupon(_ref6, detail) {
@@ -34037,8 +34102,7 @@ var actions = {
   },
   DeletePenjualan: function DeletePenjualan(_ref24, kd) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee24() {
-      var dispatch, response, toast, _toast14;
-
+      var dispatch, response;
       return _regeneratorRuntime().wrap(function _callee24$(_context24) {
         while (1) {
           switch (_context24.prev = _context24.next) {
@@ -34050,54 +34114,24 @@ var actions = {
 
             case 4:
               response = _context24.sent;
-              // console.log(response.data.data)
-              toast = window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em'
-              });
-              toast.fire({
-                icon: 'success',
-                title: 'Penjualan berhasil terhapus',
-                padding: '2em'
-              });
               return _context24.abrupt("return", response);
 
-            case 10:
-              _context24.prev = 10;
+            case 8:
+              _context24.prev = 8;
               _context24.t0 = _context24["catch"](1);
-              // Handle error
-              _toast14 = window.Swal.mixin({
-                toast: true,
-                position: 'top-center',
-                showConfirmButton: false,
-                timer: 3000,
-                padding: '2em'
-              });
-
-              _toast14.fire({
-                title: 'Error!',
-                text: 'Penjualan Gagal Dihapus',
-                icon: 'error',
-                // confirmButtonText: 'Cool',
-                padding: '2em'
-              });
-
               throw 'error';
 
-            case 15:
+            case 11:
             case "end":
               return _context24.stop();
           }
         }
-      }, _callee24, null, [[1, 10]]);
+      }, _callee24, null, [[1, 8]]);
     }))();
   },
   DeleteOpnum: function DeleteOpnum(_ref25, kd) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee25() {
-      var dispatch, response, toast, _toast15;
+      var dispatch, response, toast, _toast14;
 
       return _regeneratorRuntime().wrap(function _callee25$(_context25) {
         while (1) {
@@ -34129,7 +34163,7 @@ var actions = {
               _context25.prev = 10;
               _context25.t0 = _context25["catch"](1);
               // Handle error
-              _toast15 = window.Swal.mixin({
+              _toast14 = window.Swal.mixin({
                 toast: true,
                 position: 'top-center',
                 showConfirmButton: false,
@@ -34137,7 +34171,7 @@ var actions = {
                 padding: '2em'
               });
 
-              _toast15.fire({
+              _toast14.fire({
                 title: 'Error!',
                 text: 'Opnum Gagal Dihapus',
                 icon: 'error',
@@ -34157,7 +34191,7 @@ var actions = {
   },
   DeleteBbmDatang: function DeleteBbmDatang(_ref26, kd) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee26() {
-      var dispatch, response, toast, _toast16;
+      var dispatch, response, toast, _toast15;
 
       return _regeneratorRuntime().wrap(function _callee26$(_context26) {
         while (1) {
@@ -34189,7 +34223,7 @@ var actions = {
               _context26.prev = 10;
               _context26.t0 = _context26["catch"](1);
               // Handle error
-              _toast16 = window.Swal.mixin({
+              _toast15 = window.Swal.mixin({
                 toast: true,
                 position: 'top-center',
                 showConfirmButton: false,
@@ -34197,7 +34231,7 @@ var actions = {
                 padding: '2em'
               });
 
-              _toast16.fire({
+              _toast15.fire({
                 title: 'Error!',
                 text: 'BBM datang Gagal Dihapus',
                 icon: 'error',
@@ -34217,7 +34251,7 @@ var actions = {
   },
   DeletePenjualanKupon: function DeletePenjualanKupon(_ref27, kd) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee27() {
-      var dispatch, response, toast, _toast17;
+      var dispatch, response, toast, _toast16;
 
       return _regeneratorRuntime().wrap(function _callee27$(_context27) {
         while (1) {
@@ -34249,7 +34283,7 @@ var actions = {
               _context27.prev = 10;
               _context27.t0 = _context27["catch"](1);
               // Handle error
-              _toast17 = window.Swal.mixin({
+              _toast16 = window.Swal.mixin({
                 toast: true,
                 position: 'top-center',
                 showConfirmButton: false,
@@ -34257,7 +34291,7 @@ var actions = {
                 padding: '2em'
               });
 
-              _toast17.fire({
+              _toast16.fire({
                 title: 'Error!',
                 text: 'Penjualan Kupon Gagal Dihapus',
                 icon: 'error',
@@ -34721,7 +34755,7 @@ var $themeConfig = {
   // en, da, de, el, es, fr, hu, it, ja, pl, pt, ru, sv, tr, zh
   theme: 'dark',
   // light, dark, system
-  navigation: 'collapsible-vertical',
+  navigation: 'vertical',
   // vertical, collapsible-vertical, horizontal
   layout: 'full' // full, boxed-layout, large-boxed-layout
 
@@ -41807,13 +41841,13 @@ module.exports = "/images/features_overview-71862ac4115d9b272d6c0bf32e4d6943.svg
 
 /***/ }),
 
-/***/ "./resources/js/src/assets/images/pom.jpg":
-/*!************************************************!*\
-  !*** ./resources/js/src/assets/images/pom.jpg ***!
-  \************************************************/
+/***/ "./resources/js/src/assets/images/logo1.jpg":
+/*!**************************************************!*\
+  !*** ./resources/js/src/assets/images/logo1.jpg ***!
+  \**************************************************/
 /***/ ((module) => {
 
-module.exports = "/images/pom-6148d7942dfaf03e4081101acc67e55c.jpg";
+module.exports = "/images/logo1-7f565e7aeddc97dcb635105fd0dad307.jpg";
 
 /***/ }),
 
@@ -64275,7 +64309,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _noUiSlider_vue_vue_type_template_id_2967d974_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./noUiSlider.vue?vue&type=template&id=2967d974&scoped=true */ "./node_modules/vue3-nouislider/src/components/noUiSlider.vue?vue&type=template&id=2967d974&scoped=true");
 /* harmony import */ var _noUiSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./noUiSlider.vue?vue&type=script&lang=js */ "./node_modules/vue3-nouislider/src/components/noUiSlider.vue?vue&type=script&lang=js");
 /* harmony import */ var _noUiSlider_vue_vue_type_style_index_0_id_2967d974_scoped_true_lang_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./noUiSlider.vue?vue&type=style&index=0&id=2967d974&scoped=true&lang=scss */ "./node_modules/vue3-nouislider/src/components/noUiSlider.vue?vue&type=style&index=0&id=2967d974&scoped=true&lang=scss");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -64283,7 +64317,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_noUiSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_noUiSlider_vue_vue_type_template_id_2967d974_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-2967d974"],['__file',"node_modules/vue3-nouislider/src/components/noUiSlider.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_noUiSlider_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_noUiSlider_vue_vue_type_template_id_2967d974_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-2967d974"],['__file',"node_modules/vue3-nouislider/src/components/noUiSlider.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -64381,13 +64415,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _App_vue_vue_type_template_id_7201f370__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=7201f370 */ "./resources/js/src/App.vue?vue&type=template&id=7201f370");
 /* harmony import */ var _App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&setup=true&lang=js */ "./resources/js/src/App.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_7201f370__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/App.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_7201f370__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/App.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -64409,13 +64443,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _app_settings_vue_vue_type_template_id_3f95e7ef__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-settings.vue?vue&type=template&id=3f95e7ef */ "./resources/js/src/components/app-settings.vue?vue&type=template&id=3f95e7ef");
 /* harmony import */ var _app_settings_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-settings.vue?vue&type=script&setup=true&lang=js */ "./resources/js/src/components/app-settings.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_app_settings_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_app_settings_vue_vue_type_template_id_3f95e7ef__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/components/app-settings.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_app_settings_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_app_settings_vue_vue_type_template_id_3f95e7ef__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/components/app-settings.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -64436,12 +64470,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _footer_vue_vue_type_template_id_b30d9da0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.vue?vue&type=template&id=b30d9da0 */ "./resources/js/src/components/layout/footer.vue?vue&type=template&id=b30d9da0");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_footer_vue_vue_type_template_id_b30d9da0__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/components/layout/footer.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_footer_vue_vue_type_template_id_b30d9da0__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/components/layout/footer.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -64463,13 +64497,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _header_vue_vue_type_template_id_70a8d5bc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.vue?vue&type=template&id=70a8d5bc */ "./resources/js/src/components/layout/header.vue?vue&type=template&id=70a8d5bc");
 /* harmony import */ var _header_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.vue?vue&type=script&setup=true&lang=js */ "./resources/js/src/components/layout/header.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_header_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_header_vue_vue_type_template_id_70a8d5bc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/components/layout/header.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_header_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_header_vue_vue_type_template_id_70a8d5bc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/components/layout/header.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -64491,13 +64525,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _sidebar_vue_vue_type_template_id_5d511dd2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sidebar.vue?vue&type=template&id=5d511dd2 */ "./resources/js/src/components/layout/sidebar.vue?vue&type=template&id=5d511dd2");
 /* harmony import */ var _sidebar_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sidebar.vue?vue&type=script&setup=true&lang=js */ "./resources/js/src/components/layout/sidebar.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_sidebar_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_sidebar_vue_vue_type_template_id_5d511dd2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/components/layout/sidebar.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_sidebar_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_sidebar_vue_vue_type_template_id_5d511dd2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/components/layout/sidebar.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -64519,13 +64553,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _app_layout_vue_vue_type_template_id_472e3bb6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-layout.vue?vue&type=template&id=472e3bb6 */ "./resources/js/src/layouts/app-layout.vue?vue&type=template&id=472e3bb6");
 /* harmony import */ var _app_layout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-layout.vue?vue&type=script&setup=true&lang=js */ "./resources/js/src/layouts/app-layout.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_app_layout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_app_layout_vue_vue_type_template_id_472e3bb6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/layouts/app-layout.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_app_layout_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_app_layout_vue_vue_type_template_id_472e3bb6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/layouts/app-layout.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -64546,12 +64580,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _auth_layout_vue_vue_type_template_id_654feeb0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth-layout.vue?vue&type=template&id=654feeb0 */ "./resources/js/src/layouts/auth-layout.vue?vue&type=template&id=654feeb0");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 const script = {}
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_auth_layout_vue_vue_type_template_id_654feeb0__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/layouts/auth-layout.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_auth_layout_vue_vue_type_template_id_654feeb0__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/layouts/auth-layout.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -64573,13 +64607,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _index_vue_vue_type_template_id_69742990__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=69742990 */ "./resources/js/src/views/index.vue?vue&type=template&id=69742990");
 /* harmony import */ var _index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&setup=true&lang=js */ "./resources/js/src/views/index.vue?vue&type=script&setup=true&lang=js");
-/* harmony import */ var _home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_69742990__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/views/index.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_Max_Documents_GitHub_appStok_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_69742990__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/src/views/index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -68397,241 +68431,6 @@ function useRoute() {
 
 /***/ }),
 
-/***/ "./node_modules/vue/dist/vue.esm-bundler.js":
-/*!**************************************************!*\
-  !*** ./node_modules/vue/dist/vue.esm-bundler.js ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "BaseTransition": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.BaseTransition),
-/* harmony export */   "Comment": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Comment),
-/* harmony export */   "EffectScope": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.EffectScope),
-/* harmony export */   "Fragment": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Fragment),
-/* harmony export */   "KeepAlive": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.KeepAlive),
-/* harmony export */   "ReactiveEffect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.ReactiveEffect),
-/* harmony export */   "Static": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Static),
-/* harmony export */   "Suspense": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Suspense),
-/* harmony export */   "Teleport": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Teleport),
-/* harmony export */   "Text": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Text),
-/* harmony export */   "Transition": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Transition),
-/* harmony export */   "TransitionGroup": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup),
-/* harmony export */   "VueElement": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.VueElement),
-/* harmony export */   "assertNumber": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.assertNumber),
-/* harmony export */   "callWithAsyncErrorHandling": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.callWithAsyncErrorHandling),
-/* harmony export */   "callWithErrorHandling": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.callWithErrorHandling),
-/* harmony export */   "camelize": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.camelize),
-/* harmony export */   "capitalize": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.capitalize),
-/* harmony export */   "cloneVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.cloneVNode),
-/* harmony export */   "compatUtils": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.compatUtils),
-/* harmony export */   "compile": () => (/* binding */ compileToFunction),
-/* harmony export */   "computed": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.computed),
-/* harmony export */   "createApp": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createApp),
-/* harmony export */   "createBlock": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createBlock),
-/* harmony export */   "createCommentVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode),
-/* harmony export */   "createElementBlock": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createElementBlock),
-/* harmony export */   "createElementVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createElementVNode),
-/* harmony export */   "createHydrationRenderer": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createHydrationRenderer),
-/* harmony export */   "createPropsRestProxy": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createPropsRestProxy),
-/* harmony export */   "createRenderer": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createRenderer),
-/* harmony export */   "createSSRApp": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createSSRApp),
-/* harmony export */   "createSlots": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createSlots),
-/* harmony export */   "createStaticVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode),
-/* harmony export */   "createTextVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createTextVNode),
-/* harmony export */   "createVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createVNode),
-/* harmony export */   "customRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.customRef),
-/* harmony export */   "defineAsyncComponent": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineAsyncComponent),
-/* harmony export */   "defineComponent": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineComponent),
-/* harmony export */   "defineCustomElement": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineCustomElement),
-/* harmony export */   "defineEmits": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineEmits),
-/* harmony export */   "defineExpose": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineExpose),
-/* harmony export */   "defineProps": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineProps),
-/* harmony export */   "defineSSRCustomElement": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineSSRCustomElement),
-/* harmony export */   "devtools": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.devtools),
-/* harmony export */   "effect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.effect),
-/* harmony export */   "effectScope": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.effectScope),
-/* harmony export */   "getCurrentInstance": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance),
-/* harmony export */   "getCurrentScope": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.getCurrentScope),
-/* harmony export */   "getTransitionRawChildren": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.getTransitionRawChildren),
-/* harmony export */   "guardReactiveProps": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.guardReactiveProps),
-/* harmony export */   "h": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.h),
-/* harmony export */   "handleError": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.handleError),
-/* harmony export */   "hydrate": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.hydrate),
-/* harmony export */   "initCustomFormatter": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.initCustomFormatter),
-/* harmony export */   "initDirectivesForSSR": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.initDirectivesForSSR),
-/* harmony export */   "inject": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.inject),
-/* harmony export */   "isMemoSame": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isMemoSame),
-/* harmony export */   "isProxy": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isProxy),
-/* harmony export */   "isReactive": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isReactive),
-/* harmony export */   "isReadonly": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isReadonly),
-/* harmony export */   "isRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isRef),
-/* harmony export */   "isRuntimeOnly": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isRuntimeOnly),
-/* harmony export */   "isShallow": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isShallow),
-/* harmony export */   "isVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isVNode),
-/* harmony export */   "markRaw": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.markRaw),
-/* harmony export */   "mergeDefaults": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.mergeDefaults),
-/* harmony export */   "mergeProps": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.mergeProps),
-/* harmony export */   "nextTick": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.nextTick),
-/* harmony export */   "normalizeClass": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.normalizeClass),
-/* harmony export */   "normalizeProps": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.normalizeProps),
-/* harmony export */   "normalizeStyle": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle),
-/* harmony export */   "onActivated": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onActivated),
-/* harmony export */   "onBeforeMount": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onBeforeMount),
-/* harmony export */   "onBeforeUnmount": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onBeforeUnmount),
-/* harmony export */   "onBeforeUpdate": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onBeforeUpdate),
-/* harmony export */   "onDeactivated": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onDeactivated),
-/* harmony export */   "onErrorCaptured": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onErrorCaptured),
-/* harmony export */   "onMounted": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onMounted),
-/* harmony export */   "onRenderTracked": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onRenderTracked),
-/* harmony export */   "onRenderTriggered": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onRenderTriggered),
-/* harmony export */   "onScopeDispose": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onScopeDispose),
-/* harmony export */   "onServerPrefetch": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onServerPrefetch),
-/* harmony export */   "onUnmounted": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onUnmounted),
-/* harmony export */   "onUpdated": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onUpdated),
-/* harmony export */   "openBlock": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.openBlock),
-/* harmony export */   "popScopeId": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.popScopeId),
-/* harmony export */   "provide": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.provide),
-/* harmony export */   "proxyRefs": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.proxyRefs),
-/* harmony export */   "pushScopeId": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.pushScopeId),
-/* harmony export */   "queuePostFlushCb": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.queuePostFlushCb),
-/* harmony export */   "reactive": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.reactive),
-/* harmony export */   "readonly": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.readonly),
-/* harmony export */   "ref": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.ref),
-/* harmony export */   "registerRuntimeCompiler": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.registerRuntimeCompiler),
-/* harmony export */   "render": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "renderList": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.renderList),
-/* harmony export */   "renderSlot": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.renderSlot),
-/* harmony export */   "resolveComponent": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveComponent),
-/* harmony export */   "resolveDirective": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveDirective),
-/* harmony export */   "resolveDynamicComponent": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent),
-/* harmony export */   "resolveFilter": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveFilter),
-/* harmony export */   "resolveTransitionHooks": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveTransitionHooks),
-/* harmony export */   "setBlockTracking": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.setBlockTracking),
-/* harmony export */   "setDevtoolsHook": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.setDevtoolsHook),
-/* harmony export */   "setTransitionHooks": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.setTransitionHooks),
-/* harmony export */   "shallowReactive": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.shallowReactive),
-/* harmony export */   "shallowReadonly": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.shallowReadonly),
-/* harmony export */   "shallowRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.shallowRef),
-/* harmony export */   "ssrContextKey": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.ssrContextKey),
-/* harmony export */   "ssrUtils": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.ssrUtils),
-/* harmony export */   "stop": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.stop),
-/* harmony export */   "toDisplayString": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toDisplayString),
-/* harmony export */   "toHandlerKey": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toHandlerKey),
-/* harmony export */   "toHandlers": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toHandlers),
-/* harmony export */   "toRaw": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toRaw),
-/* harmony export */   "toRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toRef),
-/* harmony export */   "toRefs": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toRefs),
-/* harmony export */   "transformVNodeArgs": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.transformVNodeArgs),
-/* harmony export */   "triggerRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.triggerRef),
-/* harmony export */   "unref": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.unref),
-/* harmony export */   "useAttrs": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useAttrs),
-/* harmony export */   "useCssModule": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useCssModule),
-/* harmony export */   "useCssVars": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useCssVars),
-/* harmony export */   "useSSRContext": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useSSRContext),
-/* harmony export */   "useSlots": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useSlots),
-/* harmony export */   "useTransitionState": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useTransitionState),
-/* harmony export */   "vModelCheckbox": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox),
-/* harmony export */   "vModelDynamic": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelDynamic),
-/* harmony export */   "vModelRadio": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelRadio),
-/* harmony export */   "vModelSelect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelSelect),
-/* harmony export */   "vModelText": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelText),
-/* harmony export */   "vShow": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vShow),
-/* harmony export */   "version": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.version),
-/* harmony export */   "warn": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.warn),
-/* harmony export */   "watch": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.watch),
-/* harmony export */   "watchEffect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.watchEffect),
-/* harmony export */   "watchPostEffect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.watchPostEffect),
-/* harmony export */   "watchSyncEffect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.watchSyncEffect),
-/* harmony export */   "withAsyncContext": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withAsyncContext),
-/* harmony export */   "withCtx": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withCtx),
-/* harmony export */   "withDefaults": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withDefaults),
-/* harmony export */   "withDirectives": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withDirectives),
-/* harmony export */   "withKeys": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withKeys),
-/* harmony export */   "withMemo": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withMemo),
-/* harmony export */   "withModifiers": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withModifiers),
-/* harmony export */   "withScopeId": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withScopeId)
-/* harmony export */ });
-/* harmony import */ var _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @vue/runtime-dom */ "./node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js");
-/* harmony import */ var _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vue/runtime-dom */ "./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js");
-/* harmony import */ var _vue_compiler_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @vue/compiler-dom */ "./node_modules/@vue/compiler-dom/dist/compiler-dom.esm-bundler.js");
-/* harmony import */ var _vue_shared__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @vue/shared */ "./node_modules/@vue/shared/dist/shared.esm-bundler.js");
-
-
-
-
-
-
-function initDev() {
-    {
-        (0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.initCustomFormatter)();
-    }
-}
-
-// This entry is the "full-build" that includes both the runtime
-if ((true)) {
-    initDev();
-}
-const compileCache = Object.create(null);
-function compileToFunction(template, options) {
-    if (!(0,_vue_shared__WEBPACK_IMPORTED_MODULE_2__.isString)(template)) {
-        if (template.nodeType) {
-            template = template.innerHTML;
-        }
-        else {
-            ( true) && (0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.warn)(`invalid template option: `, template);
-            return _vue_shared__WEBPACK_IMPORTED_MODULE_2__.NOOP;
-        }
-    }
-    const key = template;
-    const cached = compileCache[key];
-    if (cached) {
-        return cached;
-    }
-    if (template[0] === '#') {
-        const el = document.querySelector(template);
-        if (( true) && !el) {
-            (0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.warn)(`Template element not found or is empty: ${template}`);
-        }
-        // __UNSAFE__
-        // Reason: potential execution of JS expressions in in-DOM template.
-        // The user must make sure the in-DOM template is trusted. If it's rendered
-        // by the server, the template should not contain any user data.
-        template = el ? el.innerHTML : ``;
-    }
-    const opts = (0,_vue_shared__WEBPACK_IMPORTED_MODULE_2__.extend)({
-        hoistStatic: true,
-        onError: ( true) ? onError : 0,
-        onWarn: ( true) ? e => onError(e, true) : 0
-    }, options);
-    if (!opts.isCustomElement && typeof customElements !== 'undefined') {
-        opts.isCustomElement = tag => !!customElements.get(tag);
-    }
-    const { code } = (0,_vue_compiler_dom__WEBPACK_IMPORTED_MODULE_3__.compile)(template, opts);
-    function onError(err, asWarning = false) {
-        const message = asWarning
-            ? err.message
-            : `Template compilation error: ${err.message}`;
-        const codeFrame = err.loc &&
-            (0,_vue_shared__WEBPACK_IMPORTED_MODULE_2__.generateCodeFrame)(template, err.loc.start.offset, err.loc.end.offset);
-        (0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.warn)(codeFrame ? `${message}\n${codeFrame}` : message);
-    }
-    // The wildcard import results in a huge object with every export
-    // with keys that cannot be mangled, and can be quite heavy size-wise.
-    // In the global build we know `Vue` is available globally so we can avoid
-    // the wildcard object.
-    const render = (new Function('Vue', code)(_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__));
-    render._rc = true;
-    return (compileCache[key] = render);
-}
-(0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.registerRuntimeCompiler)(compileToFunction);
-
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue3-apexcharts/dist/vue3-apexcharts.common.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/vue3-apexcharts/dist/vue3-apexcharts.common.js ***!
@@ -70640,6 +70439,241 @@ var index = {
 
 /* provided dependency */ var process = __webpack_require__(/*! process/browser.js */ "./node_modules/process/browser.js");
 !function(t,e){ true?module.exports=e():0}(self,(function(){return(()=>{"use strict";var t={d:(e,n)=>{for(var i in n)t.o(n,i)&&!t.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:n[i]})},o:(t,e)=>Object.prototype.hasOwnProperty.call(t,e),r:t=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})}},e={};function n(t,e=null){let n=0;do{isNaN(t.offsetTop)||(n+=t.offsetTop);const e=t.offsetParent;if(null===e)break;t=e}while(t&&t!==e);return n}function i(t){return t.getAttribute("data-scroll-spy-id")||t.getAttribute("scroll-spy-id")||t.getAttribute("id")||"default"}function o(t){return!!t.getAttribute("data-scroll-spy-id")||!!t.getAttribute("scroll-spy-id")}function r(t){do{if(o(t))return i(t);t=t.parentElement}while(t);return"default"}t.r(e),t.d(e,{Easing:()=>I,registerScrollSpy:()=>O});var s,a={Linear:{None:function(t){return t}},Quadratic:{In:function(t){return t*t},Out:function(t){return t*(2-t)},InOut:function(t){return(t*=2)<1?.5*t*t:-.5*(--t*(t-2)-1)}},Cubic:{In:function(t){return t*t*t},Out:function(t){return--t*t*t+1},InOut:function(t){return(t*=2)<1?.5*t*t*t:.5*((t-=2)*t*t+2)}},Quartic:{In:function(t){return t*t*t*t},Out:function(t){return 1- --t*t*t*t},InOut:function(t){return(t*=2)<1?.5*t*t*t*t:-.5*((t-=2)*t*t*t-2)}},Quintic:{In:function(t){return t*t*t*t*t},Out:function(t){return--t*t*t*t*t+1},InOut:function(t){return(t*=2)<1?.5*t*t*t*t*t:.5*((t-=2)*t*t*t*t+2)}},Sinusoidal:{In:function(t){return 1-Math.cos(t*Math.PI/2)},Out:function(t){return Math.sin(t*Math.PI/2)},InOut:function(t){return.5*(1-Math.cos(Math.PI*t))}},Exponential:{In:function(t){return 0===t?0:Math.pow(1024,t-1)},Out:function(t){return 1===t?1:1-Math.pow(2,-10*t)},InOut:function(t){return 0===t?0:1===t?1:(t*=2)<1?.5*Math.pow(1024,t-1):.5*(2-Math.pow(2,-10*(t-1)))}},Circular:{In:function(t){return 1-Math.sqrt(1-t*t)},Out:function(t){return Math.sqrt(1- --t*t)},InOut:function(t){return(t*=2)<1?-.5*(Math.sqrt(1-t*t)-1):.5*(Math.sqrt(1-(t-=2)*t)+1)}},Elastic:{In:function(t){return 0===t?0:1===t?1:-Math.pow(2,10*(t-1))*Math.sin(5*(t-1.1)*Math.PI)},Out:function(t){return 0===t?0:1===t?1:Math.pow(2,-10*t)*Math.sin(5*(t-.1)*Math.PI)+1},InOut:function(t){return 0===t?0:1===t?1:(t*=2)<1?-.5*Math.pow(2,10*(t-1))*Math.sin(5*(t-1.1)*Math.PI):.5*Math.pow(2,-10*(t-1))*Math.sin(5*(t-1.1)*Math.PI)+1}},Back:{In:function(t){var e=1.70158;return t*t*((e+1)*t-e)},Out:function(t){var e=1.70158;return--t*t*((e+1)*t+e)+1},InOut:function(t){var e=2.5949095;return(t*=2)<1?t*t*((e+1)*t-e)*.5:.5*((t-=2)*t*((e+1)*t+e)+2)}},Bounce:{In:function(t){return 1-a.Bounce.Out(1-t)},Out:function(t){return t<1/2.75?7.5625*t*t:t<2/2.75?7.5625*(t-=1.5/2.75)*t+.75:t<2.5/2.75?7.5625*(t-=2.25/2.75)*t+.9375:7.5625*(t-=2.625/2.75)*t+.984375},InOut:function(t){return t<.5?.5*a.Bounce.In(2*t):.5*a.Bounce.Out(2*t-1)+.5}}},u="undefined"==typeof self&&"undefined"!=typeof process&&process.hrtime?function(){var t=process.hrtime();return 1e3*t[0]+t[1]/1e6}:"undefined"!=typeof self&&void 0!==self.performance&&void 0!==self.performance.now?self.performance.now.bind(self.performance):void 0!==Date.now?Date.now:function(){return(new Date).getTime()},l=function(){function t(){this._tweens={},this._tweensAddedDuringUpdate={}}return t.prototype.getAll=function(){var t=this;return Object.keys(this._tweens).map((function(e){return t._tweens[e]}))},t.prototype.removeAll=function(){this._tweens={}},t.prototype.add=function(t){this._tweens[t.getId()]=t,this._tweensAddedDuringUpdate[t.getId()]=t},t.prototype.remove=function(t){delete this._tweens[t.getId()],delete this._tweensAddedDuringUpdate[t.getId()]},t.prototype.update=function(t,e){void 0===t&&(t=u()),void 0===e&&(e=!1);var n=Object.keys(this._tweens);if(0===n.length)return!1;for(;n.length>0;){this._tweensAddedDuringUpdate={};for(var i=0;i<n.length;i++){var o=this._tweens[n[i]],r=!e;o&&!1===o.update(t,r)&&!e&&delete this._tweens[n[i]]}n=Object.keys(this._tweensAddedDuringUpdate)}return!0},t}(),c={Linear:function(t,e){var n=t.length-1,i=n*e,o=Math.floor(i),r=c.Utils.Linear;return e<0?r(t[0],t[1],i):e>1?r(t[n],t[n-1],n-i):r(t[o],t[o+1>n?n:o+1],i-o)},Bezier:function(t,e){for(var n=0,i=t.length-1,o=Math.pow,r=c.Utils.Bernstein,s=0;s<=i;s++)n+=o(1-e,i-s)*o(e,s)*t[s]*r(i,s);return n},CatmullRom:function(t,e){var n=t.length-1,i=n*e,o=Math.floor(i),r=c.Utils.CatmullRom;return t[0]===t[n]?(e<0&&(o=Math.floor(i=n*(1+e))),r(t[(o-1+n)%n],t[o],t[(o+1)%n],t[(o+2)%n],i-o)):e<0?t[0]-(r(t[0],t[0],t[1],t[1],-i)-t[0]):e>1?t[n]-(r(t[n],t[n],t[n-1],t[n-1],i-n)-t[n]):r(t[o?o-1:0],t[o],t[n<o+1?n:o+1],t[n<o+2?n:o+2],i-o)},Utils:{Linear:function(t,e,n){return(e-t)*n+t},Bernstein:function(t,e){var n=c.Utils.Factorial;return n(t)/n(e)/n(t-e)},Factorial:(s=[1],function(t){var e=1;if(s[t])return s[t];for(var n=t;n>1;n--)e*=n;return s[t]=e,e}),CatmullRom:function(t,e,n,i,o){var r=.5*(n-t),s=.5*(i-e),a=o*o;return(2*e-2*n+r+s)*(o*a)+(-3*e+3*n-2*r-s)*a+r*o+e}}},h=function(){function t(){}return t.nextId=function(){return t._nextId++},t._nextId=0,t}(),p=new l,d=function(){function t(t,e){void 0===e&&(e=p),this._object=t,this._group=e,this._isPaused=!1,this._pauseStart=0,this._valuesStart={},this._valuesEnd={},this._valuesStartRepeat={},this._duration=1e3,this._initialRepeat=0,this._repeat=0,this._yoyo=!1,this._isPlaying=!1,this._reversed=!1,this._delayTime=0,this._startTime=0,this._easingFunction=a.Linear.None,this._interpolationFunction=c.Linear,this._chainedTweens=[],this._onStartCallbackFired=!1,this._id=h.nextId(),this._isChainStopped=!1,this._goToEnd=!1}return t.prototype.getId=function(){return this._id},t.prototype.isPlaying=function(){return this._isPlaying},t.prototype.isPaused=function(){return this._isPaused},t.prototype.to=function(t,e){return this._valuesEnd=Object.create(t),void 0!==e&&(this._duration=e),this},t.prototype.duration=function(t){return this._duration=t,this},t.prototype.start=function(t){if(this._isPlaying)return this;if(this._group&&this._group.add(this),this._repeat=this._initialRepeat,this._reversed)for(var e in this._reversed=!1,this._valuesStartRepeat)this._swapEndStartRepeatValues(e),this._valuesStart[e]=this._valuesStartRepeat[e];return this._isPlaying=!0,this._isPaused=!1,this._onStartCallbackFired=!1,this._isChainStopped=!1,this._startTime=void 0!==t?"string"==typeof t?u()+parseFloat(t):t:u(),this._startTime+=this._delayTime,this._setupProperties(this._object,this._valuesStart,this._valuesEnd,this._valuesStartRepeat),this},t.prototype._setupProperties=function(t,e,n,i){for(var o in n){var r=t[o],s=Array.isArray(r),a=s?"array":typeof r,u=!s&&Array.isArray(n[o]);if("undefined"!==a&&"function"!==a){if(u){var l=n[o];if(0===l.length)continue;l=l.map(this._handleRelativeValue.bind(this,r)),n[o]=[r].concat(l)}if("object"!==a&&!s||!r||u)void 0===e[o]&&(e[o]=r),s||(e[o]*=1),i[o]=u?n[o].slice().reverse():e[o]||0;else{for(var c in e[o]=s?[]:{},r)e[o][c]=r[c];i[o]=s?[]:{},this._setupProperties(r,e[o],n[o],i[o])}}}},t.prototype.stop=function(){return this._isChainStopped||(this._isChainStopped=!0,this.stopChainedTweens()),this._isPlaying?(this._group&&this._group.remove(this),this._isPlaying=!1,this._isPaused=!1,this._onStopCallback&&this._onStopCallback(this._object),this):this},t.prototype.end=function(){return this._goToEnd=!0,this.update(1/0),this},t.prototype.pause=function(t){return void 0===t&&(t=u()),this._isPaused||!this._isPlaying||(this._isPaused=!0,this._pauseStart=t,this._group&&this._group.remove(this)),this},t.prototype.resume=function(t){return void 0===t&&(t=u()),this._isPaused&&this._isPlaying?(this._isPaused=!1,this._startTime+=t-this._pauseStart,this._pauseStart=0,this._group&&this._group.add(this),this):this},t.prototype.stopChainedTweens=function(){for(var t=0,e=this._chainedTweens.length;t<e;t++)this._chainedTweens[t].stop();return this},t.prototype.group=function(t){return this._group=t,this},t.prototype.delay=function(t){return this._delayTime=t,this},t.prototype.repeat=function(t){return this._initialRepeat=t,this._repeat=t,this},t.prototype.repeatDelay=function(t){return this._repeatDelayTime=t,this},t.prototype.yoyo=function(t){return this._yoyo=t,this},t.prototype.easing=function(t){return this._easingFunction=t,this},t.prototype.interpolation=function(t){return this._interpolationFunction=t,this},t.prototype.chain=function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];return this._chainedTweens=t,this},t.prototype.onStart=function(t){return this._onStartCallback=t,this},t.prototype.onUpdate=function(t){return this._onUpdateCallback=t,this},t.prototype.onRepeat=function(t){return this._onRepeatCallback=t,this},t.prototype.onComplete=function(t){return this._onCompleteCallback=t,this},t.prototype.onStop=function(t){return this._onStopCallback=t,this},t.prototype.update=function(t,e){if(void 0===t&&(t=u()),void 0===e&&(e=!0),this._isPaused)return!0;var n,i,o=this._startTime+this._duration;if(!this._goToEnd&&!this._isPlaying){if(t>o)return!1;e&&this.start(t)}if(this._goToEnd=!1,t<this._startTime)return!0;!1===this._onStartCallbackFired&&(this._onStartCallback&&this._onStartCallback(this._object),this._onStartCallbackFired=!0),i=(t-this._startTime)/this._duration,i=0===this._duration||i>1?1:i;var r=this._easingFunction(i);if(this._updateProperties(this._object,this._valuesStart,this._valuesEnd,r),this._onUpdateCallback&&this._onUpdateCallback(this._object,i),1===i){if(this._repeat>0){for(n in isFinite(this._repeat)&&this._repeat--,this._valuesStartRepeat)this._yoyo||"string"!=typeof this._valuesEnd[n]||(this._valuesStartRepeat[n]=this._valuesStartRepeat[n]+parseFloat(this._valuesEnd[n])),this._yoyo&&this._swapEndStartRepeatValues(n),this._valuesStart[n]=this._valuesStartRepeat[n];return this._yoyo&&(this._reversed=!this._reversed),void 0!==this._repeatDelayTime?this._startTime=t+this._repeatDelayTime:this._startTime=t+this._delayTime,this._onRepeatCallback&&this._onRepeatCallback(this._object),!0}this._onCompleteCallback&&this._onCompleteCallback(this._object);for(var s=0,a=this._chainedTweens.length;s<a;s++)this._chainedTweens[s].start(this._startTime+this._duration);return this._isPlaying=!1,!1}return!0},t.prototype._updateProperties=function(t,e,n,i){for(var o in n)if(void 0!==e[o]){var r=e[o]||0,s=n[o],a=Array.isArray(t[o]),u=Array.isArray(s);!a&&u?t[o]=this._interpolationFunction(s,i):"object"==typeof s&&s?this._updateProperties(t[o],r,s,i):"number"==typeof(s=this._handleRelativeValue(r,s))&&(t[o]=r+(s-r)*i)}},t.prototype._handleRelativeValue=function(t,e){return"string"!=typeof e?e:"+"===e.charAt(0)||"-"===e.charAt(0)?t+parseFloat(e):parseFloat(e)},t.prototype._swapEndStartRepeatValues=function(t){var e=this._valuesStartRepeat[t],n=this._valuesEnd[t];this._valuesStartRepeat[t]="string"==typeof n?this._valuesStartRepeat[t]+parseFloat(n):this._valuesEnd[t],this._valuesEnd[t]=e},t}(),f=h.nextId,_=p,v=_.getAll.bind(_),y=_.removeAll.bind(_),g=_.add.bind(_),m=_.remove.bind(_),b=_.update.bind(_);const w={Easing:a,Group:l,Interpolation:c,now:u,Sequence:h,nextId:f,Tween:d,VERSION:"18.6.4",getAll:v,removeAll:y,add:g,remove:m,update:b},S=window.requestAnimationFrame||window.webkitRequestAnimationFrame||function(t){window.setTimeout(t,1e3/60)};function T(){w.update()&&S(T)}S(T);const I=w.Easing,E={allowNoActive:!1,sectionSelector:null,offset:0,time:500,steps:30,easing:null,active:{selector:null,class:"active"},link:{selector:"a"}},O=(t,e)=>{const o=Object.assign({},E,e||{}),s={};Object.defineProperty(s,"scrollTop",{get:()=>document.body.scrollTop||document.documentElement.scrollTop,set(t){document.body.scrollTop=t,document.documentElement.scrollTop=t}}),Object.defineProperty(s,"scrollHeight",{get:()=>document.body.scrollHeight||document.documentElement.scrollHeight}),Object.defineProperty(s,"offsetHeight",{get:()=>window.innerHeight});const a="@@scrollSpyContext",u={},l={},c={},h={},p={};function d(t,e,n){n.preventDefault(),_(u[e],t)}function f(t,e){const n=i(t),o=g(t,e);for(let t=0;t<o.length;t++){const e=o[t],i=d.bind(null,t,n);e[a].click||(e.addEventListener("click",i),e[a].click=i)}}function _(t,e){const o=i(t),r=l[o],{scrollEl:s,options:u}=t[a],c=s.scrollTop;if(r[e]){const t=n(r[e])-u.offset;if(u.easing)return void function(t,e,n,i,o){new w.Tween({postion:e}).to({postion:n},i).easing(o||I.Cubic.In).onUpdate((function(e){t.scrollTop=e.postion})).start(),T()}(s,c,t,u.time,u.easing);if(window.navigator.userAgent.indexOf("MSIE ")>0){const e=u.time,n=u.steps,i=parseInt(e)/parseInt(n),o=t-c;for(let t=0;t<=n;t++){const e=c+o/n*t;setTimeout((()=>{s.scrollTop=e}),i*t)}return}window.scrollTo({top:t,behavior:"smooth"})}}function v(t,e){const n=i(t),r=Object.assign({},o,{active:{selector:e.value&&e.value.selector?e.value.selector:o.active.selector,class:e.value&&e.value.class?e.value.class:o.active.class}}),s=[...g(t,r.active.selector)];h[n]=s.map((t=>(t[a].options=r,t)))}function y(t,e){const n=i(t),o=t[a],r=g(t,e);l[n]=r,r[0]&&r[0]instanceof HTMLElement&&r[0].offsetParent!==t&&(o.eventEl=window,o.scrollEl=s)}function g(t,e){if(!e)return[...t.children].map((t=>m(t)));const n=i(t),o=[];for(const i of t.querySelectorAll(e))r(i)===n&&o.push(m(i));return o}function m(t){return t[a]={onScroll:()=>{},options:o,id:"",eventEl:t,scrollEl:t},t}t.directive("scroll-spy",{created(t,e){const r=i(t);t[a]={onScroll:()=>{const e=i(t),o=l[e],{scrollEl:r,options:s}=t[a];let u;if(r.offsetHeight+r.scrollTop>=r.scrollHeight-10)u=o.length;else for(u=0;u<o.length&&!(n(o[u],r)-s.offset>r.scrollTop);u++);if(u--,u<0)u=s.allowNoActive?null:0;else if(s.allowNoActive&&u>=o.length-1){const t=o[u];t instanceof HTMLElement&&n(o[u])+t.offsetHeight<r.scrollTop&&(u=null)}if(!s.allowNoActive&&0===u||u!==p[e]){let t=c[e];t&&(t.classList.remove(t[a].options.active.class),delete c[e]);const n=p[e]=u;void 0!==p&&Object.keys(h).length>0&&null!==n&&(t=h[e][n],c[e]=t,t&&t.classList.add(t[a].options.active.class))}},options:Object.assign({},o,e.value),id:i(t),eventEl:t,scrollEl:t},u[r]=t,delete p[r]},mounted(t){const{options:{sectionSelector:e}}=t[a];y(t,e);const{eventEl:n,onScroll:i}=t[a];n.addEventListener("scroll",i),i()},updated(t,e){t[a].options=Object.assign({},o,e.value);const{onScroll:n,options:{sectionSelector:i}}=t[a];y(t,i),n()},unmounted(t){const{eventEl:e,onScroll:n}=t[a];e.removeEventListener("scroll",n)}}),t.directive("scroll-spy-active",{created:v,updated:v}),t.directive("scroll-spy-link",{mounted:function(t,e){f(t,Object.assign({},o.link,e.value).selector)},updated:function(t,e){f(t,Object.assign({},o.link,e.value).selector)},unmounted(t){const e=g(t,null);for(let n=0;n<e.length;n++){const o=e[n],r=i(t),s=d.bind(null,n,r);o[a].click&&(o.removeEventListener("click",s),delete o[a].click)}}})};return e})()}));
+
+/***/ }),
+
+/***/ "./node_modules/vue/dist/vue.esm-bundler.js":
+/*!**************************************************!*\
+  !*** ./node_modules/vue/dist/vue.esm-bundler.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BaseTransition": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.BaseTransition),
+/* harmony export */   "Comment": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Comment),
+/* harmony export */   "EffectScope": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.EffectScope),
+/* harmony export */   "Fragment": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Fragment),
+/* harmony export */   "KeepAlive": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.KeepAlive),
+/* harmony export */   "ReactiveEffect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.ReactiveEffect),
+/* harmony export */   "Static": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Static),
+/* harmony export */   "Suspense": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Suspense),
+/* harmony export */   "Teleport": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Teleport),
+/* harmony export */   "Text": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Text),
+/* harmony export */   "Transition": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.Transition),
+/* harmony export */   "TransitionGroup": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup),
+/* harmony export */   "VueElement": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.VueElement),
+/* harmony export */   "assertNumber": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.assertNumber),
+/* harmony export */   "callWithAsyncErrorHandling": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.callWithAsyncErrorHandling),
+/* harmony export */   "callWithErrorHandling": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.callWithErrorHandling),
+/* harmony export */   "camelize": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.camelize),
+/* harmony export */   "capitalize": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.capitalize),
+/* harmony export */   "cloneVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.cloneVNode),
+/* harmony export */   "compatUtils": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.compatUtils),
+/* harmony export */   "compile": () => (/* binding */ compileToFunction),
+/* harmony export */   "computed": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.computed),
+/* harmony export */   "createApp": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createApp),
+/* harmony export */   "createBlock": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createBlock),
+/* harmony export */   "createCommentVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode),
+/* harmony export */   "createElementBlock": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createElementBlock),
+/* harmony export */   "createElementVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createElementVNode),
+/* harmony export */   "createHydrationRenderer": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createHydrationRenderer),
+/* harmony export */   "createPropsRestProxy": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createPropsRestProxy),
+/* harmony export */   "createRenderer": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createRenderer),
+/* harmony export */   "createSSRApp": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createSSRApp),
+/* harmony export */   "createSlots": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createSlots),
+/* harmony export */   "createStaticVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode),
+/* harmony export */   "createTextVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createTextVNode),
+/* harmony export */   "createVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.createVNode),
+/* harmony export */   "customRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.customRef),
+/* harmony export */   "defineAsyncComponent": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineAsyncComponent),
+/* harmony export */   "defineComponent": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineComponent),
+/* harmony export */   "defineCustomElement": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineCustomElement),
+/* harmony export */   "defineEmits": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineEmits),
+/* harmony export */   "defineExpose": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineExpose),
+/* harmony export */   "defineProps": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineProps),
+/* harmony export */   "defineSSRCustomElement": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.defineSSRCustomElement),
+/* harmony export */   "devtools": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.devtools),
+/* harmony export */   "effect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.effect),
+/* harmony export */   "effectScope": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.effectScope),
+/* harmony export */   "getCurrentInstance": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.getCurrentInstance),
+/* harmony export */   "getCurrentScope": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.getCurrentScope),
+/* harmony export */   "getTransitionRawChildren": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.getTransitionRawChildren),
+/* harmony export */   "guardReactiveProps": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.guardReactiveProps),
+/* harmony export */   "h": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.h),
+/* harmony export */   "handleError": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.handleError),
+/* harmony export */   "hydrate": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.hydrate),
+/* harmony export */   "initCustomFormatter": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.initCustomFormatter),
+/* harmony export */   "initDirectivesForSSR": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.initDirectivesForSSR),
+/* harmony export */   "inject": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.inject),
+/* harmony export */   "isMemoSame": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isMemoSame),
+/* harmony export */   "isProxy": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isProxy),
+/* harmony export */   "isReactive": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isReactive),
+/* harmony export */   "isReadonly": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isReadonly),
+/* harmony export */   "isRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isRef),
+/* harmony export */   "isRuntimeOnly": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isRuntimeOnly),
+/* harmony export */   "isShallow": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isShallow),
+/* harmony export */   "isVNode": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.isVNode),
+/* harmony export */   "markRaw": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.markRaw),
+/* harmony export */   "mergeDefaults": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.mergeDefaults),
+/* harmony export */   "mergeProps": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.mergeProps),
+/* harmony export */   "nextTick": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.nextTick),
+/* harmony export */   "normalizeClass": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.normalizeClass),
+/* harmony export */   "normalizeProps": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.normalizeProps),
+/* harmony export */   "normalizeStyle": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle),
+/* harmony export */   "onActivated": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onActivated),
+/* harmony export */   "onBeforeMount": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onBeforeMount),
+/* harmony export */   "onBeforeUnmount": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onBeforeUnmount),
+/* harmony export */   "onBeforeUpdate": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onBeforeUpdate),
+/* harmony export */   "onDeactivated": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onDeactivated),
+/* harmony export */   "onErrorCaptured": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onErrorCaptured),
+/* harmony export */   "onMounted": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onMounted),
+/* harmony export */   "onRenderTracked": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onRenderTracked),
+/* harmony export */   "onRenderTriggered": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onRenderTriggered),
+/* harmony export */   "onScopeDispose": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onScopeDispose),
+/* harmony export */   "onServerPrefetch": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onServerPrefetch),
+/* harmony export */   "onUnmounted": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onUnmounted),
+/* harmony export */   "onUpdated": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.onUpdated),
+/* harmony export */   "openBlock": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.openBlock),
+/* harmony export */   "popScopeId": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.popScopeId),
+/* harmony export */   "provide": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.provide),
+/* harmony export */   "proxyRefs": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.proxyRefs),
+/* harmony export */   "pushScopeId": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.pushScopeId),
+/* harmony export */   "queuePostFlushCb": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.queuePostFlushCb),
+/* harmony export */   "reactive": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.reactive),
+/* harmony export */   "readonly": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.readonly),
+/* harmony export */   "ref": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.ref),
+/* harmony export */   "registerRuntimeCompiler": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.registerRuntimeCompiler),
+/* harmony export */   "render": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "renderList": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.renderList),
+/* harmony export */   "renderSlot": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.renderSlot),
+/* harmony export */   "resolveComponent": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveComponent),
+/* harmony export */   "resolveDirective": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveDirective),
+/* harmony export */   "resolveDynamicComponent": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent),
+/* harmony export */   "resolveFilter": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveFilter),
+/* harmony export */   "resolveTransitionHooks": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.resolveTransitionHooks),
+/* harmony export */   "setBlockTracking": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.setBlockTracking),
+/* harmony export */   "setDevtoolsHook": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.setDevtoolsHook),
+/* harmony export */   "setTransitionHooks": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.setTransitionHooks),
+/* harmony export */   "shallowReactive": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.shallowReactive),
+/* harmony export */   "shallowReadonly": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.shallowReadonly),
+/* harmony export */   "shallowRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.shallowRef),
+/* harmony export */   "ssrContextKey": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.ssrContextKey),
+/* harmony export */   "ssrUtils": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.ssrUtils),
+/* harmony export */   "stop": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.stop),
+/* harmony export */   "toDisplayString": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toDisplayString),
+/* harmony export */   "toHandlerKey": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toHandlerKey),
+/* harmony export */   "toHandlers": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toHandlers),
+/* harmony export */   "toRaw": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toRaw),
+/* harmony export */   "toRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toRef),
+/* harmony export */   "toRefs": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.toRefs),
+/* harmony export */   "transformVNodeArgs": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.transformVNodeArgs),
+/* harmony export */   "triggerRef": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.triggerRef),
+/* harmony export */   "unref": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.unref),
+/* harmony export */   "useAttrs": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useAttrs),
+/* harmony export */   "useCssModule": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useCssModule),
+/* harmony export */   "useCssVars": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useCssVars),
+/* harmony export */   "useSSRContext": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useSSRContext),
+/* harmony export */   "useSlots": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useSlots),
+/* harmony export */   "useTransitionState": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.useTransitionState),
+/* harmony export */   "vModelCheckbox": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox),
+/* harmony export */   "vModelDynamic": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelDynamic),
+/* harmony export */   "vModelRadio": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelRadio),
+/* harmony export */   "vModelSelect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelSelect),
+/* harmony export */   "vModelText": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vModelText),
+/* harmony export */   "vShow": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.vShow),
+/* harmony export */   "version": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.version),
+/* harmony export */   "warn": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.warn),
+/* harmony export */   "watch": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.watch),
+/* harmony export */   "watchEffect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.watchEffect),
+/* harmony export */   "watchPostEffect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.watchPostEffect),
+/* harmony export */   "watchSyncEffect": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.watchSyncEffect),
+/* harmony export */   "withAsyncContext": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withAsyncContext),
+/* harmony export */   "withCtx": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withCtx),
+/* harmony export */   "withDefaults": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withDefaults),
+/* harmony export */   "withDirectives": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withDirectives),
+/* harmony export */   "withKeys": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withKeys),
+/* harmony export */   "withMemo": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withMemo),
+/* harmony export */   "withModifiers": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withModifiers),
+/* harmony export */   "withScopeId": () => (/* reexport safe */ _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__.withScopeId)
+/* harmony export */ });
+/* harmony import */ var _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @vue/runtime-dom */ "./node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js");
+/* harmony import */ var _vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @vue/runtime-dom */ "./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js");
+/* harmony import */ var _vue_compiler_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @vue/compiler-dom */ "./node_modules/@vue/compiler-dom/dist/compiler-dom.esm-bundler.js");
+/* harmony import */ var _vue_shared__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @vue/shared */ "./node_modules/@vue/shared/dist/shared.esm-bundler.js");
+
+
+
+
+
+
+function initDev() {
+    {
+        (0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.initCustomFormatter)();
+    }
+}
+
+// This entry is the "full-build" that includes both the runtime
+if ((true)) {
+    initDev();
+}
+const compileCache = Object.create(null);
+function compileToFunction(template, options) {
+    if (!(0,_vue_shared__WEBPACK_IMPORTED_MODULE_2__.isString)(template)) {
+        if (template.nodeType) {
+            template = template.innerHTML;
+        }
+        else {
+            ( true) && (0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.warn)(`invalid template option: `, template);
+            return _vue_shared__WEBPACK_IMPORTED_MODULE_2__.NOOP;
+        }
+    }
+    const key = template;
+    const cached = compileCache[key];
+    if (cached) {
+        return cached;
+    }
+    if (template[0] === '#') {
+        const el = document.querySelector(template);
+        if (( true) && !el) {
+            (0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.warn)(`Template element not found or is empty: ${template}`);
+        }
+        // __UNSAFE__
+        // Reason: potential execution of JS expressions in in-DOM template.
+        // The user must make sure the in-DOM template is trusted. If it's rendered
+        // by the server, the template should not contain any user data.
+        template = el ? el.innerHTML : ``;
+    }
+    const opts = (0,_vue_shared__WEBPACK_IMPORTED_MODULE_2__.extend)({
+        hoistStatic: true,
+        onError: ( true) ? onError : 0,
+        onWarn: ( true) ? e => onError(e, true) : 0
+    }, options);
+    if (!opts.isCustomElement && typeof customElements !== 'undefined') {
+        opts.isCustomElement = tag => !!customElements.get(tag);
+    }
+    const { code } = (0,_vue_compiler_dom__WEBPACK_IMPORTED_MODULE_3__.compile)(template, opts);
+    function onError(err, asWarning = false) {
+        const message = asWarning
+            ? err.message
+            : `Template compilation error: ${err.message}`;
+        const codeFrame = err.loc &&
+            (0,_vue_shared__WEBPACK_IMPORTED_MODULE_2__.generateCodeFrame)(template, err.loc.start.offset, err.loc.end.offset);
+        (0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.warn)(codeFrame ? `${message}\n${codeFrame}` : message);
+    }
+    // The wildcard import results in a huge object with every export
+    // with keys that cannot be mangled, and can be quite heavy size-wise.
+    // In the global build we know `Vue` is available globally so we can avoid
+    // the wildcard object.
+    const render = (new Function('Vue', code)(_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_0__));
+    render._rc = true;
+    return (compileCache[key] = render);
+}
+(0,_vue_runtime_dom__WEBPACK_IMPORTED_MODULE_1__.registerRuntimeCompiler)(compileToFunction);
+
+
+
 
 /***/ }),
 
@@ -76903,7 +76937,7 @@ module.exports = JSON.parse('{"dashboard":"仪表盘","sales":"销售量","analy
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/chunks/" + chunkId + "." + {"index2":"b86c94487af63e6c","components-tabs":"7d26d655f9b1c5f5","components-accordions":"6f54d6692542b8ca","components-modals":"0d4ebf40d0b6e90b","components-cards":"61a44650539153cb","components-carousel":"7dda02e900053feb","components-timeline":"6af3ac21b9055512","components-media-object":"a7fea067ebd1ac95","components-list-group":"33a58c4dcab9e668","components-pricing-table":"a41168574c826697","components-notifications":"d783a9939cfa83f2","components-lightbox":"8ae39e8bc5d2e148","components-countdown":"5c90a35b3c51285f","components-counter":"e1114de1d6803e36","components-sweetalert":"dd2b4baad8198ea7","font-icons":"1c6b60ca1c288529","pages-helpdesk":"faaea6ce4db4f731","pages-contact-us":"f6882781779c942b","pages-faq":"80b93b6cbb853255","pages-faq2":"e54a0fbb57092c1e","pages-privacy-policy":"6c0f612349ea65ed","pages-coming-soon":"ac482e942baaa89d","pages-error404":"50bb97581b381993","pages-error500":"cfb42f580ba0e3d4","pages-error503":"682d656c81717085","pages-maintenence":"af2ac21877798cc7","pages-blank-page":"1d63aa1e7902c88f","pages-sample":"4308e75a820a998c","auth-login-boxed":"959a23af94fb35c7","auth-register-boxed":"05477b375a9b7e39","auth-lockscreen-boxed":"85fce3a25c9dd90e","auth-pass-recovery-boxed":"f0abc593cec5fe69","auth-login":"8a70179170e99822","auth-register":"f31299aae3f764d7","auth-lockscreen":"b21715d4052d7106","auth-pass-recovery":"555a3fb666566217","elements-alerts":"7d6917779dd656f5","elements-avatar":"4b207063cdc0b578","elements-badges":"42c2e096625c36cd","elements-breadcrumbs":"8bacca1b52adb8dd","elements-buttons":"ee752918cbe981b6","elements-buttons-group":"ff7163b0a873b9c9","elements-color-library":"545d7f333781581f","elements-dropdown":"756a12572a37074e","elements-infobox":"55780f7bc756b748","elements-jumbotron":"acc3e9117df582e6","elements-loader":"52105e0f200846c2","elements-pagination":"fd72488439d715e5","elements-popovers":"b118c8f1c21e38db","elements-progress-bar":"cf82439acc46164b","elements-search":"1dae829c4303704c","elements-tooltips":"58d4adb697027569","elements-treeview":"b97df418b46a6092","elements-typography":"d4a951bb85afb580","tables":"b14a103b80e94ca5","users-profile":"251c414215e9f6ad","users-account-setting":"9a07e13c71891631","dragndrop":"8143856059b64489","charts-apex-chart":"89efd893b155eb71","widgets":"975ec76f40b2a9b1","forms-basic":"7b36b18a48b605fa","forms-input-group":"9c408a6c0945acb4","forms-layouts":"fa33f51044d98b86","forms-validation":"bcdb5b36a03c393f","forms-checkbox-radio":"17b57dde5693e3a9","forms-switches":"ab32367dd001bca7","forms-wizards":"ee5b875e0bf14f05","forms-file-upload":"8e02cd2c07617f9c","forms-clipboard":"688b02b482e363c3","forms-date-picker":"0c0ab51ec0e603f3","forms-input-mask":"061d338d3172aa4b","forms-quill-editor":"cb3ac54d3104bffb","forms-touchspin":"c70aa61cbff3ef55","forms-markdown-editor":"1f8eae7ebbc8aa0f","forms-select2":"be3387025d0f7472","apps-chat":"90087ea1b7039d84","apps-mailbox":"99068d9c74012a41","apps-todo-list":"d7310c9b7b5e15a7","apps-contacts":"008863b63e7a6af0","apps-notes":"4afe009a0227d140","apps-scrumboard":"ece8194f637302d5","apps-calendar":"0a9f95f7d655c23b","apps-invoice-list":"944e21847f045464","apps-invoice-preview":"be55ced568ebb9b7","apps-invoice-add":"97829c70b37aa9c3","apps-invoice-edit":"6fa5591a503e2148","tables-basic":"9dbf3ef714f29bfc","tables-striped":"4af661427060d18d","tables-order-sorting":"132fccf4090d9098","tables-multi-column":"ad02c49e7ba2d4b5","tables-multiple-tables":"264a072ad0f67697","tables-alt-pagination":"6ae386139737de76","tables-custom":"1c9c3bc1d97a7df0","tables-range-search":"bf1b9eb645397636","tables-export":"303ffa8e3082253e","tables-live-dom-ordering":"66e0a2d65ebd92b3","tables-miscellaneous":"d52a4638a0f99226","node_modules_html2canvas_dist_html2canvas_js":"5475dc17eb928a5a","node_modules_dompurify_dist_purify_js":"9dabfec756329575","node_modules_canvg_lib_index_es_js":"84de45b397df7f27"}[chunkId] + ".js";
+/******/ 			return "js/chunks/" + chunkId + "." + {"index2":"00e7cf1f96a1f142","components-tabs":"4bfe5a9e38c8d35d","apps-invoice-preview":"0b8a8ed7cea1241b","components-accordions":"fe81d9ae2fe95202","components-modals":"1046dcbfaa507a0f","components-cards":"5bf82743a3906d09","components-carousel":"cfcdcd29ea1c9560","components-timeline":"12f106309ee609b4","components-media-object":"61fb0fa3073ec562","components-list-group":"deeb0a9c784f5403","components-pricing-table":"100222c0fa8e5dca","components-notifications":"e3a760ac2f705e97","components-lightbox":"dc3e658046ae4cf8","components-countdown":"675eaf79a42f0f52","components-counter":"d3096a898f18366f","components-sweetalert":"d70ab095737996f7","font-icons":"e9d6e1014aaa0b74","pages-helpdesk":"f0e2f5a2b5278a48","pages-contact-us":"e5a1b22a69a7b4e2","pages-faq":"106f0c1f763d93bc","pages-faq2":"5e535810a011f2f5","pages-privacy-policy":"e295ecea9c79cabd","pages-coming-soon":"aee65c7f46f932cb","pages-error404":"8beef8aea16bfed6","pages-error500":"3a65457d959e21a9","pages-error503":"4dfbbb90266ef13c","pages-maintenence":"e2ca00da557d928a","pages-blank-page":"5126a2d8c6bc95ab","pages-sample":"c7dd8bda41e1891f","auth-login-boxed":"abeeb85a8909db4c","auth-register-boxed":"2ce11d5c698985a6","auth-lockscreen-boxed":"8ba67fdbaccf495f","auth-pass-recovery-boxed":"62c038ee45888f0e","auth-login":"2708e4a6cfb81716","auth-register":"d2505c2428f60163","auth-lockscreen":"acad6f6559c601fa","auth-pass-recovery":"73fd41c5d1ea4361","elements-alerts":"c037d0b02995864b","elements-avatar":"766f089c962d1d66","elements-badges":"6f95d32a4f49b78e","elements-breadcrumbs":"0f82e521da5841c0","elements-buttons":"bff0c21e54db6353","elements-buttons-group":"bc76c2bbf0c9aef8","elements-color-library":"d171b192b21e9f7c","elements-dropdown":"19a379278dead12c","elements-infobox":"07463dca91e385ae","elements-jumbotron":"ad0646d8dc4428e0","elements-loader":"52eb745daef5d509","elements-pagination":"febd0cbd3b022a81","elements-popovers":"d4ef4b983967a9ec","elements-progress-bar":"d2eaf5a4069756ab","elements-search":"c50bd80fca9a0fc7","elements-tooltips":"beb5d2b7698ff37f","elements-treeview":"bed0270cf18b75c9","elements-typography":"0b6e658649143268","tables":"faf67dfb8f71ae11","users-profile":"389190857f2e7972","users-account-setting":"21bc376969f27aab","dragndrop":"e5f681660c6cf476","charts-apex-chart":"8ca03f843818392f","widgets":"467aaf6b1751f75b","forms-basic":"90d8226a78071363","forms-input-group":"ebc255762650e0b9","forms-layouts":"8d789e11b5d66007","forms-validation":"13519a1a629591b7","forms-checkbox-radio":"b8d9a31f9200f4be","forms-switches":"4c65e3962bb53e8e","forms-wizards":"dcb7d7c9c49711a4","forms-file-upload":"92daf8bc6c1b360f","forms-clipboard":"16cd6714297dce0a","forms-date-picker":"54c368e748220ba8","forms-input-mask":"4f0ff4e2e55b37bc","forms-quill-editor":"fb90445595bfe13a","forms-touchspin":"f75c88bd5a6ee700","forms-markdown-editor":"b28f2aabe8b8da2f","forms-select2":"7248825c81e896be","apps-chat":"69dcaf95f26946af","apps-mailbox":"95ff0b7d678a96d2","apps-todo-list":"5b937429eafab397","apps-contacts":"4592f92a7af64131","apps-notes":"fa6b562b30627733","apps-scrumboard":"fef5d8a081c9d66b","apps-calendar":"ead729bd9e6df81b","apps-invoice-list":"9b3b9b58233d5ea9","apps-invoice-add":"b3709cde68423cc2","apps-invoice-edit":"f837b6b27b12bb0c","tables-basic":"31e829b097a61df8","tables-striped":"96cd1ed0a4b6d69d","tables-order-sorting":"98987d710bf6fee9","tables-multi-column":"d2e0806b7819c1c6","tables-multiple-tables":"c38f25ffc6735d9b","tables-alt-pagination":"937bf423bfde6269","tables-custom":"86dd33aaffcc538d","tables-range-search":"34e9b1c9a7f7d37a","tables-export":"9ef0f121cbd13974","tables-live-dom-ordering":"27f232d9e02c34bf","tables-miscellaneous":"0cf0959dc7d7513a","node_modules_html2canvas_dist_html2canvas_js":"5475dc17eb928a5a","node_modules_dompurify_dist_purify_js":"9dabfec756329575","node_modules_canvg_lib_index_es_js":"84de45b397df7f27"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	

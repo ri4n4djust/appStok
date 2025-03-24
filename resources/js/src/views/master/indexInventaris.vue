@@ -115,22 +115,7 @@
                             </template>
                             <template #action="props">
                                 
-                                <router-link :to="{name: 'rekapan', params: {startDate: props.row.tgl_trans, kd_trans:props.row.kd_trans, regu:props.row.r_regu }}" >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-edit-2 text-success"
-                                    >
-                                        <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-                                    </svg>
-                                </router-link>
+                                
                                 <a href="javascript:void(0);" @click="delete_row(props.row)" >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -346,7 +331,9 @@
         },
         resizableColumns: true,
     });
-
+    const option1 = ref();
+    const option2 = ref();
+    const tgl_susut = ref();
     const config = ref({
         wrap: true, // set wrap to true only when using 'input-group'
         altFormat: 'M j, Y',
@@ -405,8 +392,8 @@
         store.dispatch('GetNoPenyusutan');
         setTimeout(function() { 
             kdpenyusutan.value = store.getters.NoPenyusutan ; 
-            // console.log(kd.value)
-        }, 4000);
+            // console.log(kdpenyusutan.value)
+        }, 1000);
     };
 
     const jurnal_row = (row) => {
@@ -423,7 +410,7 @@
         arrp.push({
             'kode_penyusutan': kdpenyusutan.value,
             'kode_inventaris' : kode,
-            'tgl_penyusutan' : tgl,
+            // 'tgl_penyusutan' : tgl,
             'jumlah_penyusutan' : penyusutan1bln,
             'acc_id' : acc_id,
             'accid_akum': row.accid_akum
@@ -433,13 +420,59 @@
         new window.Swal({
             title: 'Anda Yahin?',
             text: "Anda akan menyusutkan " +row.nama_inventaris,
+            html: `
+            <label for="bulan-susut">Bulan</label>
+            <select id="bulan-susut" >
+                <option value="1">Januari</option>
+                <option value="2">Februari</option>
+                <option value="3">Maret</option>
+                <option value="4">April</option>
+                <option value="5">Mei</option>
+                <option value="6">Juni</option>
+                <option value="7">Juli</option>
+                <option value="8">Agustus</option>
+                <option value="9">September</option>
+                <option value="10">Oktober</option>
+                <option value="11">November</option>
+                <option value="12">Desember</option>
+            </select>
+            <br/><br/>
+            <label for="tahun-susut">Tahun</label>
+            <select id="tahun-susut" >
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+            </select>
+            `,
+            focusConfirm: false,
             type: 'warning',
             showCancelButton: true,
             confirmButtonText: 'Ya',
-            padding: '2em'
+            padding: '2em',
+            preConfirm: () => {
+                const selectedOption1 = document.getElementById('bulan-susut').value;
+                const selectedOption2 = document.getElementById('tahun-susut').value;
+
+                option1.value = selectedOption1;
+                option2.value = selectedOption2;
+                // Return the selected values
+                tgl_susut.value = option2.value +'-'+ option1.value +'-'+'28'
+
+                return { option1, option2, tgl_susut };
+            }
         }).then(result => {
             if (result.value) {
-                store.dispatch('CreatePenyusutanInventaris', arrp)
+                const tgls = [] ;
+                tgls.push({
+                    'tgl_penyusutan' : tgl_susut.value,
+                });
+                // arrp = [ ...arrp, ...tgls ];
+                // console.log(option1.value + 'dan ' + option2.value);
+                store.dispatch('CreatePenyusutanInventaris', [arrp, tgls] )
                 .then(response => {
                     bind_data();
                     getKdInventaris();
@@ -449,13 +482,13 @@
                     // console.log('error: ', error)
                     return
                 })
-                
                 // new window.Swal('Deleted!', 'Your file has been deleted.', 'success');
-
             }
         });
+        
 
     };
+    
 
     const jurnal_kat = () => {
 

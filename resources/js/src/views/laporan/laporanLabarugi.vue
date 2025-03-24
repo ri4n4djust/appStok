@@ -31,18 +31,23 @@
 
                                                 <div class="inv--detail-section inv--customer-detail-section">
                                                     
+                                                    <div class="invoice-detail-title">
+                                                        <div class="invoice-title">
+                                                            Laporan Laba Rugi
+                                                        </div>
+                                                    </div>
 
                                                     <div >
                                                         <!-- <div class="row invoice layout-top-spacing layout-spacing apps-invoice"></div> -->
                                                         <button type="button" class="btn btn-danger btn-lg mb-3 me-3" v-if="load"><span class="spinner-border text-white me-2 align-self-center loader-sm">Loading...</span> Loading</button> 
                                                         <!-- <div class="table-responsive"> -->
-                                                            <table border="1" cellspacing="3" style="font-size:10px">
+                                                            <table border="1" cellspacing="3" width="80%">
                                                                 <tr>
                                                                     <td><h6>LAPORAN LABA RUGI PEDIODE TGL {{ sorting.startDate }} S/D {{ sorting.endDate }}</h6></td>
                                                                 </tr>
                                                                 <tr style="vertical-align:top">
                                                                     <td>
-                                                                        <table border="1" cellspacing="3" >
+                                                                        <table border="1" cellspacing="3" width="75%">
                                                                             <tbody  v-for="hrt in biayalist" :key="hrt.acc_id" :set="amount = hrt.amount" style="border: 1px;">
                                                                                 
                                                                                     
@@ -83,7 +88,7 @@
                                                                                             <div v-if="hrt.acc_id.substring(0,1) === '3' || hrt.acc_id.substring(0,1) === '4' || hrt.acc_id.substring(0,1) === '5'"> 
                                                                                                 {{ Number(amount).toLocaleString() }}
                                                                                             </div>
-                                                                                            <div v-else-if="hrt.acc_id.substring(0,1) === '6'" style="border-bottom;: 1px solid black">{{ Number(-1*amount).toLocaleString() }}</div>
+                                                                                            <div v-else-if="hrt.acc_id.substring(0,1) === '6'" style="border-bottom: 1px solid black;">{{ Number(-1*amount).toLocaleString() }}</div>
                                                                                             <div v-else>{{ Number(amount).toLocaleString() }}</div>
                                                                                         </b></td>
                                                                                         <td v-else></td>
@@ -124,7 +129,7 @@
                                                                                             <div v-if="hrt.acc_id.substring(0,1) === '3' || hrt.acc_id.substring(0,1) === '4' || hrt.acc_id.substring(0,1) === '5'"> 
                                                                                                 {{ Number(amount).toLocaleString() }}
                                                                                             </div>
-                                                                                            <div v-else-if="hrt.acc_id.substring(0,1) === '6'" style="border-bottom;: 1px solid black">{{ Number(-1*amount).toLocaleString() }}</div>
+                                                                                            <div v-else-if="hrt.acc_id.substring(0,1) === '6'" style="border-bottom: 1px solid black;">{{ Number(-1*amount).toLocaleString() }}</div>
                                                                                             <div v-else>{{ Number(amount).toLocaleString() }}</div>    
                                                                                         </td>
                                                                                         <td v-else-if="hrt.jenis === 'Total'">
@@ -155,6 +160,8 @@
                                                                             </tbody>
                                                                         </table>
                                                                     </td>
+                                                                </tr>
+                                                                <tr>
                                                                     <td>
                                                                         <!-- {{ labarugi }} -->
                                                                         <table border="1" cellspacing="3" width="100%" >
@@ -162,56 +169,11 @@
                                                                                 <tr >
                                                                                     <!-- <td>{{ labarugi['acc_id'] }}</td> -->
                                                                                     <td ><b>&nbsp;&nbsp;{{ labarugi['name'] }}</b></td>
-                                                                                    <td>{{ Number(labarugi['amount']).toLocaleString() }}</td>
-                                                                                </tr>
-                                                                                <tr >
-                                                                                    <!-- <td>{{ pph22['acc_id'] }}</td> -->
-                                                                                    <td ><b>&nbsp;&nbsp;{{ pph22['name'] }}</b></td>
-                                                                                    <td>{{ Number(pph22['amount']).toLocaleString() }}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <!-- <td>1111</td> -->
-                                                                                    <td ><b>&nbsp;&nbsp;TOTAL SETELAH PAJAK PPH 22</b></td>
-                                                                                    <td>{{ Number(labarugi['amount'] - pph22['amount']).toLocaleString() }}</td>
+                                                                                    <td><strong>{{ Number(labarugi['amount']).toLocaleString() }}</strong></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
-                                                                        <br>
-                                                                        <table border="1" cellspacing="3" width="100%" >
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <td colspan="2">PENJUALAN BBM</td>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody >
-                                                                                <tr v-for="cl in costliter_total" :key="cl">
-                                                                                    <td>{{cl.nama_bbm}}</td>
-                                                                                    <td ><b>{{ Number(cl.total_liter).toLocaleString() }} L</b></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                        <br>
-                                                                        <table border="1" cellspacing="3" width="100%" >
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <td colspan="2">TEKOR BBM</td>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>PERTAMAX</td>
-                                                                                    <td ><b>{{ Number(tekor_px).toLocaleString() }} L</b></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>PERTALITE</td>
-                                                                                    <td ><b>{{ Number(tekor_pl).toLocaleString() }} L</b></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>DEXLITE</td>
-                                                                                    <td ><b>{{ Number(tekor_dx).toLocaleString() }} L</b></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
+                                                                        
 
                                                                         <!-- <table border="1" cellspacing="3">
                                                                             <tbody  v-for="hrt in biayalist" :key="hrt.acc_id" :set="amount = hrt.amount"> -->

@@ -51,6 +51,19 @@ if(!function_exists('insert_gl')){
     
 }
 
+if(!function_exists('delete_gl')){
+    function delete_gl($notrans){
+        $data_gl = DB::table('general_ledger')->where('order_no', $notrans)->get();
+        foreach ($data_gl as $gl) {
+            DB::table('gl_detail')->where('rgl', $gl->notrans)->delete();
+        }
+        $sql = DB::table('general_ledger')->where('order_no', $notrans)->delete();
+        
+        return ;
+    }
+}
+
+
 if(!function_exists('insert_gl_detail')){
     function insert_gl_detail($det_gl){
 

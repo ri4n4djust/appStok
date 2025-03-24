@@ -17,6 +17,7 @@ use App\Models\Bbmdatang;
 use App\Models\Inventaris;
 use App\Models\Pengadaan;
 use App\Models\Penyusutan;
+use App\Models\Jasa;
 use Illuminate\Support\Facades\DB;
 
 class nomorController extends Controller
@@ -102,6 +103,48 @@ class nomorController extends Controller
                     'ada' => 'tidak ada',
                     'message' => 'Detail Post!',
                     'kdBarang'    => $post
+                ], 200);
+            }
+        }
+    }
+
+    public function kodeJasa()
+    {
+        $count = Jasa::all();
+        if($count->isEmpty()){
+            $tahun = date('Y');
+            $post = 'JSA'.'000'.'1';
+            return response()->json([
+                'success' => true,
+                'message' => 'Detail Post!',
+                'kdJasa'    => $post
+            ], 200);
+        }else{
+            $no = 0 ;
+            $count = Jasa::all()->last();
+            //$kodeBaru = $count->kdBarang  ;
+            $terakhir = substr($count->kdJasa, 6,  20);
+            $kodeBaru = $terakhir + 1  ;
+
+            // $tahun = date('Y');
+            $post = 'JSA'.'000'.$kodeBaru;
+
+            if (Jasa::where('kdJasa', $post)->exists()) {
+                // exists
+                $kodeBarulagi = $kodeBaru + 1 ;
+                $post = 'JSA'.'000'.$kodeBarulagi;
+                return response()->json([
+                    'success' => true,
+                    'message' => 'Detail Post!',
+                    'ada' => 'gggada',
+                    'kdJasa'    => $post
+                ], 200);
+            } else {
+                return response()->json([
+                    'success' => true,
+                    'ada' => 'tidak ada',
+                    'message' => 'Detail Post!',
+                    'kdJasa'    => $post
                 ], 200);
             }
         }

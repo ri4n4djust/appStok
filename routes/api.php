@@ -35,6 +35,12 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/update/barang', [App\Http\Controllers\barangController::class, 'update']);
     Route::delete('/hapus/barang/{id}', [App\Http\Controllers\barangController::class, 'destroy']);
 
+        //=====JASA============
+    Route::get('/jasa', [App\Http\Controllers\jasaController::class, 'index']);
+    Route::post('/store/jasa', [App\Http\Controllers\jasaController::class, 'simpanJasa']);
+    Route::post('/update/jasa', [App\Http\Controllers\jasaController::class, 'update']);
+    Route::delete('/hapus/jasa/{id}', [App\Http\Controllers\jasaController::class, 'destroy']);
+
     Route::get('/stok/stok-fifo', [App\Http\Controllers\barangController::class, 'stokFifo']);
 
     //=====KATEGORI============
@@ -104,6 +110,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     //==========PENOMORAN=============
     Route::get('/kdbarang', [App\Http\Controllers\nomorController::class, 'kodeBarang']);
+    Route::get('/kdjasa', [App\Http\Controllers\nomorController::class, 'kodeJasa']);
     Route::get('/kdsupplier', [App\Http\Controllers\nomorController::class, 'kodeSupplier']);
     Route::get('/kdpembelian', [App\Http\Controllers\nomorController::class, 'kodePembelian']);
     Route::get('/kdinventaris', [App\Http\Controllers\nomorController::class, 'kodeInventaris']);
@@ -149,6 +156,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/store/penjualan', [App\Http\Controllers\penjualanController::class, 'simpanPenjualan']);
     Route::post('/store/penjualan-kupon', [App\Http\Controllers\penjualanController::class, 'simpanPenjualanKupon']);
     Route::post('/getdetail-penjualan', [App\Http\Controllers\penjualanController::class, 'getDetailPenjualan']);
+    
 
     //============biaya
     Route::post('/store/biaya', [App\Http\Controllers\biayaController::class, 'simpanBiaya']);

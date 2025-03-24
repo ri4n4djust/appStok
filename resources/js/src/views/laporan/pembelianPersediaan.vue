@@ -123,7 +123,7 @@
     import moment from "moment";
 
     import { useMeta } from '@/composables/use-meta';
-    useMeta({ title: 'Data Laporan Penjualan BBM' });
+    useMeta({ title: 'Data Laporan Pembelian BBM' });
 
     const store = useStore();
     const router = useRouter()

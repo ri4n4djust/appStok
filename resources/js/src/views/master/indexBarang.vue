@@ -96,7 +96,14 @@
                 </div>
             </div>
 
-            <Modal v-model:visible="isVisible" :draggable="true" :title="edit" width="60%">
+            <Modal 
+                v-model:visible="isVisible" 
+                :draggable="true" 
+                :title="'Edit Data Barang'"
+                :showCancelButton="false" 
+                :cancelButton="{text: 'cancel', onclick: () => {isVisible = false}, loading: false}"
+                :okButton="{text: 'SAVE', onclick: () => {edit_barang()}, loading: false}"
+                width="60%">
                 <div class="row mb-4">
                     <div class="col-sm-4">
                         <label for="inputState">Kode</label>
@@ -110,12 +117,7 @@
                         <label for="inputState">Satuan</label>
                         <input v-model="edit.satuanB" class="form-control" placeholder="Satuan" />
                     </div>
-                    <div class="col-sm">
-                        <label for="inputState">Akun Penjualan</label>
-                        <select id="inputState" v-model="edit.acc_id" class="form-select">
-                            <option  v-for="ac in accs" :value="ac.acc_id" :key="ac.acc_id">{{ ac.name }}</option>
-                        </select>
-                    </div>
+                    
                 </div>
                 <div class="row mb-4">
                     <div class="col-sm-4">
@@ -132,12 +134,7 @@
                         <label for="inputState">Harga Jual</label>
                         <input v-model="edit.hrgJual" class="form-control" placeholder="Harga Jual" @keypress="onlyNumber" />
                     </div>
-                    <div class="col-sm">
-                        <label for="inputState">Akun Hpp</label>
-                        <select id="inputState" v-model="edit.acchpp" class="form-select">
-                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id">{{ ac.name }}</option>
-                        </select>
-                    </div>
+                    
                 </div>
                 <div class="row mb-4">
                     <div class="col-sm-4">
@@ -152,6 +149,20 @@
                         <label for="inputState">Qty Max</label>
                         <input v-model="edit.qtyMax" class="form-control" placeholder="Qty Max" @keypress="onlyNumber" />
                     </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-sm">
+                        <label for="inputState">Akun Penjualan</label>
+                        <select id="inputState" v-model="edit.acc_id" class="form-select">
+                            <option  v-for="ac in accs" :value="ac.acc_id" :key="ac.acc_id">{{ ac.name }}</option>
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Akun Hpp</label>
+                        <select id="inputState" v-model="edit.acchpp" class="form-select">
+                            <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id">{{ ac.name }}</option>
+                        </select>
+                    </div>
                     <div class="col-sm">
                         <label for="inputState">Akun Persediaan</label>
                         <select id="inputState" v-model="edit.accpersediaan" class="form-select">
@@ -159,15 +170,11 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <label for="inputState">Akun Persediaan</label>
+                        <label for="inputState">Akun Tekor</label>
                         <select id="inputState" v-model="edit.accbiaya" class="form-select">
                             <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
                         </select>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal" data-bs-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
-                    <button type="button" class="btn btn-primary" @click="edit_barang">Save</button>
                 </div>
             </Modal>
 
@@ -182,7 +189,7 @@
                             <div class="modal-body">
                                 <form>
                                     <div class="row mb-4">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm">
                                             <label for="inputState">Kode</label>
                                             <input v-model="input.kdB" class="form-control" placeholder="Kode" disabled />
                                         </div>
@@ -194,15 +201,10 @@
                                             <label for="inputState">Satuan</label>
                                             <input v-model="input.satuanB" class="form-control" placeholder="Satuan" />
                                         </div>
-                                        <div class="col-sm">
-                                            <label for="inputState">Akun Penjualan</label>
-                                            <select id="inputState" v-model="input.acc_id" class="form-select">
-                                                <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
-                                            </select>
-                                        </div>
+                                        
                                     </div>
                                     <div class="row mb-4">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm">
                                             <label for="inputState">Kategori</label>
                                             <select class="form-select" v-model="input.kdktg">
                                                 <option v-for="ktg in ktgs" :value="ktg.kodeKtg" :key="ktg.id">{{ ktg.namaKtg }}</option>
@@ -216,15 +218,10 @@
                                             <label for="inputState">Harga Jual</label>
                                             <input v-model="input.hrgJual" class="form-control" placeholder="Harga Jual" @keypress="onlyNumber" />
                                         </div>
-                                        <div class="col-sm">
-                                            <label for="inputState">Akun Hpp</label>
-                                            <select id="inputState" v-model="input.acchpp" class="form-select">
-                                                <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
-                                            </select>
-                                        </div>
+                                        
                                     </div>
                                     <div class="row mb-4">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm">
                                             <label for="inputState">Merek</label>
                                             <input v-model="input.merek" class="form-control" placeholder="Merek" />
                                         </div>
@@ -236,6 +233,22 @@
                                             <label for="inputState">Qty Max</label>
                                             <input v-model="input.qtyMax" class="form-control" placeholder="Qty Max" @keypress="onlyNumber" />
                                         </div>
+                                        
+                                    </div>
+
+                                    <div class="row mb-4">
+                                        <div class="col-sm">
+                                            <label for="inputState">Akun Penjualan</label>
+                                            <select id="inputState" v-model="input.acc_id" class="form-select">
+                                                <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm">
+                                            <label for="inputState">Akun Hpp</label>
+                                            <select id="inputState" v-model="input.acchpp" class="form-select">
+                                                <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
+                                            </select>
+                                        </div>
                                         <div class="col-sm">
                                             <label for="inputState">Akun Persediaan</label>
                                             <select id="inputState" v-model="input.accpersediaan" class="form-select">
@@ -243,7 +256,7 @@
                                             </select>
                                         </div>
                                         <div class="col-sm">
-                                            <label for="inputState">Akun Biaya</label>
+                                            <label for="inputState">Akun Tekor</label>
                                             <select id="inputState" v-model="input.accbiaya" class="form-select">
                                                 <option :value="ac.acc_id" v-for="ac in accs" :key="ac.acc_id" selected>{{ ac.name }}</option>
                                             </select>
@@ -516,8 +529,8 @@
             qtyMax: item.qtyMax,
             acc_id: item.accid,
             acchpp: item.accid_hpp,
-            accpersediaan: item.accid_persediaan
-
+            accpersediaan: item.accid_persediaan,
+            accbiaya: item.accid_biaya
         });
         console.log(item);
         // alert('ID: ' + item.kdBarang + ', Name: ' + item.nmBarang);

@@ -12,5 +12,5 @@ export const usePageTitle = (pageTitle) =>
     );
 
 export const useMeta = (data) => {
-    return useHead({ ...data, title: `${data.title} | Sistem Informasi POM BENSIN` });
+    return useHead({ ...data, title: `${data.title} | WinMax Bali` });
 };

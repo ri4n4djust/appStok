@@ -579,6 +579,12 @@ class barangController extends Controller
                 DB::table('tblpenjualankupon')->truncate();
                 DB::table('general_ledger')->truncate();
                 DB::table('gl_detail')->truncate();
+                DB::table('tblinventaris_pengadaan')->truncate();
+                DB::table('tblinventaris_pengadaan_detail')->truncate();
+
+                DB::table('tblinventaris_penyusutan')->truncate();
+                DB::table('tblinventaris_penyusutan_detail')->truncate();
+                DB::table('tblkartu_stok')->truncate();
                 DB::table('tblpelanggan')->update([
                     'deposit' => '0',
                 ]);
@@ -588,10 +594,24 @@ class barangController extends Controller
                     'salePrice' => '0'
                 ]);
                 DB::table('tblbbm')->update([
-                    'stokBbm' => '0',
+                    // 'stokBbm' => '0',
                     'last_price' => '0',
                     'sale_price' => '0',
                     'last_meter' => '0'
+                ]);
+                DB::table('tblbarang')->update([
+                    'stkBarang' => '0',
+                ]);
+                DB::table('tblinventaris')->update([
+                    'nilai_inventaris' => '0',
+                    'qty_inventaris' => '0',
+                ]);
+
+                DB::table('gl')->update([
+                    'amount' => '0',
+                ]);
+                DB::table('gl_lr')->update([
+                    'amount' => '0',
                 ]);
 
                 DB::commit();

@@ -31,6 +31,7 @@ class laporanController extends Controller
                 ->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')
                 ->select('tblpenjualan.*', 'tblpelanggan.nmPelanggan')
                 ->whereBetween('tblpenjualan.tglPenjualan', [$startDate, $endDate])
+                ->orderBy('tblpenjualan.idPenjualan', 'desc')
                 ->get();
         return response()->json([
             'success' => true,
@@ -563,6 +564,7 @@ class laporanController extends Controller
                     ]);
                 };
                 DB::table('tblpenjualan_detail')->where('r_noPenjualan', $kd)->delete();
+                DB::table('tblpenjualan_detail_jasa')->where('r_noPenjualan', $kd)->delete();
                 DB::table('tblkartu_stok')->where('r_notrans', $kd)->delete();
                 DB::commit();
             });

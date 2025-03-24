@@ -50,6 +50,7 @@
                             <template #tgl="props"> {{ moment(props.row.tgl).format("D-M-YYYY") }} </template>
                             <template #debet="props"> {{ Number(props.row.debet).toLocaleString() }} </template>
                             <template #kredit="props"> {{ Number(props.row.kredit).toLocaleString() }} </template>
+                            <template #saldo="props"> {{ Number(props.row.saldo).toLocaleString() }} </template>
                             <!-- <template #action="props">
                                 <div class="custom-dropdown dropdown btn-group ">
                                     <div class="btn-group" href="#" role="button" id="pendingTask" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -121,7 +122,7 @@
     const store = useStore();
     const router = useRouter()
 
-    const columns = ref(['notrans', 'acc_id','name', 'memo' ,'tgl', 'debet', 'kredit']);
+    const columns = ref(['notrans', 'acc_id','name', 'memo' ,'tgl', 'debet', 'kredit', 'saldo']);
     const items = ref([]);
     const table_option = ref({
         perPage: 100,

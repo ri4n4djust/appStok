@@ -258,9 +258,9 @@ class inventarisController extends Controller
         try{
             $exception = DB::transaction(function() use ($request){
 
-                $detail = $request[0];
+                $detail = $request[0][0];
                 $noNota = $detail['kode_penyusutan'];
-                $tglNota = $detail['tgl_penyusutan'];
+                $tglSusut = $request[1][0]['tgl_penyusutan'];
 
                 $kode_inventaris = $detail['kode_inventaris'];
                 $old_det = DB::table('tblinventaris')->where('kode_inventaris', $kode_inventaris)->first();
@@ -272,7 +272,7 @@ class inventarisController extends Controller
 
                         'penyusutan_sysno' => $detail['kode_penyusutan'],
                         'penyusutan_docno' => $detail['kode_penyusutan'],
-                        'tgl_penyusutan' => $detail['tgl_penyusutan'],
+                        'tgl_penyusutan' => $tglSusut, // $detail['tgl_penyusutan'],
                         'memo_penyusutan' => 'memo',
                         'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                         'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
@@ -282,7 +282,7 @@ class inventarisController extends Controller
                         // [
                         'rsysno_penyusutan' => $detail['kode_penyusutan'],
                         'rkode_inventaris' => $detail['kode_inventaris'],
-                        'tgl_penyusutan' => $detail['tgl_penyusutan'],
+                        'tgl_penyusutan' => $tglSusut, // $detail['tgl_penyusutan'],
                         'jumlah_penyusutan' => $detail['jumlah_penyusutan'] * $old_det->qty_inventaris,
                         'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                         'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
@@ -304,7 +304,7 @@ class inventarisController extends Controller
                     //===jumlah pphps4
                     $pphps4_dibayar = $subtotal * $pphps4 / 100 ;
                     //====endjumalh pph
-                    insert_gl($noNota,$tglNota,$subtotal,$memo,$jurnal);
+                    insert_gl($noNota,$tglSusut,$subtotal,$memo,$jurnal);
                     $rgl = DB::table('general_ledger')->get()->last()->notrans;
                     $ac = [
                         [
@@ -348,22 +348,22 @@ class inventarisController extends Controller
                             'void_flag' => 0,
                         ],
                         //===========pph ps4
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_id_k,
-                            'debet' => $pphps4_dibayar,
-                            'kredit' => 0,
-                            'trans_detail' => 'Trans-biaya',
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_pph,
-                            'debet' => 0,
-                            'kredit' => $pphps4_dibayar,
-                            'trans_detail' => 'Trans-biaya',
-                            'void_flag' => 0,
-                        ]
+                        // [
+                        //     'rgl' => $rgl,
+                        //     'acc_id' => $acc_id_k,
+                        //     'debet' => $pphps4_dibayar,
+                        //     'kredit' => 0,
+                        //     'trans_detail' => 'Trans-biaya',
+                        //     'void_flag' => 0,
+                        // ],
+                        // [
+                        //     'rgl' => $rgl,
+                        //     'acc_id' => $acc_pph,
+                        //     'debet' => 0,
+                        //     'kredit' => $pphps4_dibayar,
+                        //     'trans_detail' => 'Trans-biaya',
+                        //     'void_flag' => 0,
+                        // ]
                         //============end pph ps4
                     ];
                     
@@ -505,22 +505,22 @@ class inventarisController extends Controller
                                 'void_flag' => 0,
                             ],
                             //===========pph ps4
-                            [
-                                'rgl' => $rgl,
-                                'acc_id' => $acc_id_k,
-                                'debet' => $pphps4_dibayar,
-                                'kredit' => 0,
-                                'trans_detail' => 'Trans-biaya',
-                                'void_flag' => 0,
-                            ],
-                            [
-                                'rgl' => $rgl,
-                                'acc_id' => $acc_pph,
-                                'debet' => 0,
-                                'kredit' => $pphps4_dibayar,
-                                'trans_detail' => 'Trans-biaya',
-                                'void_flag' => 0,
-                            ]
+                            // [
+                            //     'rgl' => $rgl,
+                            //     'acc_id' => $acc_id_k,
+                            //     'debet' => $pphps4_dibayar,
+                            //     'kredit' => 0,
+                            //     'trans_detail' => 'Trans-biaya',
+                            //     'void_flag' => 0,
+                            // ],
+                            // [
+                            //     'rgl' => $rgl,
+                            //     'acc_id' => $acc_pph,
+                            //     'debet' => 0,
+                            //     'kredit' => $pphps4_dibayar,
+                            //     'trans_detail' => 'Trans-biaya',
+                            //     'void_flag' => 0,
+                            // ]
                             //============end pph ps4
                         ];
                         insert_gl_detail($ac);

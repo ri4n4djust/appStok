@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\PenjualanDetail;
+use App\Models\PenjualanDetailJasa;
 use App\Models\Penjualan;
 use App\Models\GeneralLedger;
 use App\Models\KuponPenjualan;
@@ -12,7 +13,7 @@ class penjualanController extends Controller
 {
     //
     public function simpanPenjualan(Request $request){
-
+        $noNota = $request[0]['noNota'];
         try{
             $exception = DB::transaction(function() use ($request){ 
                 $editid = $request->input('editid');
@@ -21,7 +22,7 @@ class penjualanController extends Controller
                 $tglNota = $request[0]['tglNota'];
                 $noNota = $request[0]['noNota'];
                 $total =  $request[0]['subtotal'];
-                $diskon = $total * $request[0]['disc'] / 100;
+                // $diskon = $total * $request[0]['disc'] / 100;
                 $pph22 = 10 ; //$detop[0]['pph22'];
                 $type = $request[0]['term'];
                 $piutang = 0;
@@ -32,10 +33,10 @@ class penjualanController extends Controller
                 $post = DB::table('tblpenjualan')->upsert([
                     'noPenjualan'     => $request[0]['noNota'],
                     'r_pelanggan'     => $request[0]['kdPelanggan'],
-                    'subTotalPenjualan'     => $request[0]['subtotal'],
+                    'subTotalPenjualan'     => $request[0]['total'],
                     'tglPenjualan'   => $tglNota,
-                    'discPenjualan'     => $diskon,
-                    'discPercentP'     => $request[0]['disc'],
+                    // 'discPenjualan'     => $diskon,
+                    // 'discPercentP'     => $request[0]['disc'],
                     'taxPenjualan'     => $request[0]['tax'],
                     'totalPenjualan'     => $request[0]['total'],
                     'notePenjualan'     => $request[0]['notes'],
@@ -50,8 +51,8 @@ class penjualanController extends Controller
                     'r_pelanggan'     => $request[0]['kdPelanggan'],
                     'subTotalPenjualan'     => $request[0]['subtotal'],
                     'tglPenjualan'   => $tglNota,
-                    'discPenjualan'     => $diskon,
-                    'discPercentP'     => $request[0]['disc'],
+                    // 'discPenjualan'     => $diskon,
+                    // 'discPercentP'     => $request[0]['disc'],
                     'taxPenjualan'     => $request[0]['tax'],
                     'totalPenjualan'     => $request[0]['total'],
                     'notePenjualan'     => $request[0]['notes'],
@@ -61,139 +62,245 @@ class penjualanController extends Controller
                     'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                 ]
             );
-                PenjualanDetail::where('r_noPenjualan', $noNota)->delete();
+                
                 $detpem = $request[1];
-                for ($i = 0; $i < count($detpem); $i++) {
-
-                    $kdBarang = $detpem[$i]['kdBarang'];
-                    $nmBarang = $detpem[$i]['nmBarang'];
-                    $qty = $detpem[$i]['qty'];
-                    $hrg = $detpem[$i]['hrgJual'];
-                    $brg = DB::table('tblpersediaan')->where('kdPersediaan', $kdBarang)->first();
-                    $oldStok = $brg->stokPersediaan;
-                    DB::table('tblpersediaan')->where('kdPersediaan', $kdBarang)->update([
-                        'stokPersediaan' => $oldStok - $qty,
-                        'salePrice' => $hrg,
-                    ]);
-                    DB::table('tblbarang')->where('kdBarang', $kdBarang)->update([
-                        'stkBarang' => $oldStok - $qty,
-                        'hrgJual' => $hrg,
-                    ]);
-
-                    $detail[] = [
-                        'r_noPenjualan' => $noNota,
-                        'r_kdBarang' => $kdBarang,
-                        'tgl_trans' => $tglNota,
-                        'r_nmBarang' => $detpem[$i]['nmBarang'],
-                        'kategori_jual' => $detpem[$i]['kategori'],
-                        'hrgJual' => $detpem[$i]['hrgJual'],
-                        'satuanJual' => $detpem[$i]['satuan'],
-                        'qty' => $qty,
-                        'totalHpp' => $detpem[$i]['totalhpp'],
-                        'totalJual' => $detpem[$i]['total'],
-                        'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
-                        'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
-                    ];
-
-                    //========insert kartu stok
-                    $total_jual = $detpem[$i]['total'];
-                    $stok_awal = $oldStok ; // DB::table('tblpersediaan')->select('stokPersediaan')->where('kdPersediaan', $kdBarang)->first()->stokPersediaan;
-                    $stok_akhir = $oldStok - $qty ;
-                    insert_kartustok_jual($noNota,$kdBarang,$tglNota,$stok_awal,$qty,$total_jual,$stok_akhir);
-                    //====================end kartu stok
-
-
-                    //===========jurnal
-                    $accid = $detpem[$i]['accid']; // acc id yg di debet
-                    $acc_id_d = $detpem[$i]['accid_persediaan']; // acc id yg di debet
-                    $acc_hpp = $detpem[$i]['accid_hpp'];
-                    $acc_id_k = '11110'; // $request[0]['subtotal']; // acc id yg di kredit
-                    $acc = '32300';
-                    $acc_pph = '23100'; // acc hutang pph
-                    $memo = 'Penjualan-'.$nmBarang;
-                    $jurnal = 'JK';
-                    $subtotal = $detpem[$i]['total'];
-                    $subtotal_hpp = $detpem[$i]['totalhpp'];
-                    //===jumlah pph
-                    $bati = $subtotal - $subtotal_hpp ;
-                    $pph22_dibayar = $bati * $pph22 / 100 ;
-                    //====endjumalh pph
-                    insert_gl($noNota,$tglNota,$subtotal,$memo,$jurnal);
-                    $rgl = DB::table('general_ledger')->get()->last()->notrans;
-                    $ac = [
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $accid,
-                            'debet' => $subtotal,
-                            'kredit' => 0,
-                            'trans_detail' => 'Penjualan-Barang'.$nmBarang,
-                            'void_flag' => 0,
-                        ], 
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_id_k ,
-                            'debet' => $subtotal + ($subtotal - $subtotal_hpp),
-                            'kredit' => 0,
-                            'trans_detail' => 'Penjualan-Barang'.$nmBarang,
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_id_d,
-                            'debet' => 0,
-                            'kredit' => $subtotal,
-                            'trans_detail' => 'Penjualan-Barang'.$nmBarang,
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_hpp,
-                            'debet' => $subtotal_hpp,
-                            'kredit' => 0,
-                            'trans_detail' => 'Penjualan-Barang'.$nmBarang,
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc,
-                            'debet' => 0,
-                            'kredit' => $subtotal - $subtotal_hpp,
-                            'trans_detail' => 'Penjualan-Barang'.$nmBarang,
-                            'void_flag' => 0,
-                        ],
-                        // pph22
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_id_k,
-                            'debet' => 0,
-                            'kredit' => $pph22_dibayar,
-                            'trans_detail' => 'Penjualan-pph22'.$nmBarang,
-                            'void_flag' => 0,
-                        ],
-                        [
-                            'rgl' => $rgl,
-                            'acc_id' => $acc_pph,
-                            'debet' => $pph22_dibayar,
-                            'kredit' => 0,
-                            'trans_detail' => 'Penjualan-pph22'.$nmBarang,
-                            'void_flag' => 0,
-                        ]
-                        //===end pph22
-                    ];
+                if (isset($detpem)) {
+                    PenjualanDetail::where('r_noPenjualan', $noNota)->delete();
+                    // Handle the case where $detpem[1] exists
                     
-                    insert_gl_detail($ac);
-                    //===========end jurnal
+                    for ($i = 0; $i < count($detpem); $i++) {
+
+                        $kdBarang = $detpem[$i]['kdBarang'];
+                        $nmBarang = $detpem[$i]['nmBarang'];
+                        $qty = $detpem[$i]['qty'];
+                        $hrg = $detpem[$i]['hrgJual'];
+                        $brg = DB::table('tblpersediaan')->where('kdPersediaan', $kdBarang)->first();
+                        $oldStok = $brg->stokPersediaan;
+                        DB::table('tblpersediaan')->where('kdPersediaan', $kdBarang)->update([
+                            'stokPersediaan' => $oldStok - $qty,
+                            'salePrice' => $hrg,
+                        ]);
+                        DB::table('tblbarang')->where('kdBarang', $kdBarang)->update([
+                            'stkBarang' => $oldStok - $qty,
+                            'hrgJual' => $hrg,
+                        ]);
+
+                        $detail[] = [
+                            'r_noPenjualan' => $noNota,
+                            'r_kdBarang' => $kdBarang,
+                            'tgl_trans' => $tglNota,
+                            'r_nmBarang' => $detpem[$i]['nmBarang'],
+                            'kategori_jual' => $detpem[$i]['kategori'],
+                            'hrgJual' => $detpem[$i]['hrgJual'],
+                            'satuanJual' => $detpem[$i]['satuan'],
+                            'qty' => $qty,
+                            'totalHpp' => $detpem[$i]['totalhpp'],
+                            'disc' => ($detpem[$i]['hrgJual'] * $qty) * $detpem[$i]['disc'] / 100,
+                            'totalJual' => $detpem[$i]['total'],
+                            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                            'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+                        ];
+
+                        //========insert kartu stok
+                        $total_jual = $detpem[$i]['total'];
+                        $stok_awal = $oldStok ; // DB::table('tblpersediaan')->select('stokPersediaan')->where('kdPersediaan', $kdBarang)->first()->stokPersediaan;
+                        $stok_akhir = $oldStok - $qty ;
+                        insert_kartustok_jual($noNota,$kdBarang,$tglNota,$stok_awal,$qty,$total_jual,$stok_akhir);
+                        //====================end kartu stok
+
+
+                        //===========jurnal
+                        $accid = $detpem[$i]['accid']; // acc id yg di debet
+                        $acc_id_d = $detpem[$i]['accid_persediaan']; // acc id yg di debet
+                        $acc_hpp = $detpem[$i]['accid_hpp'];
+                        $acc_id_k = '11110'; // $request[0]['subtotal']; // acc id yg di kredit
+                        $acc = '32300';
+                        $acc_pph = '23100'; // acc hutang pph
+                        $memo = 'Penjualan-'.$nmBarang;
+                        $jurnal = 'JK';
+                        $subtotal = $detpem[$i]['total'];
+                        $subtotal_hpp = $detpem[$i]['totalhpp'];
+                        //===jumlah pph
+                        $bati = $subtotal - $subtotal_hpp ;
+                        $pph22_dibayar = $bati * $pph22 / 100 ;
+                        //====endjumalh pph
+                        insert_gl($noNota,$tglNota,$subtotal,$memo,$jurnal);
+                        $rgl = DB::table('general_ledger')->get()->last()->notrans;
+                        $ac = [
+                            [
+                                'rgl' => $rgl,
+                                'acc_id' => $accid,
+                                'debet' => $subtotal,
+                                'kredit' => 0,
+                                'trans_detail' => 'Penjualan-Barang'.$nmBarang,
+                                'void_flag' => 0,
+                            ], 
+                            [
+                                'rgl' => $rgl,
+                                'acc_id' => $acc_id_k ,
+                                'debet' => $subtotal,
+                                'kredit' => 0,
+                                'trans_detail' => 'Penjualan-Barang'.$nmBarang,
+                                'void_flag' => 0,
+                            ],
+                            [
+                                'rgl' => $rgl,
+                                'acc_id' => $acc_id_d,
+                                'debet' => 0,
+                                'kredit' => $subtotal_hpp,
+                                'trans_detail' => 'Penjualan-Barang'.$nmBarang,
+                                'void_flag' => 0,
+                            ],
+                            [
+                                'rgl' => $rgl,
+                                'acc_id' => $acc_hpp,
+                                'debet' => $subtotal_hpp,
+                                'kredit' => 0,
+                                'trans_detail' => 'Penjualan-Barang'.$nmBarang,
+                                'void_flag' => 0,
+                            ],
+                            [
+                                'rgl' => $rgl,
+                                'acc_id' => $acc,
+                                'debet' => 0,
+                                'kredit' => $subtotal - $subtotal_hpp,
+                                'trans_detail' => 'Penjualan-Barang'.$nmBarang,
+                                'void_flag' => 0,
+                            ],
+                            // pph22
+                            // [
+                            //     'rgl' => $rgl,
+                            //     'acc_id' => $acc_id_k,
+                            //     'debet' => 0,
+                            //     'kredit' => $pph22_dibayar,
+                            //     'trans_detail' => 'Penjualan-pph22'.$nmBarang,
+                            //     'void_flag' => 0,
+                            // ],
+                            // [
+                            //     'rgl' => $rgl,
+                            //     'acc_id' => $acc_pph,
+                            //     'debet' => $pph22_dibayar,
+                            //     'kredit' => 0,
+                            //     'trans_detail' => 'Penjualan-pph22'.$nmBarang,
+                            //     'void_flag' => 0,
+                            // ]
+                            //===end pph22
+                        ];
+                        
+                        insert_gl_detail($ac);
+                        //===========end jurnal
+                    }
+                    PenjualanDetail::insert($detail);
+                }else{
+                    PenjualanDetail::where('r_noPenjualan', $noNota)->delete();
+                    // delete_gl($noNota);
                 }
 
-                PenjualanDetail::insert($detail);
+                $detpemjasa = $request[2];
+                if (isset($detpemjasa)) {
+                    PenjualanDetailJasa::where('r_noPenjualan', $noNota)->delete();
+                    // Handle the case where $detpem[1] exists
+                    
+                    for ($i = 0; $i < count($detpemjasa); $i++) {
+
+                        $kdJasa = $detpemjasa[$i]['kdJasa'];
+                        $nmJasa = $detpemjasa[$i]['nmJasa'];
+                        $qtyjasa = $detpemjasa[$i]['qtyjasa'];
+                        $biayaJasa = $detpemjasa[$i]['biayaJasa'];
+                        
+
+                        $detailjasa[] = [
+                            'r_noPenjualan' => $noNota,
+                            'r_kdJasa' => $kdJasa,
+                            'tgl_trans' => $tglNota,
+                            'r_nmJasa' => $detpemjasa[$i]['nmJasa'],
+                            'biayaJasa' => $detpemjasa[$i]['biayaJasa'],
+                            'qtyJasa' => $qtyjasa,
+                            'totalJasa' => $detpemjasa[$i]['total'],
+                            'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                            'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
+                        ];
+
+
+
+                        //===========jurnal
+                        $accid = $detpemjasa[$i]['accid']; // acc id yg di debet
+                        $accid_jasa = $detpemjasa[$i]['accid_jasa'];
+                        $acc = '32300'; // laba ditahan
+                        $memo = 'Penjualan-Jasa'.$nmJasa;
+                        $jurnal = 'JK';
+                        $subtotal = $detpemjasa[$i]['total'];
+                        //===jumlah pph
+                        // $bati = $subtotal - $subtotal_hpp ;
+                        // $pph22_dibayar = $bati * $pph22 / 100 ;
+                        //====endjumalh pph
+                        insert_gl($noNota,$tglNota,$subtotal,$memo,$jurnal);
+                        $rgl = DB::table('general_ledger')->get()->last()->notrans;
+                        $ac = [
+                            [
+                                'rgl' => $rgl,
+                                'acc_id' => $accid,
+                                'debet' => $subtotal,
+                                'kredit' => 0,
+                                'trans_detail' => 'Penjualan-Jasa'.$nmJasa,
+                                'void_flag' => 0,
+                            ], 
+                            [
+                                'rgl' => $rgl,
+                                'acc_id' => $accid_jasa ,
+                                'debet' => $subtotal,
+                                'kredit' => 0,
+                                'trans_detail' => 'Penjualan-Jasa'.$nmJasa,
+                                'void_flag' => 0,
+                            ],
+                            [
+                                'rgl' => $rgl,
+                                'acc_id' => $acc,
+                                'debet' => 0,
+                                'kredit' => $subtotal,
+                                'trans_detail' => 'Penjualan-Jasa'.$nmJasa,
+                                'void_flag' => 0,
+                            ],
+                            
+                            // pph22
+                            // [
+                            //     'rgl' => $rgl,
+                            //     'acc_id' => $acc_id_k,
+                            //     'debet' => 0,
+                            //     'kredit' => $pph22_dibayar,
+                            //     'trans_detail' => 'Penjualan-pph22'.$nmBarang,
+                            //     'void_flag' => 0,
+                            // ],
+                            // [
+                            //     'rgl' => $rgl,
+                            //     'acc_id' => $acc_pph,
+                            //     'debet' => $pph22_dibayar,
+                            //     'kredit' => 0,
+                            //     'trans_detail' => 'Penjualan-pph22'.$nmBarang,
+                            //     'void_flag' => 0,
+                            // ]
+                            //===end pph22
+                        ];
+                        
+                        insert_gl_detail($ac);
+                        //===========end jurnal
+                    }
+                    PenjualanDetailJasa::insert($detailjasa);
+                }else{
+                    PenjualanDetailJasa::where('r_noPenjualan', $noNota)->delete();
+                    // delete_gl($noNota);
+                }
+                   
 
                 DB::commit();
             });
             if(is_null($exception)) {
+                // $lastInsertId = DB::getPdo()->lastInsertId();
+                // $lastInsert = DB::table('tblpenjualan')->where('noPenjualan', $noNota)->first();
                 return response()->json([
                     'success' => true,
                     'message' => 'Post Berhasil di insert!',
-                    // 'data' => $detail
+                    'data' => $noNota
                 ], 200);
             } else {
                 DB::rollback();
@@ -303,10 +410,11 @@ class penjualanController extends Controller
 
         $dataH = Penjualan::where('noPenjualan', $noPenjualan)->join('tblpelanggan', 'tblpenjualan.r_pelanggan', 'tblpelanggan.kdPelanggan')->get();
         $dataD = PenjualanDetail::where('r_noPenjualan', $noPenjualan)->join('tblbarang', 'tblpenjualan_detail.r_kdBarang', 'tblbarang.kdBarang')->get();
+        $dataJ = PenjualanDetailJasa::where('r_noPenjualan', $noPenjualan)->join('tbljasa', 'tblpenjualan_detail_jasa.r_kdJasa', 'tbljasa.kdJasa')->get();
         return response()->json([
             'success' => true,
             'message' => 'Detail Penjualan!',
-            'data' => [$dataH, $dataD]
+            'data' => [$dataH, $dataD, $dataJ]
         ], 200);
     }
 }
