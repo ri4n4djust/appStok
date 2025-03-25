@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 24, 2025 at 11:28 PM
+-- Generation Time: Mar 25, 2025 at 09:50 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -187,25 +187,6 @@ CREATE TABLE `general_ledger` (
   `date_udpate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
---
--- Dumping data for table `general_ledger`
---
-
-INSERT INTO `general_ledger` (`id`, `notrans`, `order_no`, `invoice_no`, `r_anggaran`, `sumber_anggaran`, `tabel_trans`, `tgl`, `total_trans`, `memo`, `jurnal`, `rlocation`, `comp_loc`, `loctrf_from`, `loctrf_to`, `pay_notrans`, `return_notrans`, `trigered`, `void_flag`, `extdata_flag`, `us_create`, `us_update`, `date_create`, `date_udpate`) VALUES
-(1, 'GJ000001', 'GJ25031', '0', 99999, 1, 'general_ledger', '2025-01-01 00:00:00', '20000000.00', 'Mdal Awal', 'GJ', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-23 14:18:46', '2025-03-23 14:18:46'),
-(98, 'GJ000002', 'INV2025-1', '0', 99999, 1, 'general_ledger', '2025-03-01 00:00:00', '332500.00', 'Penjualan-RAM VGEN', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(99, 'GJ000003', 'INV2025-1', '0', 99999, 1, 'general_ledger', '2025-03-01 00:00:00', '200000.00', 'Penjualan-JasaINSTALL WINDOWS', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(100, 'GJ000004', 'INV2025-2', '0', 99999, 1, 'general_ledger', '2025-03-25 00:00:00', '350000.00', 'Penjualan-Mainboard Varro H61', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(101, 'GJ000005', 'INV2025-2', '0', 99999, 1, 'general_ledger', '2025-03-25 00:00:00', '350000.00', 'Penjualan-RAM VGEN', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(102, 'GJ000006', 'INV2025-2', '0', 99999, 1, 'general_ledger', '2025-03-25 00:00:00', '200000.00', 'Penjualan-JasaINSTALL WINDOWS', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(110, 'GJ000011', 'INV2025-3', '0', 99999, 1, 'general_ledger', '2025-03-02 00:00:00', '332500.00', 'Penjualan-RAM VGEN', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(111, 'GJ000012', 'INV2025-3', '0', 99999, 1, 'general_ledger', '2025-03-02 00:00:00', '200000.00', 'Penjualan-JasaINSTALL WINDOWS', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(112, 'GJ000013', 'INV2025-4', '0', 99999, 1, 'general_ledger', '2025-03-25 00:00:00', '230000.00', 'Penjualan-KAMERA 2MP', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 07:04:16', '2025-03-25 07:04:16'),
-(113, 'GJ000014', 'INV2025-5', '0', 99999, 1, 'general_ledger', '2025-03-25 00:00:00', '350000.00', 'Penjualan-RAM VGEN', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 07:11:24', '2025-03-25 07:11:24'),
-(114, 'GJ000015', 'INV2025-6', '0', 99999, 1, 'general_ledger', '2025-03-25 00:00:00', '700000.00', 'Penjualan-DVR 4CH', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(115, 'GJ000016', 'INV2025-6', '0', 99999, 1, 'general_ledger', '2025-03-25 00:00:00', '230000.00', 'Penjualan-KAMERA 2MP', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(116, 'GJ000017', 'INV2025-6', '0', 99999, 1, 'general_ledger', '2025-03-25 00:00:00', '150000.00', 'Penjualan-JasaPERBAIKAN CCTV', 'JK', '01020', 'Comp-Loc', '0', '0', '0', '0', 0, 0, 0, 'user', 'uerr', '2025-03-25 07:17:03', '2025-03-25 07:17:03');
-
 -- --------------------------------------------------------
 
 --
@@ -223,15 +204,8 @@ CREATE TABLE `gl` (
 --
 
 INSERT INTO `gl` (`id`, `acc_id`, `amount`) VALUES
-(1, '32200', '-20000000.00'),
-(2, '11110', '21965000.00'),
-(3, '41400', '1365000.00'),
-(4, '11604', '-628000.00'),
-(5, '51400', '628000.00'),
-(6, '32300', '-1337000.00'),
-(7, '42801', '600000.00'),
-(8, '38100', '2593000.00'),
-(9, '38999', NULL);
+(1, '38100', '0.00'),
+(2, '38999', '0.00');
 
 -- --------------------------------------------------------
 
@@ -251,66 +225,6 @@ CREATE TABLE `gl_detail` (
   `date_udpate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
---
--- Dumping data for table `gl_detail`
---
-
-INSERT INTO `gl_detail` (`id`, `rgl`, `acc_id`, `debet`, `kredit`, `trans_detail`, `void_flag`, `date_create`, `date_udpate`) VALUES
-(1, 'GJ000001', 32200, '0.00', '20000000.00', 'Jurnal-Umum', 0, '2025-03-23 14:18:46', '2025-03-23 14:18:46'),
-(2, 'GJ000001', 11110, '20000000.00', '0.00', 'Jurnal-Umum', 0, '2025-03-23 14:18:46', '2025-03-23 14:18:46'),
-(391, 'GJ000002', 41400, '332500.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(392, 'GJ000002', 11110, '332500.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(393, 'GJ000002', 11604, '0.00', '200000.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(394, 'GJ000002', 51400, '200000.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(395, 'GJ000002', 32300, '0.00', '132500.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(396, 'GJ000003', 11110, '200000.00', '0.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(397, 'GJ000003', 42801, '200000.00', '0.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(398, 'GJ000003', 32300, '0.00', '200000.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(399, 'GJ000004', 41400, '350000.00', '0.00', 'Penjualan-BarangMainboard Varro H61', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(400, 'GJ000004', 11110, '350000.00', '0.00', 'Penjualan-BarangMainboard Varro H61', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(401, 'GJ000004', 11604, '0.00', '28000.00', 'Penjualan-BarangMainboard Varro H61', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(402, 'GJ000004', 51400, '28000.00', '0.00', 'Penjualan-BarangMainboard Varro H61', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(403, 'GJ000004', 32300, '0.00', '322000.00', 'Penjualan-BarangMainboard Varro H61', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(404, 'GJ000005', 41400, '350000.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(405, 'GJ000005', 11110, '350000.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(406, 'GJ000005', 11604, '0.00', '200000.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(407, 'GJ000005', 51400, '200000.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(408, 'GJ000005', 32300, '0.00', '150000.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(409, 'GJ000006', 11110, '200000.00', '0.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(410, 'GJ000006', 42801, '200000.00', '0.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(411, 'GJ000006', 32300, '0.00', '200000.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(441, 'GJ000011', 41400, '332500.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(442, 'GJ000011', 11110, '332500.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(443, 'GJ000011', 11604, '0.00', '200000.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(444, 'GJ000011', 51400, '200000.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(445, 'GJ000011', 32300, '0.00', '132500.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(446, 'GJ000012', 11110, '200000.00', '0.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(447, 'GJ000012', 42801, '200000.00', '0.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(448, 'GJ000012', 32300, '0.00', '200000.00', 'Penjualan-JasaINSTALL WINDOWS', 0, '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(449, 'GJ000013', 41500, '230000.00', '0.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:04:16', '2025-03-25 07:04:16'),
-(450, 'GJ000013', 11110, '230000.00', '0.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:04:16', '2025-03-25 07:04:16'),
-(451, 'GJ000013', 11605, '0.00', '170000.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:04:16', '2025-03-25 07:04:16'),
-(452, 'GJ000013', 51500, '170000.00', '0.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:04:16', '2025-03-25 07:04:16'),
-(453, 'GJ000013', 32300, '0.00', '60000.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:04:16', '2025-03-25 07:04:16'),
-(454, 'GJ000014', 41400, '350000.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 07:11:24', '2025-03-25 07:11:24'),
-(455, 'GJ000014', 11110, '350000.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 07:11:24', '2025-03-25 07:11:24'),
-(456, 'GJ000014', 11604, '0.00', '200000.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 07:11:24', '2025-03-25 07:11:24'),
-(457, 'GJ000014', 51400, '200000.00', '0.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 07:11:24', '2025-03-25 07:11:24'),
-(458, 'GJ000014', 32300, '0.00', '150000.00', 'Penjualan-BarangRAM VGEN', 0, '2025-03-25 07:11:24', '2025-03-25 07:11:24'),
-(459, 'GJ000015', 41500, '700000.00', '0.00', 'Penjualan-BarangDVR 4CH', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(460, 'GJ000015', 11110, '700000.00', '0.00', 'Penjualan-BarangDVR 4CH', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(461, 'GJ000015', 11605, '0.00', '487000.00', 'Penjualan-BarangDVR 4CH', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(462, 'GJ000015', 51500, '487000.00', '0.00', 'Penjualan-BarangDVR 4CH', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(463, 'GJ000015', 32300, '0.00', '213000.00', 'Penjualan-BarangDVR 4CH', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(464, 'GJ000016', 41500, '230000.00', '0.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(465, 'GJ000016', 11110, '230000.00', '0.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(466, 'GJ000016', 11605, '0.00', '170000.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(467, 'GJ000016', 51500, '170000.00', '0.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(468, 'GJ000016', 32300, '0.00', '60000.00', 'Penjualan-BarangKAMERA 2MP', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(469, 'GJ000017', 11110, '150000.00', '0.00', 'Penjualan-JasaPERBAIKAN CCTV', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(470, 'GJ000017', 42801, '150000.00', '0.00', 'Penjualan-JasaPERBAIKAN CCTV', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(471, 'GJ000017', 32300, '0.00', '150000.00', 'Penjualan-JasaPERBAIKAN CCTV', 0, '2025-03-25 07:17:03', '2025-03-25 07:17:03');
-
 -- --------------------------------------------------------
 
 --
@@ -328,15 +242,8 @@ CREATE TABLE `gl_lr` (
 --
 
 INSERT INTO `gl_lr` (`id`, `acc_id`, `amount`) VALUES
-(1, '32200', '-20000000.00'),
-(2, '11110', '21965000.00'),
-(3, '41400', '1365000.00'),
-(4, '11604', '-628000.00'),
-(5, '51400', '628000.00'),
-(6, '32300', '-1337000.00'),
-(7, '42801', '600000.00'),
-(8, '38100', '0.00'),
-(9, '38999', '0.00');
+(1, '38100', '0.00'),
+(2, '38999', '0.00');
 
 -- --------------------------------------------------------
 
@@ -1029,7 +936,8 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (370, 'App\\Models\\User', 1, 'ApiToken', '40ff5db22ec0c5e0f38b5874d04d167a2db16d652fa19bb4407e6452602da7ad', '[\"*\"]', '2025-03-24 06:04:41', '2025-03-22 04:06:42', '2025-03-24 06:04:41'),
 (371, 'App\\Models\\User', 1, 'ApiToken', '740aeb2fffc7c7830b85dca40d4d4bb6e2ca608c286725a7b86fcc0cda0f0125', '[\"*\"]', '2025-03-24 23:01:18', '2025-03-22 05:35:52', '2025-03-24 23:01:18'),
 (372, 'App\\Models\\User', 1, 'ApiToken', 'd25ab0784f7ad24a6c1795a16954374f671b84f973fce147d2d116255f7af553', '[\"*\"]', '2025-03-22 11:26:37', '2025-03-22 07:37:28', '2025-03-22 11:26:37'),
-(373, 'App\\Models\\User', 1, 'ApiToken', '8bf9ccd78a9a0c28a34e8d31c261b47949e61a90b65710981635bf3f4911e564', '[\"*\"]', '2025-03-24 23:19:28', '2025-03-24 03:35:17', '2025-03-24 23:19:28');
+(373, 'App\\Models\\User', 1, 'ApiToken', '8bf9ccd78a9a0c28a34e8d31c261b47949e61a90b65710981635bf3f4911e564', '[\"*\"]', '2025-03-24 23:19:28', '2025-03-24 03:35:17', '2025-03-24 23:19:28'),
+(374, 'App\\Models\\User', 1, 'ApiToken', 'd025bc3e6413e49ba917597836ae1f8fa471785beac03429a41b4fc23e7d7086', '[\"*\"]', '2025-03-25 09:47:57', '2025-03-25 05:09:16', '2025-03-25 09:47:57');
 
 -- --------------------------------------------------------
 
@@ -1116,15 +1024,15 @@ CREATE TABLE `tblbarang` (
 --
 
 INSERT INTO `tblbarang` (`id`, `kdBarang`, `nmBarang`, `hrgPokok`, `hrgJual`, `ktgBarang`, `satuanBarang`, `merek`, `stkBarang`, `stkSatuan`, `qtyMin`, `qtyMax`, `stsBarang`, `deskripsi`, `accid`, `accid_hpp`, `accid_persediaan`, `accid_biaya`, `created_at`, `updated_at`) VALUES
-(2, 'BRG0004', 'KAMERA 2MP', 170000, 230000, 'KT-2021-9', 'PCS', 'HILOOK', '-14', NULL, '5', '200', '1', 'des', '41500', '51500', '11605', '52500', NULL, '2025-03-22 08:24:54'),
-(3, 'BRG0005', 'DVR 4CH', 487000, 700000, 'KT-2021-9', 'PCS', 'HILOOK', '-6', NULL, '2', '10', '1', 'des', '41500', '51500', '11605', '52500', '2023-01-23 00:04:44', '2025-03-22 10:51:56'),
-(4, 'BRG0006', 'BRIGHT GAS 5,5KG', 100000, 110000, 'KT-2021-3', 'TABUNG', 'BRIGHT', '0', NULL, '2', '10', '0', 'des', '41400', '51400', '11604', '', '2023-02-03 13:26:02', '2023-02-03 13:26:02'),
-(5, 'BRG0007', 'ELPIGI GAS 3KG', 16000, 18000, 'KT-2021-3', 'TABUNG', 'ELPIGI', '0', NULL, '5', '100', '0', 'des', '41400', '51400', '11604', '', '2023-02-04 02:58:44', '2023-02-04 02:58:44'),
-(6, 'BRG0008', 'OLI MESRAN 1.5L', 80000, 110000, 'KT-2021-2', 'BOTOL', 'MESRAN', '0', NULL, '5', '100', '0', 'des', '41500', '51500', '11605', '', '2023-02-04 02:59:07', '2023-02-04 02:59:07'),
-(9, 'BRG0009', 'RAM VGEN', 200000, 350000, 'KT-2021-3', 'PCS', 'VISI', '-4', NULL, '2', '10', '0', 'des', '41400', '51400', '11604', '52400', '2024-09-09 06:54:24', '2025-01-07 10:15:46'),
-(10, 'BRG00010', 'KOMPUTER CORE I3', 500000, 500000, 'KT-2021-3', 'SET', 'LG', '-4', NULL, '1', '20', '0', 'des', '41200', '51200', '11602', '', '2024-09-09 09:51:22', '2024-09-09 09:51:22'),
-(14, 'BRG00011', 'Mainboard Varro H61', 28000, 350000, 'KT-2021-1', 'PCS', 'Varro', '-1', NULL, '1', '5', '0', 'des', '41400', '51400', '11604', '52400', '2025-03-21 02:27:30', '2025-03-21 02:39:34'),
-(16, 'BRG00012', 'KABEL JARINGAN', 750000, 950000, 'KT-2021-7', 'Roll', 'Hikvisiob', '0', NULL, '3', '1', '0', 'des', '41400', '51400', '11604', '52400', '2025-03-22 07:50:17', '2025-03-22 07:50:45');
+(2, 'BRG0004', 'KAMERA 2MP HIKVISION', 170000, 230000, 'KT-2021-9', 'PCS', 'HILOOK', '0', NULL, '5', '200', '1', 'des', '41500', '51500', '11605', '52500', NULL, '2025-03-25 05:09:43'),
+(3, 'BRG0005', 'DVR 4CH HILOOK', 487000, 700000, 'KT-2021-9', 'PCS', 'HILOOK', '0', NULL, '2', '10', '1', 'des', '41500', '51500', '11605', '52500', '2023-01-23 00:04:44', '2025-03-25 05:10:03'),
+(4, 'BRG0006', 'BNC DRAT', 3000, 5000, 'KT-2021-9', 'PCS', 'TAIWAN', '0', NULL, '2', '100', '0', 'des', '41500', '51500', '11605', '52500', '2023-02-03 13:26:02', '2025-03-25 05:11:57'),
+(5, 'BRG0007', 'KONEKTOR DC', 2500, 5000, 'KT-2021-9', 'PCS', 'DC', '0', NULL, '5', '100', '0', 'des', '41500', '51500', '11605', '52500', '2023-02-04 02:58:44', '2025-03-25 05:13:01'),
+(6, 'BRG0008', 'POWER CENTRAL HIK 4CH', 112000, 350000, 'KT-2021-9', 'UNIT', 'HIKVISION', '0', NULL, '5', '100', '0', 'des', '41500', '51500', '11605', '52500', '2023-02-04 02:59:07', '2025-03-25 05:13:53'),
+(9, 'BRG0009', 'RAM DDR4 4GB KINGSTON', 190000, 350000, 'KT-2021-4', 'PCS', 'KINGSTON', '0', NULL, '2', '10', '0', 'des', '41200', '52200', '11602', '52200', '2024-09-09 06:54:24', '2025-03-25 05:15:19'),
+(10, 'BRG00010', 'SSD NVME ADATA 500GB', 500000, 800000, 'KT-2021-4', 'PCS', 'ADATA', '0', NULL, '1', '20', '0', 'des', '41200', '51200', '11602', '52200', '2024-09-09 09:51:22', '2025-03-25 05:16:55'),
+(14, 'BRG00011', 'SSD NVME 256GB RAPTOR', 280000, 350000, 'KT-2021-4', 'PCS', 'RAPTOR', '0', NULL, '1', '5', '0', 'des', '41200', '51200', '11602', '52200', '2025-03-21 02:27:30', '2025-03-25 05:17:58'),
+(16, 'BRG00012', 'KABEL JARINGAN SPEKTRA 305M', 750000, 950000, 'KT-2021-7', 'ROOL', 'SPETRA', '0', NULL, '1', '10', '0', 'des', '41400', '51400', '11604', '52400', '2025-03-22 07:50:17', '2025-03-25 05:19:21');
 
 -- --------------------------------------------------------
 
@@ -1238,7 +1146,7 @@ CREATE TABLE `tblinventaris` (
 --
 
 INSERT INTO `tblinventaris` (`id_inventaris`, `kode_inventaris`, `kode_pengadaan`, `nama_inventaris`, `group_inventaris`, `accid_akum`, `tahun_pembuatan`, `tahun_perakitan`, `merek`, `warna`, `umur_ekonomis`, `nilai_inventaris`, `qty_inventaris`, `created_at`, `updated_at`) VALUES
-(6, 'IV0520231', 'PGA0320253', 'TV 32 INCH', '12400', '12503', '2016-02-05', '2016-02-05', 'SAMSUNG', 'HITAM', 3, '292124.00', '1.00', '2023-05-04 08:54:29', '2023-05-04 08:54:29'),
+(6, 'IV0520231', 'PGA0320253', 'TV 32 INCH', '12400', '12503', '2016-02-05', '2016-02-05', 'SAMSUNG', 'HITAM', 3, '0.00', '0.00', '2023-05-04 08:54:29', '2023-05-04 08:54:29'),
 (7, 'IV0520232', 'PGA0520232', 'MESIN ABSEN SIDIK JARI', '12400', '12503', '2016-07-10', '2016-07-10', 'FINGERSPOT', 'HITAM', 3, '0.00', '0.00', '2023-05-04 08:55:19', '2023-05-04 08:55:19'),
 (8, 'IV0520233', 'PGA0520233', 'DVR KAMERA CCTV 8CH', '12400', '12503', '2016-08-08', '2016-08-08', 'HIKVISION', 'HITAM', 3, '0.00', '0.00', '2023-05-04 08:56:11', '2023-05-04 08:56:11'),
 (9, 'IV0520234', 'PGA0520234', 'DVR KAMERA CCTV 16CH', '12400', '12503', '2016-08-08', '2016-08-08', 'HIKVISION', 'HITAM', 3, '0.00', '0.00', '2023-05-04 08:56:48', '2023-05-04 08:56:48'),
@@ -1246,7 +1154,7 @@ INSERT INTO `tblinventaris` (`id_inventaris`, `kode_inventaris`, `kode_pengadaan
 (11, 'IV0520236', 'PGA0520236', 'KAMERA INDOOR', '12400', '12503', '2016-11-20', '2016-11-20', 'HIKVISION', 'PUTIH', 3, '0.00', '0.00', '2023-05-04 08:58:11', '2023-05-04 08:58:11'),
 (12, 'IV0520237', 'PGA0520237', 'AIR CONDENSIONER (AC)', '12400', '12503', '2015-03-12', '2015-03-12', 'PANASONIC', 'PUTIH', 3, '0.00', '0.00', '2023-05-04 08:59:29', '2023-05-04 08:59:29'),
 (13, 'IV0520238', 'PGA0520238', 'AIR CONDENSIONER (AC)', '12400', '12503', '2018-08-26', '2018-08-26', 'MIDEA', 'PUTIH', 3, '0.00', '0.00', '2023-05-04 09:00:17', '2023-05-04 09:00:17'),
-(14, 'IV0520239', 'PGA0320251', 'KOMPUTER', '12400', '12503', '2016-10-22', '2016-10-22', 'INTEL', 'HITAM', 3, '0.00', '1.00', '2023-05-04 09:01:01', '2023-05-04 09:01:01'),
+(14, 'IV0520239', 'PGA0320251', 'KOMPUTER', '12400', '12503', '2016-10-22', '2016-10-22', 'INTEL', 'HITAM', 3, '0.00', '0.00', '2023-05-04 09:01:01', '2023-05-04 09:01:01'),
 (15, 'IV05202310', 'PGA0520239', 'MONITOR KOMPUTER', '12400', '12503', '2016-10-22', '2016-10-22', 'LG', 'HITAM', 3, '0.00', '0.00', '2023-05-04 09:02:02', '2023-05-04 09:02:02'),
 (16, 'IV05202311', 'PGA05202310', 'PRINTER EPSON TM-U220', '12400', '12503', '2006-06-17', '2006-06-17', 'EPSON', 'HITAM', 3, '0.00', '0.00', '2023-05-07 23:31:38', '2023-05-07 23:31:38'),
 (17, 'IV05202312', 'PGA05202311', 'PRINTER EPSON TM-U220', '12400', '12503', '2015-06-17', '2015-06-17', 'EPSON', 'HITAM', 3, '0.00', '0.00', '2023-05-07 23:33:01', '2023-05-07 23:33:01'),
@@ -1381,7 +1289,8 @@ CREATE TABLE `tbljasa` (
 
 INSERT INTO `tbljasa` (`id`, `kdJasa`, `nmJasa`, `biayaJasa`, `deskripsi`, `accid`, `accid_jasa`, `created_at`, `updated_at`) VALUES
 (18, 'JSA0001', 'INSTALL WINDOWS', 200000, 'Install windows dan aplikasi standart', '11110', '42801', '2025-03-24 00:10:27', '2025-03-24 00:10:27'),
-(19, 'JSA0002', 'PERBAIKAN CCTV', 150000, 'PERBAIKAN CCTV', '11110', '42801', '2025-03-24 00:11:06', '2025-03-24 00:11:06');
+(19, 'JSA0002', 'PERBAIKAN CCTV', 150000, 'PERBAIKAN CCTV', '11110', '42801', '2025-03-24 00:11:06', '2025-03-24 00:11:06'),
+(20, 'JSA0003', 'SETUP PC OFFICE', 150000, 'SETUP PC UNTUK OFFICE', '11110', '42801', '2025-03-25 05:20:27', '2025-03-25 05:20:27');
 
 -- --------------------------------------------------------
 
@@ -1403,20 +1312,6 @@ CREATE TABLE `tblkartu_stok` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
---
--- Dumping data for table `tblkartu_stok`
---
-
-INSERT INTO `tblkartu_stok` (`id`, `r_notrans`, `kd_barang`, `tgl`, `stok_awal`, `unit_beli`, `total_beli`, `unit_jual`, `total_jual`, `stok_akhir`, `created_at`, `updated_at`) VALUES
-(53, 'INV2025-1', 'BRG0009', '2025-03-01 00:00:00', '0.00', '0.00', '0.00', '1.00', '332500.00', '-1.00', '2025-03-25 06:34:26', '2025-03-25 06:34:26'),
-(54, 'INV2025-2', 'BRG00011', '2025-03-25 00:00:00', '0.00', '0.00', '0.00', '1.00', '350000.00', '-1.00', '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(55, 'INV2025-2', 'BRG0009', '2025-03-25 00:00:00', '-1.00', '0.00', '0.00', '1.00', '350000.00', '-2.00', '2025-03-25 06:42:46', '2025-03-25 06:42:46'),
-(60, 'INV2025-3', 'BRG0009', '2025-03-02 00:00:00', '-2.00', '0.00', '0.00', '1.00', '332500.00', '-3.00', '2025-03-25 06:57:49', '2025-03-25 06:57:49'),
-(61, 'INV2025-4', 'BRG0004', '2025-03-25 00:00:00', '-12.00', '0.00', '0.00', '1.00', '230000.00', '-13.00', '2025-03-25 07:04:16', '2025-03-25 07:04:16'),
-(62, 'INV2025-5', 'BRG0009', '2025-03-25 00:00:00', '-3.00', '0.00', '0.00', '1.00', '350000.00', '-4.00', '2025-03-25 07:11:24', '2025-03-25 07:11:24'),
-(63, 'INV2025-6', 'BRG0005', '2025-03-25 00:00:00', '-5.00', '0.00', '0.00', '1.00', '700000.00', '-6.00', '2025-03-25 07:17:03', '2025-03-25 07:17:03'),
-(64, 'INV2025-6', 'BRG0004', '2025-03-25 00:00:00', '-13.00', '0.00', '0.00', '1.00', '230000.00', '-14.00', '2025-03-25 07:17:03', '2025-03-25 07:17:03');
 
 -- --------------------------------------------------------
 
@@ -1610,14 +1505,15 @@ CREATE TABLE `tblpelanggan` (
 
 INSERT INTO `tblpelanggan` (`id`, `kdPelanggan`, `nmPelanggan`, `almtPelanggan`, `noHpPelanggan`, `rolePelanggan`, `emailPelanggan`, `path`, `deposit`, `created_at`, `updated_at`) VALUES
 (30, 'PL02022030', 'CASH', '-', '-', '-', '-', 'user-avtar.svg', '0.00', '2022-08-04 21:42:35', '2022-08-04 21:42:35'),
-(31, 'PL02022031', 'MIROR', '-', '-', '-', '-', 'user-avtar.svg', '0.00', '2022-08-04 21:42:50', '2022-08-04 21:42:50'),
-(32, 'PL02022032', 'SMA 1 KUTA', '-', '-', '-', '-', 'user-avtar.svg', '0.00', '2022-08-18 04:12:11', '2022-08-18 04:12:11'),
-(33, 'PL02022033', 'KUNJA', '-', '-', '-', '-', 'user-avtar.svg', '0.00', '2022-08-18 04:12:32', '2022-08-18 04:12:32'),
-(34, 'PL02022034', 'CAFE DELMAR', '-', '-', '-', '-', '-', '0.00', '2023-01-29 13:05:53', '2023-01-29 13:05:53'),
-(35, 'PL02022035', 'PETS CONTROL', '-', '-', '-', '-', '-', '0.00', '2023-01-29 13:06:57', '2023-01-29 13:06:57'),
-(36, 'PL02022036', 'KAYU RAJA', '-', '-', '-', '-', '-', '0.00', '2023-01-29 13:09:28', '2023-01-29 13:09:28'),
-(37, 'PL02022037', 'SURFING', '-', '-', '-', '-', '-', '0.00', '2023-01-29 13:09:28', '2023-01-29 13:09:28'),
-(38, 'PL02022038', 'THE AWAN VILLAS', '-', '-', '-', '-', '-', '0.00', '2023-01-29 13:09:28', '2023-01-29 13:09:28');
+(31, 'PL02022031', 'ASA VILLA', 'Kunti', '-', '-', '-', '-', '0.00', '2022-08-04 21:42:50', '2025-03-25 06:08:32'),
+(32, 'PL02022032', 'BUANA VILLA', 'Jimbaran', '-', '-', '-', '-', '0.00', '2022-08-18 04:12:11', '2025-03-25 06:07:33'),
+(33, 'PL02022033', 'AWANDARI', 'Seminyak', '-', '-', '-', '-', '0.00', '2022-08-18 04:12:32', '2025-03-25 06:07:07'),
+(34, 'PL02022034', 'ANDI BEACH HOUSE', 'BATU BOLONG', '-', '-', '-', '-', '0.00', '2023-01-29 13:05:53', '2025-03-25 06:06:08'),
+(35, 'PL02022035', 'CAROLINE GUEST HOUSE', 'Batu bolong', '-', '-', '-', '-', '0.00', '2023-01-29 13:06:57', '2025-03-25 06:05:41'),
+(36, 'PL02022036', 'ARIA VILLA', 'Seminyak', '-', '-', '-', '-', '0.00', '2023-01-29 13:09:28', '2025-03-25 06:04:42'),
+(37, 'PL02022037', 'AMALFI HOTEL', 'Seminyak', '-', '-', '-', '-', '0.00', '2023-01-29 13:09:28', '2025-03-25 06:04:57'),
+(38, 'PL02022038', 'THE AWAN VILLAS', 'Batu Belig', '-', '-', '-', '-', '0.00', '2023-01-29 13:09:28', '2025-03-25 06:05:12'),
+(39, 'PL02025039', 'JAYS VILLA', 'BUMBAK', '9876566', '-', '-', '-', '0.00', '2025-03-25 05:45:11', '2025-03-25 06:03:05');
 
 -- --------------------------------------------------------
 
@@ -1686,18 +1582,6 @@ CREATE TABLE `tblpenjualan` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
---
--- Dumping data for table `tblpenjualan`
---
-
-INSERT INTO `tblpenjualan` (`idPenjualan`, `noPenjualan`, `tglPenjualan`, `r_pelanggan`, `subTotalPenjualan`, `discPenjualan`, `discPercentP`, `taxPenjualan`, `totalPenjualan`, `notePenjualan`, `termPenjualan`, `jthTempo`, `typeBayar`, `piutangPenjualan`, `created_at`, `updated_at`) VALUES
-(56, 'INV2025-1', '2025-03-01 00:00:00', 'PL02022033', '532500.00', '0.00', 0, '36575.00', '532500.00', NULL, 0, '2025-03-01 00:00:00', '0', '0.00', '2025-03-24 22:34:26', '2025-03-24 22:34:26'),
-(57, 'INV2025-2', '2025-03-25 00:00:00', 'PL02022031', '900000.00', '0.00', 0, '77000.00', '900000.00', NULL, 0, '2025-03-25 00:00:00', '0', '0.00', '2025-03-24 22:42:46', '2025-03-24 22:42:46'),
-(61, 'INV2025-3', '2025-03-02 00:00:00', 'PL02022038', '532500.00', '0.00', 0, '36575.00', '532500.00', NULL, 0, '2025-03-25 00:00:00', '0', '0.00', '2025-03-24 22:57:49', '2025-03-24 22:57:49'),
-(62, 'INV2025-4', '2025-03-25 00:00:00', 'PL02022031', '230000.00', '0.00', 0, '25300.00', '230000.00', NULL, 0, '2025-03-25 00:00:00', '0', '0.00', '2025-03-24 23:04:16', '2025-03-24 23:04:16'),
-(63, 'INV2025-5', '2025-03-25 00:00:00', 'PL02022031', '350000.00', '0.00', 0, '38500.00', '350000.00', NULL, 0, '2025-03-25 00:00:00', '0', '0.00', '2025-03-24 23:11:24', '2025-03-24 23:11:24'),
-(64, 'INV2025-6', '2025-03-25 00:00:00', 'PL02022032', '1080000.00', '0.00', 0, '102300.00', '1080000.00', NULL, 0, '2025-03-25 00:00:00', '0', '0.00', '2025-03-24 23:17:02', '2025-03-24 23:17:02');
-
 -- --------------------------------------------------------
 
 --
@@ -1737,20 +1621,6 @@ CREATE TABLE `tblpenjualan_detail` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
---
--- Dumping data for table `tblpenjualan_detail`
---
-
-INSERT INTO `tblpenjualan_detail` (`idDetailPenjualan`, `r_noPenjualan`, `tgl_trans`, `r_kdBarang`, `r_nmBarang`, `kategori_jual`, `hrgJual`, `qty`, `satuanJual`, `totalHpp`, `disc`, `totalJual`, `created_at`, `updated_at`) VALUES
-(48, 'INV2025-1', '2025-03-01 00:00:00', 'BRG0009', 'RAM VGEN', 'KT-2021-3', '350000.00', 1, 'PCS', '200000.00', '17500', '332500.00', '2025-03-24 22:34:26', '2025-03-24 22:34:26'),
-(49, 'INV2025-2', '2025-03-25 00:00:00', 'BRG00011', 'Mainboard Varro H61', 'KT-2021-1', '350000.00', 1, 'PCS', '28000.00', '0', '350000.00', '2025-03-24 22:42:46', '2025-03-24 22:42:46'),
-(50, 'INV2025-2', '2025-03-25 00:00:00', 'BRG0009', 'RAM VGEN', 'KT-2021-3', '350000.00', 1, 'PCS', '200000.00', '0', '350000.00', '2025-03-24 22:42:46', '2025-03-24 22:42:46'),
-(55, 'INV2025-3', '2025-03-02 00:00:00', 'BRG0009', 'RAM VGEN', 'KT-2021-3', '350000.00', 1, 'PCS', '200000.00', '17500', '332500.00', '2025-03-24 22:57:49', '2025-03-24 22:57:49'),
-(56, 'INV2025-4', '2025-03-25 00:00:00', 'BRG0004', 'KAMERA 2MP', 'KT-2021-9', '230000.00', 1, 'PCS', '170000.00', '0', '230000.00', '2025-03-24 23:04:16', '2025-03-24 23:04:16'),
-(57, 'INV2025-5', '2025-03-25 00:00:00', 'BRG0009', 'RAM VGEN', 'KT-2021-3', '350000.00', 1, 'PCS', '200000.00', '0', '350000.00', '2025-03-24 23:11:24', '2025-03-24 23:11:24'),
-(58, 'INV2025-6', '2025-03-25 00:00:00', 'BRG0005', 'DVR 4CH', 'KT-2021-9', '700000.00', 1, 'PCS', '487000.00', '0', '700000.00', '2025-03-24 23:17:03', '2025-03-24 23:17:03'),
-(59, 'INV2025-6', '2025-03-25 00:00:00', 'BRG0004', 'KAMERA 2MP', 'KT-2021-9', '230000.00', 1, 'PCS', '170000.00', '0', '230000.00', '2025-03-24 23:17:03', '2025-03-24 23:17:03');
-
 -- --------------------------------------------------------
 
 --
@@ -1766,19 +1636,10 @@ CREATE TABLE `tblpenjualan_detail_jasa` (
   `biayaJasa` decimal(13,2) NOT NULL,
   `qtyJasa` int NOT NULL,
   `totalJasa` decimal(13,2) NOT NULL,
+  `noteJasa` text CHARACTER SET latin1 COLLATE latin1_general_ci,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
---
--- Dumping data for table `tblpenjualan_detail_jasa`
---
-
-INSERT INTO `tblpenjualan_detail_jasa` (`idDetailPenjualan`, `r_noPenjualan`, `tgl_trans`, `r_kdJasa`, `r_nmJasa`, `biayaJasa`, `qtyJasa`, `totalJasa`, `created_at`, `updated_at`) VALUES
-(35, 'INV2025-1', '2025-03-01 00:00:00', 'JSA0001', 'INSTALL WINDOWS', '200000.00', 1, '200000.00', '2025-03-24 22:34:26', '2025-03-24 22:34:26'),
-(36, 'INV2025-2', '2025-03-25 00:00:00', 'JSA0001', 'INSTALL WINDOWS', '200000.00', 1, '200000.00', '2025-03-24 22:42:46', '2025-03-24 22:42:46'),
-(40, 'INV2025-3', '2025-03-02 00:00:00', 'JSA0001', 'INSTALL WINDOWS', '200000.00', 1, '200000.00', '2025-03-24 22:57:49', '2025-03-24 22:57:49'),
-(41, 'INV2025-6', '2025-03-25 00:00:00', 'JSA0002', 'PERBAIKAN CCTV', '150000.00', 1, '150000.00', '2025-03-24 23:17:03', '2025-03-24 23:17:03');
 
 -- --------------------------------------------------------
 
@@ -1807,15 +1668,15 @@ INSERT INTO `tblpersediaan` (`idPersediaan`, `kdPersediaan`, `nmPersediaan`, `st
 (1, 'BRG0001', 'PERTAMAX', 0, 'Liter', 'KT-2021-1', '0.00', '0.00', '2023-01-19 22:24:13', '2023-01-19 22:24:13'),
 (2, 'BRG0002', 'PERTALITE', 0, 'Liter', 'KT-2021-1', '0.00', '0.00', '2023-01-19 22:25:23', '2023-01-19 22:25:23'),
 (3, 'BRG0003', 'DEX LITE', 0, 'Liter', 'KT-2021-1', '0.00', '0.00', '2023-01-19 22:26:32', '2023-01-19 22:26:32'),
-(4, 'BRG0004', 'KAMERA 2MP', -14, 'PCS', 'KT-2021-9', '170000.00', '230000.00', '2023-01-20 12:14:45', '2025-03-22 08:24:54'),
-(6, 'BRG0005', 'DVR 4CH', -6, 'PCS', 'KT-2021-9', '487000.00', '700000.00', NULL, '2025-03-22 10:51:56'),
-(7, 'BRG0006', 'BRIGHT GAS 5,5KG', 0, 'TABUNG', 'KT-2021-3', '0.00', '0.00', NULL, NULL),
-(8, 'BRG0007', 'ELPIGI GAS 3KG', 0, 'TABUNG', 'KT-2021-3', '0.00', '0.00', NULL, NULL),
-(9, 'BRG0008', 'OLI MESRAN 1.5L', 0, 'BOTOL', 'KT-2021-2', '0.00', '0.00', NULL, NULL),
-(10, 'BRG0009', 'RAM VGEN', -4, 'PCS', 'KT-2021-3', '200000.00', '350000.00', '2024-09-09 06:54:24', '2025-01-07 10:15:46'),
-(11, 'BRG00010', 'KOMPUTER CORE I3', -2, 'SET', 'KT-2021-3', '500000.00', '500000.00', '2024-09-09 09:51:22', '2024-09-09 09:51:22'),
-(15, 'BRG00011', 'Mainboard Varro H61', -1, 'PCS', 'KT-2021-1', '28000.00', '350000.00', '2025-03-21 02:27:30', '2025-03-21 02:39:34'),
-(17, 'BRG00012', 'KABEL JARINGAN', 0, 'Roll', 'KT-2021-7', '0.00', '0.00', '2025-03-22 07:50:17', '2025-03-22 07:50:45');
+(4, 'BRG0004', 'KAMERA 2MP HIKVISION', 0, 'PCS', 'KT-2021-9', '0.00', '0.00', '2023-01-20 12:14:45', '2025-03-25 05:09:43'),
+(6, 'BRG0005', 'DVR 4CH HILOOK', 0, 'PCS', 'KT-2021-9', '0.00', '0.00', NULL, '2025-03-25 05:10:03'),
+(7, 'BRG0006', 'BNC DRAT', 0, 'PCS', 'KT-2021-9', '0.00', '0.00', NULL, '2025-03-25 05:11:57'),
+(8, 'BRG0007', 'KONEKTOR DC', 0, 'PCS', 'KT-2021-9', '0.00', '0.00', NULL, '2025-03-25 05:13:01'),
+(9, 'BRG0008', 'POWER CENTRAL HIK 4CH', 0, 'UNIT', 'KT-2021-9', '0.00', '0.00', NULL, '2025-03-25 05:13:53'),
+(10, 'BRG0009', 'RAM DDR4 4GB KINGSTON', 0, 'PCS', 'KT-2021-4', '0.00', '0.00', '2024-09-09 06:54:24', '2025-03-25 05:15:19'),
+(11, 'BRG00010', 'SSD NVME ADATA 500GB', 0, 'PCS', 'KT-2021-4', '0.00', '0.00', '2024-09-09 09:51:22', '2025-03-25 05:16:55'),
+(15, 'BRG00011', 'SSD NVME 256GB RAPTOR', 0, 'PCS', 'KT-2021-4', '0.00', '0.00', '2025-03-21 02:27:30', '2025-03-25 05:17:58'),
+(17, 'BRG00012', 'KABEL JARINGAN SPEKTRA 305M', 0, 'ROOL', 'KT-2021-7', '0.00', '0.00', '2025-03-22 07:50:17', '2025-03-25 05:19:21');
 
 -- --------------------------------------------------------
 
@@ -3598,25 +3459,25 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `general_ledger`
 --
 ALTER TABLE `general_ledger`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `gl`
 --
 ALTER TABLE `gl`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `gl_detail`
 --
 ALTER TABLE `gl_detail`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=472;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `gl_lr`
 --
 ALTER TABLE `gl_lr`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -3628,7 +3489,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=374;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=375;
 
 --
 -- AUTO_INCREMENT for table `rekening_anggaran`
@@ -3646,7 +3507,7 @@ ALTER TABLE `setup_dealer`
 -- AUTO_INCREMENT for table `tblbarang`
 --
 ALTER TABLE `tblbarang`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `tblbbm`
@@ -3682,37 +3543,37 @@ ALTER TABLE `tblinventaris`
 -- AUTO_INCREMENT for table `tblinventaris_pengadaan`
 --
 ALTER TABLE `tblinventaris_pengadaan`
-  MODIFY `id_pengadaan` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_pengadaan` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblinventaris_pengadaan_detail`
 --
 ALTER TABLE `tblinventaris_pengadaan_detail`
-  MODIFY `id_pengadaan_detail` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_pengadaan_detail` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblinventaris_penyusutan`
 --
 ALTER TABLE `tblinventaris_penyusutan`
-  MODIFY `id_penyusutan` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_penyusutan` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblinventaris_penyusutan_detail`
 --
 ALTER TABLE `tblinventaris_penyusutan_detail`
-  MODIFY `id_penyusutan_detail` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_penyusutan_detail` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbljasa`
 --
 ALTER TABLE `tbljasa`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `tblkartu_stok`
 --
 ALTER TABLE `tblkartu_stok`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblkategori`
@@ -3760,25 +3621,25 @@ ALTER TABLE `tblpegawai`
 -- AUTO_INCREMENT for table `tblpelanggan`
 --
 ALTER TABLE `tblpelanggan`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `tblpembelian`
 --
 ALTER TABLE `tblpembelian`
-  MODIFY `idPembelian` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idPembelian` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblpembelian_detail`
 --
 ALTER TABLE `tblpembelian_detail`
-  MODIFY `idPembelianDetail` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idPembelianDetail` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblpenjualan`
 --
 ALTER TABLE `tblpenjualan`
-  MODIFY `idPenjualan` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `idPenjualan` bigint NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblpenjualankupon`
@@ -3790,19 +3651,19 @@ ALTER TABLE `tblpenjualankupon`
 -- AUTO_INCREMENT for table `tblpenjualan_detail`
 --
 ALTER TABLE `tblpenjualan_detail`
-  MODIFY `idDetailPenjualan` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `idDetailPenjualan` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblpenjualan_detail_jasa`
 --
 ALTER TABLE `tblpenjualan_detail_jasa`
-  MODIFY `idDetailPenjualan` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `idDetailPenjualan` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tblpersediaan`
 --
 ALTER TABLE `tblpersediaan`
-  MODIFY `idPersediaan` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `idPersediaan` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `tblperubahan_hargabbm`
