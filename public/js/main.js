@@ -31590,7 +31590,8 @@ var state = {
   nojurnalumum: [],
   noinventaris: [],
   nopengadaan: [],
-  nopenyusutan: []
+  nopenyusutan: [],
+  nopelanggan: []
 };
 var getters = {
   NoBarang: function NoBarang(state) {
@@ -31631,6 +31632,9 @@ var getters = {
   },
   NoPenyusutan: function NoPenyusutan(state) {
     return state.nopenyusutan;
+  },
+  NoPelanggan: function NoPelanggan(state) {
+    return state.nopelanggan;
   }
 };
 var actions = {
@@ -32062,6 +32066,39 @@ var actions = {
         }
       }, _callee13, null, [[1, 8]]);
     }))();
+  },
+  GetNoPelanggan: function GetNoPelanggan(_ref14) {
+    return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee14() {
+      var commit, response;
+      return _regeneratorRuntime().wrap(function _callee14$(_context14) {
+        while (1) {
+          switch (_context14.prev = _context14.next) {
+            case 0:
+              commit = _ref14.commit;
+              _context14.prev = 1;
+              _context14.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/kdpelanggan');
+
+            case 4:
+              response = _context14.sent;
+              commit('setNoPelanggan', response.data.kdPelanggan);
+              _context14.next = 12;
+              break;
+
+            case 8:
+              _context14.prev = 8;
+              _context14.t0 = _context14["catch"](1);
+              // Handle error
+              alert('error no Pelanggan');
+              return _context14.abrupt("return");
+
+            case 12:
+            case "end":
+              return _context14.stop();
+          }
+        }
+      }, _callee14, null, [[1, 8]]);
+    }))();
   }
 };
 var mutations = {
@@ -32103,6 +32140,9 @@ var mutations = {
   },
   setKdPenyusutan: function setKdPenyusutan(state, pyu) {
     state.nopenyusutan = pyu;
+  },
+  setNoPelanggan: function setNoPelanggan(state, plg) {
+    state.nopelanggan = plg;
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -32329,25 +32369,65 @@ var getters = {
 var actions = {
   CreatePelanggan: function CreatePelanggan(_ref, pel) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var dispatch;
+      var dispatch, response, toast, _toast;
+
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               dispatch = _ref.dispatch;
-              _context.next = 3;
+              _context.prev = 1;
+              _context.next = 4;
               return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/tambah/pelanggan', pel);
 
-            case 3:
-              _context.next = 5;
+            case 4:
+              response = _context.sent;
+              _context.next = 7;
               return dispatch('GetPelanggan');
 
-            case 5:
+            case 7:
+              toast = window.Swal.mixin({
+                toast: true,
+                position: 'top-center',
+                showConfirmButton: false,
+                timer: 3000,
+                padding: '2em'
+              });
+              toast.fire({
+                icon: 'success',
+                title: 'Pelanggan berhasil tersimpan',
+                padding: '2em'
+              });
+              return _context.abrupt("return", response);
+
+            case 12:
+              _context.prev = 12;
+              _context.t0 = _context["catch"](1);
+              // Handle error
+              _toast = window.Swal.mixin({
+                toast: true,
+                position: 'top-center',
+                showConfirmButton: false,
+                timer: 3000,
+                padding: '2em'
+              });
+
+              _toast.fire({
+                title: 'Error!',
+                text: 'Pelanggan Gagal di simpan',
+                icon: 'error',
+                // confirmButtonText: 'Cool',
+                padding: '2em'
+              });
+
+              throw 'error';
+
+            case 17:
             case "end":
               return _context.stop();
           }
         }
-      }, _callee);
+      }, _callee, null, [[1, 12]]);
     }))();
   },
   GetPelanggan: function GetPelanggan(_ref2) {
@@ -32385,7 +32465,7 @@ var actions = {
   },
   DeletePelanggan: function DeletePelanggan(_ref3, id) {
     return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-      var dispatch, response, toast, _toast;
+      var dispatch, response, toast, _toast2;
 
       return _regeneratorRuntime().wrap(function _callee3$(_context3) {
         while (1) {
@@ -32420,7 +32500,7 @@ var actions = {
               _context3.prev = 12;
               _context3.t0 = _context3["catch"](1);
               // Handle error
-              _toast = window.Swal.mixin({
+              _toast2 = window.Swal.mixin({
                 toast: true,
                 position: 'top-center',
                 showConfirmButton: false,
@@ -32428,7 +32508,7 @@ var actions = {
                 padding: '2em'
               });
 
-              _toast.fire({
+              _toast2.fire({
                 title: 'Error!',
                 text: 'Pelanggan Gagal di hapus',
                 icon: 'error',
@@ -76937,7 +77017,7 @@ module.exports = JSON.parse('{"dashboard":"仪表盘","sales":"销售量","analy
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/chunks/" + chunkId + "." + {"index2":"00e7cf1f96a1f142","components-tabs":"4bfe5a9e38c8d35d","apps-invoice-preview":"0b8a8ed7cea1241b","components-accordions":"fe81d9ae2fe95202","components-modals":"1046dcbfaa507a0f","components-cards":"5bf82743a3906d09","components-carousel":"cfcdcd29ea1c9560","components-timeline":"12f106309ee609b4","components-media-object":"61fb0fa3073ec562","components-list-group":"deeb0a9c784f5403","components-pricing-table":"100222c0fa8e5dca","components-notifications":"e3a760ac2f705e97","components-lightbox":"dc3e658046ae4cf8","components-countdown":"675eaf79a42f0f52","components-counter":"d3096a898f18366f","components-sweetalert":"d70ab095737996f7","font-icons":"e9d6e1014aaa0b74","pages-helpdesk":"f0e2f5a2b5278a48","pages-contact-us":"e5a1b22a69a7b4e2","pages-faq":"106f0c1f763d93bc","pages-faq2":"5e535810a011f2f5","pages-privacy-policy":"e295ecea9c79cabd","pages-coming-soon":"aee65c7f46f932cb","pages-error404":"8beef8aea16bfed6","pages-error500":"3a65457d959e21a9","pages-error503":"4dfbbb90266ef13c","pages-maintenence":"e2ca00da557d928a","pages-blank-page":"5126a2d8c6bc95ab","pages-sample":"c7dd8bda41e1891f","auth-login-boxed":"abeeb85a8909db4c","auth-register-boxed":"2ce11d5c698985a6","auth-lockscreen-boxed":"8ba67fdbaccf495f","auth-pass-recovery-boxed":"62c038ee45888f0e","auth-login":"2708e4a6cfb81716","auth-register":"d2505c2428f60163","auth-lockscreen":"acad6f6559c601fa","auth-pass-recovery":"73fd41c5d1ea4361","elements-alerts":"c037d0b02995864b","elements-avatar":"766f089c962d1d66","elements-badges":"6f95d32a4f49b78e","elements-breadcrumbs":"0f82e521da5841c0","elements-buttons":"bff0c21e54db6353","elements-buttons-group":"bc76c2bbf0c9aef8","elements-color-library":"d171b192b21e9f7c","elements-dropdown":"19a379278dead12c","elements-infobox":"07463dca91e385ae","elements-jumbotron":"ad0646d8dc4428e0","elements-loader":"52eb745daef5d509","elements-pagination":"febd0cbd3b022a81","elements-popovers":"d4ef4b983967a9ec","elements-progress-bar":"d2eaf5a4069756ab","elements-search":"c50bd80fca9a0fc7","elements-tooltips":"beb5d2b7698ff37f","elements-treeview":"bed0270cf18b75c9","elements-typography":"0b6e658649143268","tables":"faf67dfb8f71ae11","users-profile":"389190857f2e7972","users-account-setting":"21bc376969f27aab","dragndrop":"e5f681660c6cf476","charts-apex-chart":"8ca03f843818392f","widgets":"467aaf6b1751f75b","forms-basic":"90d8226a78071363","forms-input-group":"ebc255762650e0b9","forms-layouts":"8d789e11b5d66007","forms-validation":"13519a1a629591b7","forms-checkbox-radio":"b8d9a31f9200f4be","forms-switches":"4c65e3962bb53e8e","forms-wizards":"dcb7d7c9c49711a4","forms-file-upload":"92daf8bc6c1b360f","forms-clipboard":"16cd6714297dce0a","forms-date-picker":"54c368e748220ba8","forms-input-mask":"4f0ff4e2e55b37bc","forms-quill-editor":"fb90445595bfe13a","forms-touchspin":"f75c88bd5a6ee700","forms-markdown-editor":"b28f2aabe8b8da2f","forms-select2":"7248825c81e896be","apps-chat":"69dcaf95f26946af","apps-mailbox":"95ff0b7d678a96d2","apps-todo-list":"5b937429eafab397","apps-contacts":"4592f92a7af64131","apps-notes":"fa6b562b30627733","apps-scrumboard":"fef5d8a081c9d66b","apps-calendar":"ead729bd9e6df81b","apps-invoice-list":"9b3b9b58233d5ea9","apps-invoice-add":"b3709cde68423cc2","apps-invoice-edit":"f837b6b27b12bb0c","tables-basic":"31e829b097a61df8","tables-striped":"96cd1ed0a4b6d69d","tables-order-sorting":"98987d710bf6fee9","tables-multi-column":"d2e0806b7819c1c6","tables-multiple-tables":"c38f25ffc6735d9b","tables-alt-pagination":"937bf423bfde6269","tables-custom":"86dd33aaffcc538d","tables-range-search":"34e9b1c9a7f7d37a","tables-export":"9ef0f121cbd13974","tables-live-dom-ordering":"27f232d9e02c34bf","tables-miscellaneous":"0cf0959dc7d7513a","node_modules_html2canvas_dist_html2canvas_js":"5475dc17eb928a5a","node_modules_dompurify_dist_purify_js":"9dabfec756329575","node_modules_canvg_lib_index_es_js":"84de45b397df7f27"}[chunkId] + ".js";
+/******/ 			return "js/chunks/" + chunkId + "." + {"index2":"00e7cf1f96a1f142","components-tabs":"686e305ce24748ca","apps-invoice-preview":"0b8a8ed7cea1241b","components-accordions":"fe81d9ae2fe95202","components-modals":"1046dcbfaa507a0f","components-cards":"5bf82743a3906d09","components-carousel":"cfcdcd29ea1c9560","components-timeline":"12f106309ee609b4","components-media-object":"61fb0fa3073ec562","components-list-group":"deeb0a9c784f5403","components-pricing-table":"100222c0fa8e5dca","components-notifications":"e3a760ac2f705e97","components-lightbox":"dc3e658046ae4cf8","components-countdown":"675eaf79a42f0f52","components-counter":"d3096a898f18366f","components-sweetalert":"d70ab095737996f7","font-icons":"e9d6e1014aaa0b74","pages-helpdesk":"f0e2f5a2b5278a48","pages-contact-us":"e5a1b22a69a7b4e2","pages-faq":"106f0c1f763d93bc","pages-faq2":"5e535810a011f2f5","pages-privacy-policy":"e295ecea9c79cabd","pages-coming-soon":"aee65c7f46f932cb","pages-error404":"8beef8aea16bfed6","pages-error500":"3a65457d959e21a9","pages-error503":"4dfbbb90266ef13c","pages-maintenence":"e2ca00da557d928a","pages-blank-page":"5126a2d8c6bc95ab","pages-sample":"c7dd8bda41e1891f","auth-login-boxed":"abeeb85a8909db4c","auth-register-boxed":"2ce11d5c698985a6","auth-lockscreen-boxed":"8ba67fdbaccf495f","auth-pass-recovery-boxed":"62c038ee45888f0e","auth-login":"2708e4a6cfb81716","auth-register":"d2505c2428f60163","auth-lockscreen":"acad6f6559c601fa","auth-pass-recovery":"73fd41c5d1ea4361","elements-alerts":"c037d0b02995864b","elements-avatar":"766f089c962d1d66","elements-badges":"6f95d32a4f49b78e","elements-breadcrumbs":"0f82e521da5841c0","elements-buttons":"bff0c21e54db6353","elements-buttons-group":"bc76c2bbf0c9aef8","elements-color-library":"d171b192b21e9f7c","elements-dropdown":"19a379278dead12c","elements-infobox":"07463dca91e385ae","elements-jumbotron":"ad0646d8dc4428e0","elements-loader":"52eb745daef5d509","elements-pagination":"febd0cbd3b022a81","elements-popovers":"d4ef4b983967a9ec","elements-progress-bar":"d2eaf5a4069756ab","elements-search":"c50bd80fca9a0fc7","elements-tooltips":"beb5d2b7698ff37f","elements-treeview":"bed0270cf18b75c9","elements-typography":"0b6e658649143268","tables":"faf67dfb8f71ae11","users-profile":"389190857f2e7972","users-account-setting":"21bc376969f27aab","dragndrop":"e5f681660c6cf476","charts-apex-chart":"8ca03f843818392f","widgets":"467aaf6b1751f75b","forms-basic":"90d8226a78071363","forms-input-group":"ebc255762650e0b9","forms-layouts":"8d789e11b5d66007","forms-validation":"13519a1a629591b7","forms-checkbox-radio":"b8d9a31f9200f4be","forms-switches":"4c65e3962bb53e8e","forms-wizards":"dcb7d7c9c49711a4","forms-file-upload":"92daf8bc6c1b360f","forms-clipboard":"16cd6714297dce0a","forms-date-picker":"54c368e748220ba8","forms-input-mask":"4f0ff4e2e55b37bc","forms-quill-editor":"fb90445595bfe13a","forms-touchspin":"f75c88bd5a6ee700","forms-markdown-editor":"b28f2aabe8b8da2f","forms-select2":"7248825c81e896be","apps-chat":"69dcaf95f26946af","apps-mailbox":"95ff0b7d678a96d2","apps-todo-list":"5b937429eafab397","apps-contacts":"4592f92a7af64131","apps-notes":"fa6b562b30627733","apps-scrumboard":"fef5d8a081c9d66b","apps-calendar":"ead729bd9e6df81b","apps-invoice-list":"9b3b9b58233d5ea9","apps-invoice-add":"b3709cde68423cc2","apps-invoice-edit":"f837b6b27b12bb0c","tables-basic":"31e829b097a61df8","tables-striped":"96cd1ed0a4b6d69d","tables-order-sorting":"98987d710bf6fee9","tables-multi-column":"d2e0806b7819c1c6","tables-multiple-tables":"c38f25ffc6735d9b","tables-alt-pagination":"937bf423bfde6269","tables-custom":"86dd33aaffcc538d","tables-range-search":"34e9b1c9a7f7d37a","tables-export":"9ef0f121cbd13974","tables-live-dom-ordering":"27f232d9e02c34bf","tables-miscellaneous":"0cf0959dc7d7513a","node_modules_html2canvas_dist_html2canvas_js":"5475dc17eb928a5a","node_modules_dompurify_dist_purify_js":"9dabfec756329575","node_modules_canvg_lib_index_es_js":"84de45b397df7f27"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	

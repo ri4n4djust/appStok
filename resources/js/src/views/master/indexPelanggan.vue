@@ -7,7 +7,7 @@
                         <nav class="breadcrumb-one" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="javascript:;">Daftar</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><span>Barang</span></li>
+                                <li class="breadcrumb-item active" aria-current="page"><span>Pelanggan</span></li>
                             </ol>
                         </nav>
                     </div>
@@ -76,59 +76,70 @@
                 </div>
             </div>
 
+            <Modal 
+                v-model:visible="isVisible" 
+                :draggable="true" 
+                :title="'Edit Data Pelanggan'"
+                :showCancelButton="false" 
+                :cancelButton="{text: 'cancel', onclick: () => {isVisible = false}, loading: false}"
+                :okButton="{text: 'SAVE', onclick: () => {edit_pelanggan()}, loading: false}"
+                width="60%">
+                <div class="row mb-4">
+                    <div class="col-sm-4">
+                        <label for="inputState">Kode</label>
+                        <input v-model="edit.kdPelanggan" class="form-control" placeholder="Kode" disabled />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">Nama</label>
+                        <input v-model="edit.nmPelanggan" class="form-control" placeholder="Nama Pelanggan" />
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState">No Tlp</label>
+                        <input v-model="edit.noHpPelanggan" class="form-control" placeholder="Satuan" @keypress="onlyNumber" />
+                    </div>
+                    
+                </div>
+                <div class="row mb-4">
+                    <div class="col-sm">
+                        <label for="inputState">Alamat</label>
+                        <input v-model="edit.almtPelanggan" class="form-control" placeholder="Alamat"  />
+                    </div>                    
+                </div>
+            </Modal>
+
             <!-- <div v-show="modalinput" > -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Tambah Data Barang</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Tambah Data Pelanggan</h5>
                                 <button type="button" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button>
                             </div>
                             <div class="modal-body">
-                                <form>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-4">
-                                            <label for="inputState">Kode</label>
-                                            <input v-model="input.kdB" class="form-control" placeholder="Kode" disabled />
-                                        </div>
-                                        <div class="col-sm">
-                                            <label for="inputState">Nama</label>
-                                            <input v-model="input.nmB" class="form-control" placeholder="Nama Barang" />
-                                        </div>
-                                        <div class="col-sm">
-                                            <label for="inputState">Satuan</label>
-                                            <input v-model="input.satuanB" class="form-control" placeholder="Satuan" />
-                                        </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4">
+                                        <label for="inputState">Kode</label>
+                                        <input v-model="input.kdPelanggan" class="form-control" placeholder="Kode" disabled />
                                     </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm">
-                                            <label for="inputState">Harga Beli</label>
-                                            <input v-model="input.hrgBeli" class="form-control" placeholder="Harga Beli" @keypress="onlyNumber" />
-                                        </div>
-                                        <div class="col-sm">
-                                            <label for="inputState">Harga Jual</label>
-                                            <input v-model="input.hrgJual" class="form-control" placeholder="Harga Jual" @keypress="onlyNumber" />
-                                        </div>
+                                    <div class="col-sm">
+                                        <label for="inputState">Nama</label>
+                                        <input v-model="input.nmPelanggan" class="form-control" placeholder="Nama Pelanggan" />
                                     </div>
-                                    <div class="row mb-4">
-                                        <div class="col-sm-4">
-                                            <label for="inputState">Merek</label>
-                                            <input v-model="input.merek" class="form-control" placeholder="Merek" />
-                                        </div>
-                                        <div class="col-sm">
-                                            <label for="inputState">Qty Min</label>
-                                            <input v-model="input.qtyMin" class="form-control" placeholder="Qty Min" @keypress="onlyNumber" />
-                                        </div>
-                                        <div class="col-sm">
-                                            <label for="inputState">Qty Max</label>
-                                            <input v-model="input.qtyMax" class="form-control" placeholder="Qty Max" @keypress="onlyNumber" />
-                                        </div>
+                                    <div class="col-sm">
+                                        <label for="inputState">No HP</label>
+                                        <input v-model="input.noHpPelanggan" class="form-control" placeholder="No HP" @keypress="onlyNumber" />
                                     </div>
-                                </form>
+                                </div>
+                                <div class="row mb-8">
+                                    <div class="col-sm">
+                                        <label for="inputState">Alamat</label>
+                                        <input v-model="input.almtPelanggan" class="form-control" placeholder="Alamat"  />
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn" data-dismiss="modal" data-bs-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
-                                <button type="button" class="btn btn-primary" @click="simpan_barang">Save</button>
+                                <button type="button" class="btn btn-primary" @click="simpan_pelanggan()">Save</button>
                             </div>
                         </div>
                     </div>
@@ -149,6 +160,7 @@
     import jsPDF from 'jspdf';
     import 'jspdf-autotable';
 
+    import { Modal } from 'usemodal-vue3';
     import { useStore } from 'vuex';
 
     import { useMeta } from '@/composables/use-meta';
@@ -181,16 +193,15 @@
         resizableColumns: true,
     });
 
-    const kdbrg = ref([])
+    const isVisible = ref(false);
+    const edit = ref({});
+
+    const kdPelanggan = ref([])
     const input = ref({
-        kdB: kdbrg,
-        nmB: '',
-        satuanB: '',
-        hrgBeli: '',
-        hrgJual: '',
-        merek: '',
-        qtyMin: '',
-        qtyMax: '',
+        kdPelanggan: kdPelanggan,
+        nmPelanggan: '',
+        almtPelanggan: '',
+        noHpPelanggan: '',
     })
 
     
@@ -202,8 +213,13 @@
 
     
     const bind_data = () => {
-        store.dispatch('GetPelanggan');
-        setTimeout(function() { items.value = store.getters.StatePelanggan; }, 2000);
+        store.dispatch('GetPelanggan')
+        .then(response => {
+            items.value = store.getters.StatePelanggan;
+        }).catch(error => {
+            // console.log('error: ', error)
+            return
+        })
     }
 
     const barangs = computed(() => {
@@ -219,16 +235,44 @@
 
     // const kdbrg = ref([])
     const getkd = async () => {
-        await store.dispatch('GetNoBarang');
-        kdbrg.value = store.getters.NoBarang;
+        await store.dispatch('GetNoPelanggan')
+        .then(response => {
+            kdPelanggan.value = store.getters.NoPelanggan;
+        }).catch(error => {
+            // console.log('error: ', error)
+            return
+        })
         // console.log(kdbrg.value)
     }
 
-    const simpan_barang = () => {
+    const simpan_pelanggan = () => {
+
         const isi = input.value
-        store.dispatch('CreateBarang', isi )
-        bind_data();
-        getkd()
+        store.dispatch('CreatePelanggan', isi )
+        .then(response => {
+            bind_data();
+            getkd()
+            modalinput.value = false
+            new window.Swal('Success!', 'Your file has been saved.', 'success');
+        }).catch(error => {
+            // console.log('error: ', error)
+            return
+        })        
+    }
+
+    const edit_pelanggan = () => {
+        
+        const isi = edit.value
+        store.dispatch('CreatePelanggan', isi )
+        .then(response => {
+            bind_data();
+            getkd()
+            isVisible.value = false;
+            new window.Swal('Success!', 'Your file has been saved.', 'success');
+        }).catch(error => {
+            // console.log('error: ', error)
+            return
+        })        
     }
 
     const export_table = (type) => {
@@ -340,7 +384,13 @@
     };
     const view_row = (item) => {
         modalinput.value = true
-        alert('ID: ' + item.kdBarang + ', Name: ' + item.nmBarang);
+        isVisible.value = true;
+        edit.value = ({
+            kdPelanggan: item.kdPelanggan,
+            nmPelanggan: item.nmPelanggan,
+            almtPelanggan: item.almtPelanggan,
+            noHpPelanggan: item.noHpPelanggan,
+        });
     };
 
     const delete_row = (item) => {

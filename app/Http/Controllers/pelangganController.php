@@ -34,28 +34,30 @@ class pelangganController extends Controller
                 //     File::makeDirectory($path, 0755, true);
                 // }
                 // Image::make($request->get('gambar'))->save($path.$name);
-                
-                $post = Pelanggan::create([
-                    'kdPelanggan'     => $request->input('kdPelanggan'),
-                    'nmPelanggan'     => $request->input('nmPelanggan'),
-                    'almtPelanggan'   => $request->input('almtPelanggan'),
-                    'noHpPelanggan'   => $request->input('noHpPelanggan'),
-                    'rolePelanggan'   => $request->input('rolePelanggan'),
-                    'emailPelanggan'   => $request->input('emailPelanggan'),
-                    'path'   => $request->input('path'),
-                ]);
+
+                Pelanggan::updateOrCreate(
+                    ['kdPelanggan' => $request->input('kdPelanggan')],
+                    [
+                        'nmPelanggan'     => $request->input('nmPelanggan'),
+                        'almtPelanggan'   => $request->input('almtPelanggan'),
+                        'noHpPelanggan'   => $request->input('noHpPelanggan'),
+                        'rolePelanggan'   => '-',
+                        'emailPelanggan'  => '-',
+                        'path'            => '-',
+                    ]
+                );
                 DB::commit();
             });
             if(is_null($exception)) {
                 return response()->json([
                     'success' => true,
-                    'message' => 'Post Berhasil Disimpan!',
+                    'message' => 'Pelanggan Berhasil Disimpan!',
                 ], 200);
             } else {
                 DB::rollback();
                 return response()->json([
                     'success' => false,
-                    'message' => 'Post Gagal Disimpan!',
+                    'message' => 'Pelanggan Gagal Disimpan!',
                 ], 500);
             }
         } catch (\Exception $e) {
