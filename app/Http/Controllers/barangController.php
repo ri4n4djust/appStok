@@ -571,6 +571,7 @@ class barangController extends Controller
                 DB::table('tblpembelian_detail')->truncate();
                 DB::table('tblpenjualan')->truncate();
                 DB::table('tblpenjualan_detail')->truncate();
+                DB::table('tblpenjualan_detail_jasa')->truncate();
                 DB::table('tblperubahan_hargabbm')->truncate();
                 DB::table('tblpobbm')->truncate();
                 DB::table('tblpobbm_detail')->truncate();

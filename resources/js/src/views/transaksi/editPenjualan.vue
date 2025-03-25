@@ -204,6 +204,12 @@
                                                             </button>
                                                         </div>
                                                     </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputState">Note</label>
+                                                            <textarea v-model="jsa.note" class="form-control form-control-sm" placeholder="Price" ></textarea>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -272,7 +278,10 @@
                                                     <tbody>
                                                         <tr v-for="itemjasa in cartItemsPenJasa" :key="itemjasa.kdJasa">
                                                             <td class="description">{{ itemjasa.kdJasa }}</td>
-                                                            <td class="description">{{ itemjasa.nmJasa }}</td>
+                                                            <td class="description">
+                                                                {{ itemjasa.nmJasa }}
+                                                                <p class="inv-email-address">{{ itemjasa.note }}</p>
+                                                            </td>
                                                             <td class="rate">{{ new Intl.NumberFormat().format(itemjasa.biayaJasa) }}</td>
                                                             <td class="qty">{{ itemjasa.qtyjasa }}</td>
                                                             <td class="amount">{{ new Intl.NumberFormat().format(itemjasa.total) }}</td>
@@ -507,6 +516,7 @@
             biayaJasa: jsaArr[i].biayaJasa,
             qtyjasa: jsaArr[i].qtyJasa,
             total: jsaArr[i].totalJasa,
+            note: jsaArr[i].noteJasa,
             accid:jsaArr[i].accid,
             accid_jasa:jsaArr[i].accid_jasa,
         })
@@ -733,6 +743,7 @@
                     biayaJasa:jsa.biayaJasa,
                     qtyjasa:qtyjasa.value,
                     total:qtyjasa.value * jsa.biayaJasa,
+                    note:jsa.note
                 });	
                 localStorage.setItem('cartItemsPenJasa',JSON.stringify(cartItemsPenJasa.value));
                 getCartJasa();

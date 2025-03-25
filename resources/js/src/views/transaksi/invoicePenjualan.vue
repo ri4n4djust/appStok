@@ -94,7 +94,10 @@
                                                             <tbody>
                                                                 <tr v-for="item in items_jasa" :key="item.id">
                                                                     <td>{{ item.kdJasa }}</td>
-                                                                    <td>{{ item.nmJasa }}</td>
+                                                                    <td>
+                                                                        {{ item.nmJasa }}
+                                                                        <p class="inv-email-address">{{ item.noteJasa }}</p>
+                                                                    </td>
                                                                     <td class="text-end">{{ Number(item.biayaJasa).toLocaleString() }}</td>
                                                                     <td class="text-end">{{ item.qtyJasa }}</td>
                                                                     <td class="text-end">{{ Number(item.totalJasa).toLocaleString() }}</td>
@@ -161,9 +164,10 @@
                                             <a href="javascript:;" class="btn btn-secondary btn-print action-print" @click="print()">Print</a>
                                         </div>
                                         <div class="col-xl-12 col-md-3 col-sm-6">
-                                            <a href="javascript:;" class="btn btn-success btn-download">Download</a>
+                                            <router-link to="/penjualan" class="btn btn-warning btn-back">Back</router-link>
                                         </div>
                                         <div class="col-xl-12 col-md-3 col-sm-6">
+
                                             <router-link to="/apps/invoice/edit" class="btn btn-dark btn-edit">Edit</router-link>
                                         </div>
                                     </div>

@@ -217,6 +217,7 @@ class penjualanController extends Controller
                             'biayaJasa' => $detpemjasa[$i]['biayaJasa'],
                             'qtyJasa' => $qtyjasa,
                             'totalJasa' => $detpemjasa[$i]['total'],
+                            'noteJasa' => $detpemjasa[$i]['note'],
                             'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                             'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
                         ];
