@@ -20,22 +20,43 @@ class pembelianController extends Controller
                 // array kkey 1 = Detail
                 $tglNota = $request[0]['tglNota'];
                 $noNota = $request[0]['noNota'];
-                $post = DB::table('tblpembelian')->insert([
-                    'noNota'     => $request[0]['noNota'],
-                    'r_supplier'     => $request[0]['kdSupplier'],
-                    'subTotal'     => $request[0]['subtotal'],
-                    'tglPembelian'   => $tglNota,
-                    'disc'     => $request[0]['disc'],
-                    'discPercent'     => $request[0]['disc'],
-                    'tax'     => $request[0]['tax'],
-                    'pph'     => 0,
-                    'total'     => $request[0]['total'],
-                    'note'     => $request[0]['notes'],
-                    'term'     => $request[0]['term'],
-                    'jthTempo'     => $request[0]['jthTempo'],
-                    'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
-                    'updated_at' => \Carbon\Carbon::now()->toDateTimeString()
-                ]);
+                $existingRecord = DB::table('tblpembelian')->where('noNota', $noNota)->first();
+                if ($existingRecord) {
+                    DB::table('tblpembelian')->where('noNota', $noNota)->update([
+                        'r_supplier'     => $request[0]['kdSupplier'],
+                        'subTotal'       => $request[0]['subtotal'],
+                        'tglPembelian'   => $tglNota,
+                        'disc'           => $request[0]['disc'],
+                        'discPercent'    => $request[0]['disc'],
+                        'tax'            => $request[0]['tax'],
+                        'pph'            => 0,
+                        'total'          => $request[0]['total'],
+                        'note'           => $request[0]['notes'],
+                        'term'           => $request[0]['term'],
+                        'jthTempo'       => $request[0]['jthTempo'],
+                        'updated_at'     => \Carbon\Carbon::now()->toDateTimeString()
+                    ]);
+                    DB::table('tblpembelian_detail')->where('noNota', $noNota)->delete();
+                } else {
+                    DB::table('tblpembelian_detail')->where('noNota', $noNota)->delete();
+                    DB::table('tblpembelian')->insert([
+                        'noNota'         => $noNota,
+                        'r_supplier'     => $request[0]['kdSupplier'],
+                        'subTotal'       => $request[0]['subtotal'],
+                        'tglPembelian'   => $tglNota,
+                        'disc'           => $request[0]['disc'],
+                        'discPercent'    => $request[0]['disc'],
+                        'tax'            => $request[0]['tax'],
+                        'pph'            => 0,
+                        'total'          => $request[0]['total'],
+                        'note'           => $request[0]['notes'],
+                        'term'           => $request[0]['term'],
+                        'jthTempo'       => $request[0]['jthTempo'],
+                        'created_at'     => \Carbon\Carbon::now()->toDateTimeString(),
+                        'updated_at'     => \Carbon\Carbon::now()->toDateTimeString()
+                    ]);
+                }
+                
                 $detpem = $request[1];
                 for ($i = 0; $i < count($detpem); $i++) {
 

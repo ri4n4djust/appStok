@@ -53,7 +53,7 @@
                             <template #total="props"> {{ Number(props.row.total).toLocaleString() }} </template>
                             <template #action="props">
 
-                                <router-link :to="{name: 'editpembelian', params: {startDate: props.row.tglPenjualan, kd_trans:props.row.noPenjualan, regu:props.row.r_regu }}" >
+                                <router-link :to="{name: 'editpembelian', params: {noNota:props.row.noNota, tglNota: props.row.tglPembelian }}" >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="24"

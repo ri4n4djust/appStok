@@ -167,7 +167,9 @@
                                                         <tr v-for="item in cartItems" :key="item.kdBarang">
                                                             <td class="description">{{ item.nmBarang }}</td>
                                                             <td class="rate">{{ new Intl.NumberFormat().format(item.hrgPokok) }}</td>
-                                                            <td class="qty">{{ item.qty }}</td>
+                                                            <td class="qty">
+                                                                <input type="text" v-model="item.qty" class="form-control form-control-sm" @keypress="onlyNumber" @change="updateItemQty(item.kdBarang, item.qty)" />
+                                                            </td>
                                                             <td class="qty">{{ item.satuan }}</td>
                                                             <td class="amount">{{ new Intl.NumberFormat().format(item.total) }}</td>
                                                             <td class="tax">
@@ -353,13 +355,13 @@
 
     const props = defineProps({
         id: String,
-        startDate: String,
-        kd_trans: String,
+        tglNota: String,
+        noNota: String,
         regu: String,
     });
     const params = ref({
-        noNota: props.kd_trans,
-        tglNota: props.startDate, // moment().format("YYYY-MM-DD"),
+        noNota: props.noNota,
+        tglNota: props.tglNota, // moment().format("YYYY-MM-DD"),
         term: 0,
         jthTempo: moment().format("YYYY-MM-DD"),
         notes: '',
@@ -369,11 +371,6 @@
         total: total,
     });
     const paramssupplier = ref({
-        // kdSupplier: '',
-        // nmSupplier: '',
-        // almtSupplier: '',
-        // tlpSupplier: '',
-
     });
     const paramsacc = ref({
         noAcc: '',
@@ -471,33 +468,39 @@
 
     onMounted( async () => {
         //set default data
-        await store.dispatch('GetDetailPembelian', params.value);
-        const arr = store.getters.SdetailPembelian;
-        const brgArr = arr[1];
+        await store.dispatch('GetDetailPembelian', params.value)
+        .then(response => {
+            // console.log('result: ', response)
+            // paramssupplier.value.kdPelanggan = arr[0][0].kdPelanggan;
+            // paramssupplier.value.nmPelanggan = arr[0][0].nmPelanggan;
+            // paramssupplier.value.noHpPelanggan = arr[0][0].noHpPelanggan;
+            // paramssupplier.value.almtPelanggan = arr[0][0].almtPelanggan;
+            const arr = store.getters.SdetailPembelian;
+            const brgArr = arr[1];
+            for(let i = 0; i < brgArr.length; i++){
+                cartItemsP.value.push({ 
+                    // id: 1, 
+                    kdBarang:brgArr[i].kdBarang, 
+                    nmBarang:brgArr[i].nmBarang,
+                    accid_persediaan:brgArr[i].accid_persediaan,
+                    hrgPokok:brgArr[i].hrgBeli,
+                    qty:brgArr[i].qty,
+                    satuan:brgArr[i].satuan,
+                    total:brgArr[i].total,
+                    is_tax: false 
+                });
+            };
+            localStorage.setItem('cartItemsP', JSON.stringify(cartItemsP.value));
+        })
+        .catch(error => {
+            // console.log('error: ', error)
+            return
+        })
 
-        // for(let i = 0; i < brgArr.length; i++){
-        //     cartItemsP.value.push({ 
-        //         id: 1, 
-        //         kdBarang:brg.kdPersediaan, 
-        //         nmBarang:brg.nmPersediaan,
-        //         accid_persediaan:brg.accid_persediaan,
-        //         hrgPokok:brg.lastPrice,
-        //         qty:qty.value,
-        //         satuan:brg.satuanPersediaan,
-        //         total:qty.value * brg.lastPrice,
-        //         is_tax: false 
-        //     });
-        // };
-
-        localStorage.setItem('cartItemsP', JSON.stringify(cartItemsP.value));
-        store.dispatch('GetBarang');
-
-        // paramssupplier.value.kdPelanggan = arr[0][0].kdPelanggan;
-        // paramssupplier.value.nmPelanggan = arr[0][0].nmPelanggan;
-        // paramssupplier.value.noHpPelanggan = arr[0][0].noHpPelanggan;
-        // paramssupplier.value.almtPelanggan = arr[0][0].almtPelanggan;
-
-        console.log(arr)
+        paramssupplier.value.kdSupplier = store.getters.SdetailPembelian[0][0].kdSupplier;
+        paramssupplier.value.nmSupplier = store.getters.SdetailPembelian[0][0].nmSupplier;
+        paramssupplier.value.almtSupplier = store.getters.SdetailPembelian[0][0].almtSupplier;
+        paramssupplier.value.tlpSupplier = store.getters.SdetailPembelian[0][0].tlpSupplier;        
        
         getBarang();
         // getAcc();
@@ -598,6 +601,18 @@
                     });
             }
     }
+    function updateItemQty (barcode, qty) {
+        const cartItems = JSON.parse(localStorage.getItem('cartItemsP'));
+        const objIndex = cartItems.findIndex((e => e.kdBarang === barcode));
+        const newQty = parseInt(qty) ;
+        cartItems[objIndex].qty = parseInt(newQty);
+        cartItems[objIndex].total = parseInt(newQty * cartItems[objIndex].hrgPokok);
+        localStorage.setItem('cartItemsP',JSON.stringify(cartItems));
+        //alert('Quantity Update')
+        getCart();
+        // this.isicart = Object.keys(JSON.parse(localStorage.getItem('cartItemsP'))).length;
+    }
+
     function removeItem(id) {
         // alert(id)
         const arrayFromStroage = JSON.parse(localStorage.getItem('cartItemsP'));

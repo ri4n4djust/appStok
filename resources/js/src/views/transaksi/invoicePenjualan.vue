@@ -188,10 +188,11 @@
     import { useMeta } from '@/composables/use-meta';
     useMeta({ title: 'Invoice' });
 
-    import { useRoute } from 'vue-router';
+    import { useRouter, useRoute } from 'vue-router'
     import { useStore } from 'vuex';
     const route = useRoute();
     const store = useStore();
+    const router = useRouter();
 
     const items = ref([]);
     const items_jasa = ref([]);
@@ -257,8 +258,8 @@
             // console.log(nmPelanggan.value);
                 console.log(response);
             }).catch((error) => {
-
                 console.log(error);
+                router.push({ name: 'penjualan-barang'});
             });
 
         } catch (error) {
